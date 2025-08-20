@@ -1,0 +1,26 @@
+
+# Patched version using Stable Diffusion instead of FLUX
+import torch
+from diffusers import StableDiffusionPipeline
+from PIL import Image
+import numpy as np
+from pathlib import Path
+from typing import Dict, List, Optional, Tuple, Any
+import logging
+from dataclasses import dataclass
+
+# Keep the same interface but use SD instead
+FluxPipeline = StableDiffusionPipeline
+
+@dataclass
+class GenerationConfig:
+    """Configuration for image generation"""
+    model_name: str = "runwayml/stable-diffusion-v1-5"
+    width: int = 512  # SD works better at 512
+    height: int = 512
+    num_inference_steps: int = 20
+    guidance_scale: float = 7.5
+    seed: Optional[int] = None
+    device: str = "auto"
+
+# Rest of the file remains the same...

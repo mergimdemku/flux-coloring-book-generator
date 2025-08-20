@@ -1,0 +1,71 @@
+# Docker Compose for FLUX Coloring Book Generator
+version: '3.8'
+
+services:
+  coloring-book-generator:
+    build: .
+    container_name: flux-coloring-book
+    restart: unless-stopped
+    
+    # GPU configuration for RTX 3070
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
+    
+    # Environment variables
+    environment:
+      - CUDA_VISIBLE_DEVICES=0
+      - PYTORCH_CUDA_ALLOC_CONF=max_split_size_mb:256
+      - TORCH_CUDA_ARCH_LIST=8.6
+      - HF_HOME=/app/cache
+      - TRANSFORMERS_CACHE=/app/cache
+      - DIFFUSERS_CACHE=/app/cache
+      - CUDA_LAUNCH_BLOCKING=0
+      - TORCH_CUDNN_V8_API_ENABLED=1
+      
+    # Volume mounts
+    volumes:
+      - ./output:/app/output
+      - ./cache:/app/cache
+      - ./models:/app/models
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+    
+    # Network settings
+    ports:
+      - "8080:8080"  # Web interface port if added later
+    
+    # Resource limits (RTX 3070 optimized)
+    mem_limit: 16g
+    memswap_limit: 20g
+    
+    # Display settings (for GUI if needed)
+    environment:
+      - DISPLAY=:0
+    
+    # Command override
+    command: python3 server_main.py
+    
+    # Health check
+    healthcheck:
+      test: ["CMD", "python3", "-c", "import torch; assert torch.cuda.is_available()"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 60s
+
+# Optional: Add monitoring service
+  monitoring:
+    image: nvidia/dcgm-exporter:3.1.7-3.1.4-ubuntu20.04
+    container_name: gpu-monitoring
+    restart: unless-stopped
+    cap_add:
+      - SYS_ADMIN
+    ports:
+      - "9400:9400"
+    volumes:
+      - /usr/lib/x86_64-linux-gnu/libnvidia-ml.so:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so
+      - /usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1:/usr/lib/x86_64-linux-gnu/libnvidia-ml.so.1
