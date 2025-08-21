@@ -75,7 +75,7 @@ class FluxModelLoader:
             self.pipeline = FluxPipeline.from_pretrained(
                 "black-forest-labs/FLUX.1-schnell",
                 torch_dtype=torch.float16,
-                device_map="auto",
+                device_map="cuda" if torch.cuda.is_available() else "balanced",
                 low_cpu_mem_usage=True
             ).to(self.device)
             
