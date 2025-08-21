@@ -1,0 +1,53 @@
+# FLUX Coloring Book Generator - Production Dependencies
+# Optimized for RTX 5090 Server Deployment
+
+# Core AI/ML
+torch==2.1.0
+torchvision==0.16.0
+torchaudio==2.1.0
+diffusers[torch]==0.24.0
+transformers==4.35.0
+accelerate==0.24.0
+
+# FLUX-specific optimizations
+xformers==0.0.22
+triton==2.1.0
+bitsandbytes==0.41.3
+flash-attn==2.3.4
+
+# Hugging Face
+huggingface-hub==0.19.4
+tokenizers==0.15.0
+safetensors==0.4.1
+
+# Image processing
+Pillow==10.1.0
+opencv-python==4.8.1.78
+numpy==1.24.4
+scikit-image==0.21.0
+
+# GUI (fallback support)
+PySide6==6.6.0
+
+# PDF generation
+reportlab==4.0.7
+
+# Utilities
+requests==2.31.0
+tqdm==4.66.1
+pyyaml==6.0.1
+python-dotenv==1.0.0
+scipy>=1.11.0
+
+# Development/monitoring
+psutil==5.9.6
+gpustat==1.1.1
+
+# Optional: Web interface dependencies
+# fastapi==0.104.1
+# uvicorn[standard]==0.24.0
+# jinja2==3.1.2
+
+# Optional: Jupyter for debugging
+# jupyter==1.0.0
+# ipywidgets==8.1.1
