@@ -757,7 +757,7 @@ def generate_api():
             
             logger.info(f"Generating with enhanced prompt for {style} style, {age_range} age range")
             
-            # Generate with specific parameters
+            # Generate with specific parameters - use the enhanced prompt but call the coloring page method
             image = generator.generate(
                 enhanced_prompt,
                 height=height,
@@ -766,9 +766,6 @@ def generate_api():
             )
             
             if image:
-                # Optimize for coloring book
-                image = generator.optimize_for_coloring(image)
-                
                 # Convert to base64
                 buffered = io.BytesIO()
                 image.save(buffered, format="PNG")
@@ -818,9 +815,6 @@ def generate_api():
                 )
                 
                 if image:
-                    # Optimize for coloring book
-                    image = generator.optimize_for_coloring(image)
-                    
                     buffered = io.BytesIO()
                     image.save(buffered, format="PNG")
                     img_base64 = base64.b64encode(buffered.getvalue()).decode()
@@ -864,9 +858,6 @@ def generate_api():
                     )
                     
                     if image:
-                        # Optimize for coloring book
-                        image = generator.optimize_for_coloring(image)
-                        
                         buffered = io.BytesIO()
                         image.save(buffered, format="PNG")
                         img_base64 = base64.b64encode(buffered.getvalue()).decode()
