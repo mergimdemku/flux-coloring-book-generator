@@ -453,14 +453,14 @@ brave lion roaring</textarea>
                 <div class="form-group">
                     <label>Paper Format</label>
                     <select id="format">
-                        <option value="a4-portrait" selected>A4 Portrait (595x842)</option>
-                        <option value="a4-landscape">A4 Landscape (842x595)</option>
-                        <option value="letter-portrait">Letter Portrait (612x792)</option>
-                        <option value="letter-landscape">Letter Landscape (792x612)</option>
+                        <option value="a4-portrait" selected>A4 Portrait (592x840) - FLUX Compatible</option>
+                        <option value="a4-landscape">A4 Landscape (840x592) - FLUX Compatible</option>
+                        <option value="letter-portrait">Letter Portrait (608x792)</option>
+                        <option value="letter-landscape">Letter Landscape (792x608)</option>
                         <option value="square-large">Square Large (1024x1024)</option>
                         <option value="square-medium">Square Medium (768x768)</option>
                     </select>
-                    <div class="size-info" id="size-info">A4 Portrait: 595x842 pixels</div>
+                    <div class="size-info" id="size-info">A4 Portrait: 592x840 pixels (FLUX compatible)</div>
                 </div>
 
                 <button class="btn" onclick="generate()" id="generate-btn">
@@ -505,12 +505,12 @@ brave lion roaring</textarea>
         let isGenerating = false;
         let latestGeneration = null;
 
-        // Format size mapping
+        // Format size mapping - All dimensions must be divisible by 8 for FLUX
         const formatSizes = {
-            'a4-portrait': { width: 595, height: 842, desc: 'A4 Portrait: 595x842 pixels' },
-            'a4-landscape': { width: 842, height: 595, desc: 'A4 Landscape: 842x595 pixels' },
-            'letter-portrait': { width: 612, height: 792, desc: 'Letter Portrait: 612x792 pixels' },
-            'letter-landscape': { width: 792, height: 612, desc: 'Letter Landscape: 792x612 pixels' },
+            'a4-portrait': { width: 592, height: 840, desc: 'A4 Portrait: 592x840 pixels (FLUX compatible)' },
+            'a4-landscape': { width: 840, height: 592, desc: 'A4 Landscape: 840x592 pixels (FLUX compatible)' },
+            'letter-portrait': { width: 608, height: 792, desc: 'Letter Portrait: 608x792 pixels' },
+            'letter-landscape': { width: 792, height: 608, desc: 'Letter Landscape: 792x608 pixels' },
             'square-large': { width: 1024, height: 1024, desc: 'Square Large: 1024x1024 pixels' },
             'square-medium': { width: 768, height: 768, desc: 'Square Medium: 768x768 pixels' }
         };

@@ -31,8 +31,8 @@ def test_generation():
     try:
         image = generator.generate(
             prompt,
-            height=595,
-            width=842,
+            height=840,  # FLUX compatible (divisible by 8)
+            width=592,   # FLUX compatible (divisible by 8)  
             seed=42
         )
         
