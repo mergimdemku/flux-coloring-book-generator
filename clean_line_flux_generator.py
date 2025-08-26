@@ -22,60 +22,60 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
     def __init__(self):
         super().__init__()
         
-        # Enhanced style settings for ULTRA CLEAN lines
+        # Enhanced style settings for ULTRA CLEAN lines with strong anatomy controls
         self.clean_line_enhancers = {
             'Manga': {
                 'prompt_prefix': 'professional manga illustration',
-                'style_elements': 'manga art style, ultra clean sharp lines, high contrast black lines, perfect line work, professional manga quality',
-                'negative_prompt': 'blurry lines, sketchy, rough lines, dirty lines, messy artwork, low quality lines',
+                'style_elements': 'manga art style, ultra clean sharp black lines, high contrast lineart, perfect anatomically correct characters, professional manga quality, clean outlines, single continuous lines',
+                'negative_prompt': 'blurry lines, sketchy, rough lines, dirty lines, messy artwork, low quality lines, broken lines, disconnected lines',
                 'line_processing': 'manga_clean'
             },
             'Anime': {
                 'prompt_prefix': 'professional anime illustration', 
-                'style_elements': 'anime art style, crisp clean outlines, perfect line art, cel-animation quality, ultra clean lines',
-                'negative_prompt': 'rough lines, sketchy, blurry outlines, messy lines, low quality',
+                'style_elements': 'anime art style, crisp clean black outlines, perfect line art, cel-animation quality, ultra clean continuous lines, anatomically correct proportions',
+                'negative_prompt': 'rough lines, sketchy, blurry outlines, messy lines, low quality, broken outlines, jagged edges',
                 'line_processing': 'anime_clean'
             },
             'Disney': {
                 'prompt_prefix': 'professional Disney animation style',
-                'style_elements': 'Disney character design, smooth clean lines, perfect outlines, professional animation quality, pristine line work',
-                'negative_prompt': 'rough sketch, messy lines, amateur artwork, dirty lines',
+                'style_elements': 'Disney character design, smooth clean black lines, perfect continuous outlines, professional animation quality, pristine line work, correct anatomy',
+                'negative_prompt': 'rough sketch, messy lines, amateur artwork, dirty lines, broken lines, disconnected outlines',
                 'line_processing': 'disney_smooth'
             },
             'Pixar': {
                 'prompt_prefix': 'professional Pixar 3D style',
-                'style_elements': 'Pixar character design, clean smooth outlines, 3D animation style, perfect line definition',
-                'negative_prompt': 'rough edges, jagged lines, low quality 3D, messy outlines',
+                'style_elements': 'Pixar character design, clean smooth black outlines, 3D animation style, perfect line definition, correct proportions',
+                'negative_prompt': 'rough edges, jagged lines, low quality 3D, messy outlines, broken lines, poor anatomy',
                 'line_processing': 'pixar_smooth'
             },
             'Cartoon': {
                 'prompt_prefix': 'professional cartoon illustration',
-                'style_elements': 'cartoon style, bold clean lines, perfect outlines, child-friendly design, ultra clean artwork',
-                'negative_prompt': 'messy lines, rough sketch, amateur cartoon, dirty artwork',
+                'style_elements': 'cartoon style, bold clean black lines, perfect thick outlines, child-friendly design, ultra clean artwork, simple correct anatomy',
+                'negative_prompt': 'messy lines, rough sketch, amateur cartoon, dirty artwork, thin lines, broken outlines',
                 'line_processing': 'cartoon_bold'
             },
             'Ghibli': {
                 'prompt_prefix': 'professional Studio Ghibli style',
-                'style_elements': 'Studio Ghibli art style, delicate clean lines, hand-drawn quality, pristine line work, magical clean artwork',
-                'negative_prompt': 'rough sketch, messy lines, digital artifacts, low quality',
+                'style_elements': 'Studio Ghibli art style, delicate clean black lines, hand-drawn quality, pristine continuous line work, magical clean artwork',
+                'negative_prompt': 'rough sketch, messy lines, digital artifacts, low quality, broken lines, poor line quality',
                 'line_processing': 'ghibli_delicate'
             },
             'Simple': {
                 'prompt_prefix': 'professional simple illustration',
-                'style_elements': 'simple clean design, ultra thick clean lines, perfect for toddlers, pristine simple artwork, bold clean outlines',
-                'negative_prompt': 'complex details, messy lines, thin lines, rough artwork',
+                'style_elements': 'simple clean design, ultra thick clean black lines, perfect for toddlers, pristine simple artwork, bold continuous outlines',
+                'negative_prompt': 'complex details, messy lines, thin lines, rough artwork, broken lines, poor quality outlines',
                 'line_processing': 'simple_thick'
             },
             'Pixel': {
                 'prompt_prefix': 'professional pixel art',
-                'style_elements': 'pixel art style, clean pixel edges, sharp boundaries, retro game quality, perfect pixel alignment',
-                'negative_prompt': 'blurry pixels, anti-aliasing, smooth edges, messy pixels',
+                'style_elements': 'pixel art style, clean pixel edges, sharp boundaries, retro game quality, perfect pixel alignment, clear pixel outlines',
+                'negative_prompt': 'blurry pixels, anti-aliasing, smooth edges, messy pixels, broken pixel art, poor pixel quality',
                 'line_processing': 'pixel_sharp'
             },
             'Modern_KPop': {
                 'prompt_prefix': 'professional modern illustration',
-                'style_elements': 'modern style, clean trendy lines, fashion illustration quality, crisp contemporary artwork, stylish clean design',
-                'negative_prompt': 'old-fashioned, messy lines, rough artwork, amateur design',
+                'style_elements': 'modern style, clean trendy black lines, fashion illustration quality, crisp contemporary artwork, stylish clean design',
+                'negative_prompt': 'old-fashioned, messy lines, rough artwork, amateur design, broken lines, poor line quality',
                 'line_processing': 'modern_crisp'
             }
         }
@@ -111,11 +111,13 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         # Add ultra-clean style elements
         enhanced_prompt += f"{style_info['style_elements']}, "
         
-        # Add ultra-clean quality boosters
+        # Add ultra-clean quality boosters with anatomical correctness
         ultra_clean_boosters = [
-            'masterpiece quality', 'ultra clean lines', 'perfect line art', 
-            'professional illustration', 'high quality artwork', 'pristine lines',
-            'sharp clean edges', 'perfect outlines', 'crisp line work'
+            'masterpiece quality', 'ultra clean continuous lines', 'perfect line art', 
+            'professional illustration', 'high quality artwork', 'pristine unbroken lines',
+            'sharp clean edges', 'perfect continuous outlines', 'crisp line work',
+            'anatomically correct', 'proper proportions', 'correct anatomy',
+            'perfect body structure', 'normal human anatomy', 'realistic proportions'
         ]
         enhanced_prompt += ", ".join(ultra_clean_boosters) + ", "
         
@@ -150,26 +152,67 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         return enhanced_prompt
     
     def build_ultra_clean_negative_prompt(self, style_name: str, prompt_type: str = 'coloring_page') -> str:
-        """Build negative prompt to ensure ultra-clean results"""
+        """Build comprehensive negative prompt with anatomical controls"""
         
         style_info = self.clean_line_enhancers.get(style_name, self.clean_line_enhancers['Cartoon'])
         
-        negative_elements = [
-            style_info['negative_prompt'],
-            'blurry lines', 'sketchy lines', 'rough artwork', 'messy lines',
-            'dirty lines', 'smudged lines', 'broken lines', 'jagged edges',
-            'low quality lines', 'amateur artwork', 'unfinished lines',
-            'pixelated lines', 'aliased edges', 'compression artifacts',
-            'nsfw', 'inappropriate', 'scary', 'violent', 'dark themes',
-            'adult content', 'weapons', 'horror', 'blood'
+        # ANATOMICAL ISSUES - Most Critical
+        anatomical_issues = [
+            'two heads', 'multiple heads', 'extra heads', 'double head',
+            'three arms', 'four arms', 'extra arms', 'multiple arms', 'wrong number of arms',
+            'three hands', 'four hands', 'extra hands', 'multiple hands', 'missing hands',
+            'three legs', 'four legs', 'five legs', 'six legs', 'extra legs', 'multiple legs',
+            'three feet', 'four feet', 'five feet', 'six feet', 'extra feet', 'multiple feet',
+            'extra limbs', 'missing limbs', 'malformed limbs', 'wrong anatomy',
+            'extra fingers', 'missing fingers', 'too many fingers', 'malformed hands',
+            'extra eyes', 'missing eyes', 'wrong eye placement', 'asymmetric eyes',
+            'extra ears', 'missing ears', 'malformed ears', 'wrong ear placement',
+            'multiple tails', 'extra tails', 'wrong tail placement',
+            'deformed body', 'twisted anatomy', 'broken proportions', 'incorrect anatomy',
+            'extra body parts', 'duplicate body parts', 'floating limbs', 'disconnected body parts'
         ]
         
+        # LINE QUALITY ISSUES
+        line_quality_issues = [
+            style_info['negative_prompt'],
+            'blurry lines', 'sketchy lines', 'rough artwork', 'messy lines', 'dirty lines',
+            'smudged lines', 'broken lines', 'disconnected lines', 'jagged edges', 'poor line quality',
+            'low quality lines', 'amateur artwork', 'unfinished lines', 'incomplete lines',
+            'pixelated lines', 'aliased edges', 'compression artifacts', 'artifact lines',
+            'double lines', 'ghost lines', 'fuzzy outlines', 'unclear boundaries'
+        ]
+        
+        # GENERAL QUALITY ISSUES
+        quality_issues = [
+            'low resolution', 'poor quality', 'amateur', 'unprofessional', 'ugly',
+            'distorted', 'warped', 'stretched', 'compressed', 'out of focus',
+            'noise', 'grain', 'artifacts', 'glitches', 'errors', 'mistakes'
+        ]
+        
+        # INAPPROPRIATE CONTENT
+        inappropriate_content = [
+            'nsfw', 'inappropriate', 'scary', 'violent', 'dark themes',
+            'adult content', 'weapons', 'horror', 'blood', 'gore', 'frightening'
+        ]
+        
+        # Combine all negative elements
+        negative_elements = anatomical_issues + line_quality_issues + quality_issues + inappropriate_content
+        
         if prompt_type == 'coloring_page':
-            negative_elements.extend([
-                'colors', 'colored', 'shading', 'shadows', 'gray areas',
-                'gradients', 'text', 'words', 'letters', 'numbers',
-                'page numbers', 'title text', 'captions', 'speech bubbles'
-            ])
+            coloring_specific = [
+                # NO COLORS OR SHADING
+                'colors', 'colored', 'color fill', 'shading', 'shadows', 'gray areas',
+                'gradients', 'tones', 'highlights', 'dark areas', 'light areas',
+                
+                # NO TEXT OR WRITING
+                'text', 'words', 'letters', 'numbers', 'writing', 'fonts',
+                'page numbers', 'title text', 'captions', 'speech bubbles', 'dialogue',
+                'labels', 'signs', 'banners', 'messages', 'quotes', 'sayings',
+                
+                # NO FILLED AREAS
+                'solid colors', 'filled shapes', 'colored backgrounds', 'painted areas'
+            ]
+            negative_elements.extend(coloring_specific)
         
         return ", ".join(negative_elements)
     
@@ -191,81 +234,109 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         style_info = self.clean_line_enhancers.get(style_name, self.clean_line_enhancers['Cartoon'])
         processing_type = style_info['line_processing']
         
-        # Apply style-specific ultra-clean processing
+        # PRE-PROCESSING: Enhanced noise reduction and edge preservation
+        # Apply aggressive denoising while preserving edges
+        gray = cv2.bilateralFilter(gray, 15, 100, 100)
+        
+        # Apply style-specific ultra-clean processing with enhanced algorithms
         if processing_type == 'manga_clean':
-            # Manga: Sharp, high-contrast clean lines
-            gray = cv2.bilateralFilter(gray, 9, 80, 80)  # Smooth while preserving edges
-            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 5, 5)
-            # Enhance line thickness and sharpness
-            kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
-            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
+            # Manga: Ultra-sharp, high-contrast continuous lines
+            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 3, 3)
+            # Connect broken lines aggressively
+            kernel_connect = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect, iterations=2)
+            # Thicken lines for consistency
+            kernel_thick = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
+            edges = cv2.dilate(edges, kernel_thick, iterations=1)
             
         elif processing_type == 'anime_clean':
-            # Anime: Crisp, clean cel-animation lines
-            gray = cv2.medianBlur(gray, 3)
-            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 7, 7)
+            # Anime: Perfect cel-animation continuous lines
+            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 5, 5)
+            # Connect line breaks
+            kernel_connect = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect, iterations=2)
             
         elif processing_type == 'disney_smooth' or processing_type == 'pixar_smooth':
-            # Disney/Pixar: Smooth, flowing clean lines
-            gray = cv2.GaussianBlur(gray, (3, 3), 0)
-            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 9)
-            # Smooth the lines
-            kernel = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (3, 3))
-            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
+            # Disney/Pixar: Flowing, smooth continuous lines
+            gray_smooth = cv2.GaussianBlur(gray, (5, 5), 0)
+            edges = cv2.adaptiveThreshold(gray_smooth, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, 7)
+            # Create flowing line connections
+            kernel_flow = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (4, 4))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_flow, iterations=2)
             
         elif processing_type == 'cartoon_bold':
-            # Cartoon: Bold, thick clean lines
-            gray = cv2.medianBlur(gray, 5)
-            _, edges = cv2.threshold(gray, 160, 255, cv2.THRESH_BINARY)
-            # Make lines thicker and bolder
-            kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
+            # Cartoon: Extra-bold, thick continuous lines
+            _, edges = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
+            # Make lines much thicker and more connected
+            kernel_bold = cv2.getStructuringElement(cv2.MORPH_RECT, (4, 4))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_bold, iterations=2)
+            # Additional dilation for extra thickness
+            edges = cv2.dilate(edges, kernel_bold, iterations=1)
             
         elif processing_type == 'simple_thick':
-            # Simple: Very thick, ultra-clean lines for toddlers
-            gray = cv2.medianBlur(gray, 7)
-            _, edges = cv2.threshold(gray, 180, 255, cv2.THRESH_BINARY)
-            # Make lines extra thick
-            kernel = cv2.getStructuringElement(cv2.MORPH_RECT, (4, 4))
-            edges = cv2.dilate(edges, kernel, iterations=1)
+            # Simple: Ultra-thick, continuous lines for toddlers
+            _, edges = cv2.threshold(gray, 200, 255, cv2.THRESH_BINARY)
+            # Make lines extremely thick and connected
+            kernel_super_thick = cv2.getStructuringElement(cv2.MORPH_RECT, (6, 6))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_super_thick, iterations=3)
+            edges = cv2.dilate(edges, kernel_super_thick, iterations=2)
             
         elif processing_type == 'pixel_sharp':
-            # Pixel: Sharp pixel boundaries
-            # Resize down and back up for pixel effect
+            # Pixel: Perfect pixel boundaries with clean connections
             h, w = gray.shape
             small = cv2.resize(gray, (w//6, h//6), interpolation=cv2.INTER_NEAREST)
-            gray = cv2.resize(small, (w, h), interpolation=cv2.INTER_NEAREST)
-            _, edges = cv2.threshold(gray, 128, 255, cv2.THRESH_BINARY)
+            pixel_gray = cv2.resize(small, (w, h), interpolation=cv2.INTER_NEAREST)
+            _, edges = cv2.threshold(pixel_gray, 128, 255, cv2.THRESH_BINARY)
+            # Clean up pixel art connections
+            kernel_pixel = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_pixel, iterations=1)
             
         elif processing_type == 'ghibli_delicate':
-            # Ghibli: Delicate, hand-drawn clean lines
-            gray = cv2.bilateralFilter(gray, 5, 50, 50)
-            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 11, 11)
+            # Ghibli: Delicate but continuous hand-drawn lines
+            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 9, 9)
+            # Connect delicate line breaks
+            kernel_delicate = cv2.getStructuringElement(cv2.MORPH_ELLIPSE, (2, 2))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_delicate, iterations=1)
             
         else:  # modern_crisp and default
-            # Modern/Default: Crisp, contemporary clean lines  
-            gray = cv2.bilateralFilter(gray, 7, 60, 60)
-            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 9, 9)
+            # Modern/Default: Ultra-crisp, contemporary continuous lines
+            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 7, 7)
+            # Ensure modern line continuity
+            kernel_modern = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_modern, iterations=2)
         
-        # Final ultra-clean processing
-        # Remove noise
+        # AGGRESSIVE FINAL PROCESSING for ultra-clean continuous lines
+        
+        # Stage 1: Remove small noise particles
         edges = cv2.medianBlur(edges, 3)
         
-        # Clean up isolated pixels
-        kernel = np.ones((2, 2), np.uint8)
-        edges = cv2.morphologyEx(edges, cv2.MORPH_OPEN, kernel)
-        edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel)
+        # Stage 2: Connect nearby line segments aggressively
+        kernel_connect_final = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+        edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect_final, iterations=3)
+        
+        # Stage 3: Remove tiny isolated artifacts
+        kernel_clean = np.ones((3, 3), np.uint8)
+        edges = cv2.morphologyEx(edges, cv2.MORPH_OPEN, kernel_clean, iterations=1)
+        
+        # Stage 4: Final line connection pass
+        edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_clean, iterations=2)
+        
+        # Stage 5: Ensure pure binary image (no gray values)
+        _, edges = cv2.threshold(edges, 127, 255, cv2.THRESH_BINARY)
         
         # Convert back to PIL Image
         result = Image.fromarray(edges)
         result = result.convert('RGB')
         
-        # Final enhancement for ultra-clean look
+        # Stage 6: Final enhancement for ultra-clean look
         enhancer = ImageEnhance.Contrast(result)
-        result = enhancer.enhance(2.0)  # High contrast for clean lines
+        result = enhancer.enhance(3.0)  # Maximum contrast for ultra-clean lines
         
-        # Final sharpening
-        result = result.filter(ImageFilter.UnsharpMask(radius=1, percent=200, threshold=3))
+        # Stage 7: Aggressive sharpening for crisp edges
+        result = result.filter(ImageFilter.UnsharpMask(radius=2, percent=300, threshold=1))
+        
+        # Stage 8: Final cleanup pass
+        result = result.filter(ImageFilter.MedianFilter(size=3))
         
         return result
     

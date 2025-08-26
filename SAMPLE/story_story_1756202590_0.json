@@ -1,0 +1,175 @@
+{
+  "story": {
+    "title": "Casey and Chirpy the Bird's Adventure",
+    "summary": "A wonderful adventure story about Casey and their friend Chirpy the Bird.",
+    "scenes": [
+      "Adventure scene 1 with Casey and Chirpy the Bird",
+      "Adventure scene 2 with Casey and Chirpy the Bird",
+      "Adventure scene 3 with Casey and Chirpy the Bird",
+      "Adventure scene 4 with Casey and Chirpy the Bird",
+      "Adventure scene 5 with Casey and Chirpy the Bird",
+      "Adventure scene 6 with Casey and Chirpy the Bird",
+      "Adventure scene 7 with Casey and Chirpy the Bird",
+      "Adventure scene 8 with Casey and Chirpy the Bird",
+      "Adventure scene 9 with Casey and Chirpy the Bird",
+      "Adventure scene 10 with Casey and Chirpy the Bird",
+      "Adventure scene 11 with Casey and Chirpy the Bird",
+      "Adventure scene 12 with Casey and Chirpy the Bird",
+      "Adventure scene 13 with Casey and Chirpy the Bird",
+      "Adventure scene 14 with Casey and Chirpy the Bird",
+      "Adventure scene 15 with Casey and Chirpy the Bird",
+      "Adventure scene 16 with Casey and Chirpy the Bird",
+      "Adventure scene 17 with Casey and Chirpy the Bird",
+      "Adventure scene 18 with Casey and Chirpy the Bird",
+      "Adventure scene 19 with Casey and Chirpy the Bird",
+      "Adventure scene 20 with Casey and Chirpy the Bird"
+    ],
+    "id": "story_1756202590_0",
+    "theme": "princess_adventure",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Manga",
+      "coloring_style": "manga style black and white line art",
+      "cover_style": "manga anime style with vibrant colors",
+      "complexity": "detailed line art with expressive characters"
+    },
+    "main_character": "Casey",
+    "companion": "Chirpy the Bird",
+    "generated_at": "2025-08-26T12:03:10.515764",
+    "page_count": 20,
+    "consistent_character": true
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "children's book cover, Casey and Chirpy the Bird's Adventure, manga anime style with vibrant colors, Casey and Chirpy the Bird, magical adventure scene, vibrant colors, title text space at top, moderate detail, defined shapes, some intricate elements, professional book cover design",
+      "scene_description": "Cover for Casey and Chirpy the Bird's Adventure"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, Adventure scene 1 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 1 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Adventure scene 2 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 2 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Adventure scene 3 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 3 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, Adventure scene 4 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 4 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Adventure scene 5 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 5 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Adventure scene 6 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 6 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Adventure scene 7 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 7 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, Adventure scene 8 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 8 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, Adventure scene 9 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 9 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Adventure scene 10 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 10 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Adventure scene 11 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 11 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, Adventure scene 12 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 12 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Adventure scene 13 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 13 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, Adventure scene 14 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 14 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, Adventure scene 15 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 15 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Adventure scene 16 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 16 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, Adventure scene 17 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 17 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Adventure scene 18 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 18 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Adventure scene 19 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 19 with Casey and Chirpy the Bird"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, Adventure scene 20 with Casey and Chirpy the Bird, manga style black and white line art, detailed line art with expressive characters, moderate detail, defined shapes, some intricate elements, black and white line art only, pure white background, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, suitable for ages 5-8, consistent character design for Casey and Chirpy the Bird",
+      "scene_description": "Adventure scene 20 with Casey and Chirpy the Bird"
+    }
+  ],
+  "generation_info": {
+    "generator_version": "1.0",
+    "total_prompts": 21,
+    "cover_prompts": 1,
+    "coloring_prompts": 20
+  }
+}

@@ -1,0 +1,183 @@
+{
+  "story": {
+    "id": "story_1756214856_2",
+    "title": "Captain Emma's Cosmic Quest",
+    "summary": "Brave Captain Luna builds a rocket ship and travels to different planets to help alien friends solve problems and bring peace to the galaxy.",
+    "scenes": [
+      "Emma in her backyard workshop building a rocket ship from cardboard and dreams",
+      "The rocket magically coming to life and taking Emma to space",
+      "Emma's first view of Earth from space, seeing how beautiful it is",
+      "Landing on the Moon and meeting friendly Moon rabbits",
+      "The Moon rabbits asking Emma to help find their lost Moon cheese",
+      "Emma and the rabbits exploring Moon craters and space caves",
+      "Discovering the cheese was stolen by grumpy space pirates",
+      "Emma cleverly trading Earth carrots for the Moon cheese",
+      "Flying to Mars and meeting red rock creatures who are very sad",
+      "Learning that Mars creatures miss having water and plants",
+      "Emma bringing Earth seeds and helping plant the first Mars garden",
+      "The Mars creatures learning to care for their new plants",
+      "Traveling to Jupiter and meeting cloud dancers in the storm",
+      "The cloud dancers teaching Emma how to dance among the stars",
+      "Emma helping resolve a conflict between Mars and Jupiter friends",
+      "Organizing a peaceful meeting between all the planet creatures",
+      "Everyone working together to build a friendship space station",
+      "Emma teaching Earth games to all her new alien friends",
+      "A big celebration party with creatures from every planet",
+      "Emma returning home with a heart full of cosmic friendships"
+    ],
+    "theme": "space_explorer",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Disney",
+      "coloring_style": "Disney style black and white line art, smooth clean lines, classic style",
+      "cover_style": "Disney animation style with magical colors, professional Disney cover",
+      "complexity": "classic Disney character design with flowing clean lines"
+    },
+    "main_character": "Emma",
+    "companion": "Zippy the Squirrel",
+    "generated_at": "2025-08-26T15:27:36.741067",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "professional children's book cover, Captain Emma's Cosmic Quest integrated as beautiful clean text in the image, Disney animation style with magical colors, professional Disney cover, Emma and Zippy the Squirrel, magical adventure scene, vibrant colors, title as part of the artwork, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, high quality cover design, clean typography, full page layout",
+      "scene_description": "Cover for Captain Emma's Cosmic Quest with integrated title text"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, Emma in her backyard workshop building a rocket ship from cardboard and dreams, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma in her backyard workshop building a rocket ship from cardboard and dreams"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, The rocket magically coming to life and taking Emma to space, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "The rocket magically coming to life and taking Emma to space"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Emma's first view of Earth from space, seeing how beautiful it is, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma's first view of Earth from space, seeing how beautiful it is"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, Landing on the Moon and meeting friendly Moon rabbits, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Landing on the Moon and meeting friendly Moon rabbits"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, The Moon rabbits asking Emma to help find their lost Moon cheese, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "The Moon rabbits asking Emma to help find their lost Moon cheese"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Emma and the rabbits exploring Moon craters and space caves, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma and the rabbits exploring Moon craters and space caves"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Discovering the cheese was stolen by grumpy space pirates, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Discovering the cheese was stolen by grumpy space pirates"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, Emma cleverly trading Earth carrots for the Moon cheese, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma cleverly trading Earth carrots for the Moon cheese"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, Flying to Mars and meeting red rock creatures who are very sad, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Flying to Mars and meeting red rock creatures who are very sad"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Learning that Mars creatures miss having water and plants, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Learning that Mars creatures miss having water and plants"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Emma bringing Earth seeds and helping plant the first Mars garden, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma bringing Earth seeds and helping plant the first Mars garden"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, The Mars creatures learning to care for their new plants, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "The Mars creatures learning to care for their new plants"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Traveling to Jupiter and meeting cloud dancers in the storm, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Traveling to Jupiter and meeting cloud dancers in the storm"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, The cloud dancers teaching Emma how to dance among the stars, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "The cloud dancers teaching Emma how to dance among the stars"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, Emma helping resolve a conflict between Mars and Jupiter friends, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma helping resolve a conflict between Mars and Jupiter friends"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Organizing a peaceful meeting between all the planet creatures, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Organizing a peaceful meeting between all the planet creatures"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, Everyone working together to build a friendship space station, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Everyone working together to build a friendship space station"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Emma teaching Earth games to all her new alien friends, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma teaching Earth games to all her new alien friends"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, A big celebration party with creatures from every planet, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "A big celebration party with creatures from every planet"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, Emma returning home with a heart full of cosmic friendships, Disney style black and white line art, smooth clean lines, classic style, classic Disney character design with flowing clean lines, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Emma",
+      "scene_description": "Emma returning home with a heart full of cosmic friendships"
+    }
+  ],
+  "generation_info": {
+    "generator_version": "2.0_improved",
+    "total_prompts": 21,
+    "cover_prompts": 1,
+    "coloring_prompts": 20,
+    "story_type": "complete_narrative",
+    "features": [
+      "real_story_progression",
+      "no_text_on_coloring_pages",
+      "clean_lines",
+      "integrated_cover_title"
+    ]
+  }
+}

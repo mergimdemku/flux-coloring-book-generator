@@ -1,0 +1,183 @@
+{
+  "story": {
+    "id": "story_1756214856_1",
+    "title": "Sage and the Friendly Dragon",
+    "summary": "Little Emma discovers a lonely dragon in the forest and helps him find a new home where he can be happy and make friends.",
+    "scenes": [
+      "Sage walking through the enchanted forest picking flowers",
+      "Sage discovering a sad dragon hiding behind a large tree",
+      "Sage and the dragon sitting together as she listens to his problem",
+      "The dragon showing Sage his old cave that became too small",
+      "Sage and the dragon searching for a perfect new home together",
+      "They find a beautiful mountain cave with a crystal lake",
+      "Sage helping the dragon decorate his new cave with colorful gems",
+      "The dragon practicing flying around his new mountain home",
+      "Village children meeting the friendly dragon for the first time",
+      "The dragon giving the children rides around the mountain",
+      "Sage and friends having a picnic with the dragon by the lake",
+      "The dragon teaching the children about nature and magic",
+      "Everyone working together to plant a beautiful garden",
+      "The dragon using his fire breath to help cook a feast",
+      "All the forest animals coming to welcome the dragon",
+      "The dragon and Sage reading stories under the stars",
+      "The dragon protecting the village from a terrible storm",
+      "The grateful villagers throwing a celebration party",
+      "Sage and the dragon watching the sunset from the mountain top",
+      "The dragon and all his new friends living happily together"
+    ],
+    "theme": "dragon_friendship",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Anime",
+      "coloring_style": "anime style black and white line art, crisp clean lines, perfect outlines",
+      "cover_style": "anime style with bright vivid colors, professional anime cover",
+      "complexity": "clean precise lines with large expressive eyes"
+    },
+    "main_character": "Sage",
+    "companion": "Whiskers the Cat",
+    "generated_at": "2025-08-26T15:27:36.735584",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "professional children's book cover, Sage and the Friendly Dragon integrated as beautiful clean text in the image, anime style with bright vivid colors, professional anime cover, Sage and Whiskers the Cat, magical adventure scene, vibrant colors, title as part of the artwork, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, high quality cover design, clean typography, full page layout",
+      "scene_description": "Cover for Sage and the Friendly Dragon with integrated title text"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, Sage walking through the enchanted forest picking flowers, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage walking through the enchanted forest picking flowers"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Sage discovering a sad dragon hiding behind a large tree, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage discovering a sad dragon hiding behind a large tree"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Sage and the dragon sitting together as she listens to his problem, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage and the dragon sitting together as she listens to his problem"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, The dragon showing Sage his old cave that became too small, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon showing Sage his old cave that became too small"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Sage and the dragon searching for a perfect new home together, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage and the dragon searching for a perfect new home together"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, They find a beautiful mountain cave with a crystal lake, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "They find a beautiful mountain cave with a crystal lake"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Sage helping the dragon decorate his new cave with colorful gems, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage helping the dragon decorate his new cave with colorful gems"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, The dragon practicing flying around his new mountain home, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon practicing flying around his new mountain home"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, Village children meeting the friendly dragon for the first time, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Village children meeting the friendly dragon for the first time"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, The dragon giving the children rides around the mountain, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon giving the children rides around the mountain"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Sage and friends having a picnic with the dragon by the lake, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage and friends having a picnic with the dragon by the lake"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, The dragon teaching the children about nature and magic, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon teaching the children about nature and magic"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Everyone working together to plant a beautiful garden, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Everyone working together to plant a beautiful garden"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, The dragon using his fire breath to help cook a feast, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon using his fire breath to help cook a feast"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, All the forest animals coming to welcome the dragon, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "All the forest animals coming to welcome the dragon"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, The dragon and Sage reading stories under the stars, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon and Sage reading stories under the stars"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, The dragon protecting the village from a terrible storm, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon protecting the village from a terrible storm"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, The grateful villagers throwing a celebration party, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The grateful villagers throwing a celebration party"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Sage and the dragon watching the sunset from the mountain top, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "Sage and the dragon watching the sunset from the mountain top"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, The dragon and all his new friends living happily together, anime style black and white line art, crisp clean lines, perfect outlines, clean precise lines with large expressive eyes, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Sage",
+      "scene_description": "The dragon and all his new friends living happily together"
+    }
+  ],
+  "generation_info": {
+    "generator_version": "2.0_improved",
+    "total_prompts": 21,
+    "cover_prompts": 1,
+    "coloring_prompts": 20,
+    "story_type": "complete_narrative",
+    "features": [
+      "real_story_progression",
+      "no_text_on_coloring_pages",
+      "clean_lines",
+      "integrated_cover_title"
+    ]
+  }
+}

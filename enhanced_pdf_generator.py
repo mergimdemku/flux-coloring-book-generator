@@ -261,22 +261,8 @@ class EnhancedPDFGenerator:
         # Draw image
         canvas_obj.drawImage(img_reader, x_offset, y_offset, width=new_width, height=new_height)
         
-        # Add page number
-        canvas_obj.setFont(self.fonts['body'], 12)
-        canvas_obj.setFillColor(colors.black)
-        page_text = f"Page {page_number}"
-        text_width = canvas_obj.stringWidth(page_text, self.fonts['body'], 12)
-        text_x = (self.page_width - text_width) / 2
-        canvas_obj.drawString(text_x, self.margin, page_text)
-        
-        # Add scene description if provided (very small text)
-        if scene_description:
-            canvas_obj.setFont(self.fonts['body'], 8)
-            canvas_obj.setFillColor(colors.gray)
-            desc_text = scene_description[:80] + "..." if len(scene_description) > 80 else scene_description
-            desc_width = canvas_obj.stringWidth(desc_text, self.fonts['body'], 8)
-            desc_x = (self.page_width - desc_width) / 2
-            canvas_obj.drawString(desc_x, self.margin + 15, desc_text)
+        # NO TEXT ON COLORING PAGES - User explicitly requested this
+        # Pages should be completely clean with only the coloring image
     
     def generate_complete_book_pdf(self, story_data: Dict[str, Any], 
                                   cover_image: Optional[Image.Image],

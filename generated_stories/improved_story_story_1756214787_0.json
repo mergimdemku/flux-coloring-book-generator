@@ -1,0 +1,183 @@
+{
+  "story": {
+    "id": "story_1756214787_0",
+    "title": "Super Max's First Day",
+    "summary": "Sam discovers he has superpowers on his first day at a new school and learns that the greatest power is being kind and helping others.",
+    "scenes": [
+      "Max waking up nervous about his first day at a new school",
+      "Accidentally using super strength to open his bedroom door too wide",
+      "Max's mom helping him practice controlling his new powers",
+      "Arriving at school and trying to act normal around other kids",
+      "Max's super hearing picking up someone crying for help",
+      "Finding a cat stuck high up in the school playground tree",
+      "Carefully using his flying power to rescue the scared cat",
+      "The other kids amazed and wanting to be Max's friend",
+      "Max helping a classmate who dropped all their books",
+      "Using super speed to help clean up after art class",
+      "A school bully picking on smaller children at recess",
+      "Max standing up to the bully using words instead of powers",
+      "Teaching the bully that being kind is much better than being mean",
+      "The former bully apologizing and asking to join their games",
+      "Max organizing a fun superhero play time for everyone",
+      "Helping the teacher carry heavy boxes without showing his strength",
+      "Max learning that small acts of kindness are the best superpowers",
+      "Making three new best friends who accept him just as he is",
+      "Max's mom proud of how he used his powers to help others",
+      "Max going to bed happy, excited for tomorrow's adventures"
+    ],
+    "theme": "superhero_kid",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Manga",
+      "coloring_style": "manga style black and white line art, clean sharp lines, high contrast",
+      "cover_style": "manga anime style with vibrant colors, professional cover art",
+      "complexity": "detailed clean line art with expressive characters"
+    },
+    "main_character": "Max",
+    "companion": "Hopper the Rabbit",
+    "generated_at": "2025-08-26T15:26:27.495022",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "professional children's book cover, Super Max's First Day integrated as beautiful clean text in the image, manga anime style with vibrant colors, professional cover art, Max and Hopper the Rabbit, magical adventure scene, vibrant colors, title as part of the artwork, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, high quality cover design, clean typography, full page layout",
+      "scene_description": "Cover for Super Max's First Day with integrated title text"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, Max waking up nervous about his first day at a new school, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max waking up nervous about his first day at a new school"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Accidentally using super strength to open his bedroom door too wide, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Accidentally using super strength to open his bedroom door too wide"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Max's mom helping him practice controlling his new powers, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max's mom helping him practice controlling his new powers"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, Arriving at school and trying to act normal around other kids, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Arriving at school and trying to act normal around other kids"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Max's super hearing picking up someone crying for help, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max's super hearing picking up someone crying for help"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Finding a cat stuck high up in the school playground tree, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Finding a cat stuck high up in the school playground tree"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Carefully using his flying power to rescue the scared cat, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Carefully using his flying power to rescue the scared cat"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, The other kids amazed and wanting to be Max's friend, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "The other kids amazed and wanting to be Max's friend"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, Max helping a classmate who dropped all their books, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max helping a classmate who dropped all their books"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Using super speed to help clean up after art class, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Using super speed to help clean up after art class"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, A school bully picking on smaller children at recess, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "A school bully picking on smaller children at recess"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, Max standing up to the bully using words instead of powers, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max standing up to the bully using words instead of powers"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Teaching the bully that being kind is much better than being mean, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Teaching the bully that being kind is much better than being mean"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, The former bully apologizing and asking to join their games, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "The former bully apologizing and asking to join their games"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, Max organizing a fun superhero play time for everyone, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max organizing a fun superhero play time for everyone"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Helping the teacher carry heavy boxes without showing his strength, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Helping the teacher carry heavy boxes without showing his strength"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, Max learning that small acts of kindness are the best superpowers, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max learning that small acts of kindness are the best superpowers"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Making three new best friends who accept him just as he is, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Making three new best friends who accept him just as he is"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Max's mom proud of how he used his powers to help others, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max's mom proud of how he used his powers to help others"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, Max going to bed happy, excited for tomorrow's adventures, manga style black and white line art, clean sharp lines, high contrast, detailed clean line art with expressive characters, moderate detail, clean defined shapes, some intricate elements, school-age appropriate, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages 5-8, consistent character design for Max",
+      "scene_description": "Max going to bed happy, excited for tomorrow's adventures"
+    }
+  ],
+  "generation_info": {
+    "generator_version": "2.0_improved",
+    "total_prompts": 21,
+    "cover_prompts": 1,
+    "coloring_prompts": 20,
+    "story_type": "complete_narrative",
+    "features": [
+      "real_story_progression",
+      "no_text_on_coloring_pages",
+      "clean_lines",
+      "integrated_cover_title"
+    ]
+  }
+}
