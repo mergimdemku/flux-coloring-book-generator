@@ -15,8 +15,8 @@ import json
 from queue import Queue
 import traceback
 
-from kids_story_generator import KidsStoryGenerator
-from enhanced_flux_generator import EnhancedFluxGenerator
+from improved_story_generator import ImprovedStoryGenerator
+from clean_line_flux_generator import CleanLineFluxGenerator
 from enhanced_pdf_generator import EnhancedPDFGenerator
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -29,10 +29,10 @@ class AutomatedColoringBookPipeline:
         self.output_dir = Path(output_dir)
         self.output_dir.mkdir(exist_ok=True)
         
-        # Initialize components
-        logger.info("Initializing pipeline components...")
-        self.story_generator = KidsStoryGenerator()
-        self.flux_generator = EnhancedFluxGenerator()
+        # Initialize improved components
+        logger.info("Initializing improved pipeline components...")
+        self.story_generator = ImprovedStoryGenerator()
+        self.flux_generator = CleanLineFluxGenerator()
         self.pdf_generator = EnhancedPDFGenerator(str(self.output_dir))
         
         # Pipeline state
@@ -87,7 +87,7 @@ class AutomatedColoringBookPipeline:
         self.current_status = "Generating story"
         
         try:
-            story_batch = self.story_generator.get_next_batch_from_queue()
+            story_batch = self.story_generator.get_next_story_batch()
             
             self.stats['stories_generated'] += 1
             self.stats['last_generation'] = datetime.now().isoformat()
@@ -133,16 +133,16 @@ class AutomatedColoringBookPipeline:
                 for attempt in range(self.settings['retry_attempts']):
                     try:
                         if prompt_data['type'] == 'cover':
-                            # Generate colored cover
-                            image = self.flux_generator.generate_colored_cover(
+                            # Generate perfect cover with clean lines and title integration
+                            image = self.flux_generator.generate_perfect_cover(
                                 prompt_data=prompt_data,
                                 story_data=story_data,
                                 width=self.settings['image_dimensions'][0],
                                 height=self.settings['image_dimensions'][1]
                             )
                         else:
-                            # Generate B&W coloring page
-                            image = self.flux_generator.generate_with_enhanced_prompts(
+                            # Generate ultra-clean B&W coloring page
+                            image = self.flux_generator.generate_ultra_clean_coloring_page(
                                 prompt_data=prompt_data,
                                 story_data=story_data,
                                 width=self.settings['image_dimensions'][0],
@@ -233,7 +233,7 @@ class AutomatedColoringBookPipeline:
                 'total_prompts': len(story_batch['prompts']),
                 'successful_images': len(generated_images['coloring_images']) + (1 if generated_images['cover_image'] else 0),
                 'failed_images': len(generated_images['failed_images']),
-                'pipeline_version': '2.0'
+                'pipeline_version': '2.0_improved_stories_clean_lines'
             },
             'stats': self.stats.copy()
         }
@@ -293,7 +293,6 @@ class AutomatedColoringBookPipeline:
         
         self.running = True
         self.stats['start_time'] = datetime.now().isoformat()
-        self.story_generator.start_continuous_generation(story_interval_minutes)
         
         def pipeline_loop():
             while self.running:
@@ -356,7 +355,6 @@ class AutomatedColoringBookPipeline:
         
         logger.info("🛑 Stopping automated pipeline...")
         self.running = False
-        self.story_generator.stop_generation()
         self.current_status = "Stopped"
         
         # Cleanup
