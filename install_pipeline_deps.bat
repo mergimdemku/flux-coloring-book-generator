@@ -11,6 +11,9 @@ echo.
 echo Installing enhanced pipeline dependencies...
 echo.
 
+REM Fix NumPy compatibility first (PyTorch requires NumPy < 2.0)
+pip install "numpy<2.0"
+
 REM Core image processing
 pip install opencv-python
 pip install Pillow --upgrade
@@ -19,9 +22,8 @@ REM PDF generation
 pip install reportlab
 pip install pypdf2
 
-REM Additional utilities
-pip install numpy
-pip install pathlib
+REM Additional utilities - pathlib is built-in to Python 3.4+
+REM pip install pathlib
 
 echo.
 echo Testing installations...
