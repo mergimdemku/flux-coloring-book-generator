@@ -39,6 +39,11 @@ def find_sweet_spot():
     
     if not generator.load_model():
         print("❌ FLUX model failed to load!")
+        print("\n🔐 Authentication required!")
+        print("To fix this:")
+        print("1. Run: python setup_huggingface_auth.py")
+        print("2. Follow the authentication steps")
+        print("3. Try again")
         return False
     
     print("✅ FLUX model loaded successfully")
