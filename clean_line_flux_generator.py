@@ -230,24 +230,81 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         else:
             gray = img_array
         
+        # FAINT IMAGE DETECTION: Check if FLUX generated a very light image
+        mean_brightness = np.mean(gray)
+        dark_pixels = np.sum(gray < 128) / gray.size
+        logger.info(f"Image analysis: mean brightness {mean_brightness:.1f}, dark pixels {dark_pixels:.1%}")
+        
+        # Handle faint images (common with FLUX coloring pages)
+        if mean_brightness > 240 and dark_pixels < 0.05:
+            logger.warning("Faint image detected - applying enhancement before processing")
+            # Enhance contrast dramatically for very faint images
+            pil_gray = Image.fromarray(gray)
+            enhancer = ImageEnhance.Contrast(pil_gray)
+            enhanced = enhancer.enhance(5.0)
+            gray = np.array(enhanced)
+            # Apply histogram equalization
+            gray = cv2.equalizeHist(gray)
+        elif mean_brightness > 200 and dark_pixels < 0.1:
+            logger.info("Light image detected - applying moderate enhancement")
+            pil_gray = Image.fromarray(gray)
+            enhancer = ImageEnhance.Contrast(pil_gray)
+            enhanced = enhancer.enhance(2.5)
+            gray = np.array(enhanced)
+        
         # Get processing type
         style_info = self.clean_line_enhancers.get(style_name, self.clean_line_enhancers['Cartoon'])
         processing_type = style_info['line_processing']
         
-        # PRE-PROCESSING: Enhanced noise reduction and edge preservation
-        # Apply aggressive denoising while preserving edges
-        gray = cv2.bilateralFilter(gray, 15, 100, 100)
+        # PRE-PROCESSING: Gentler denoising to preserve faint details
+        gray = cv2.bilateralFilter(gray, 9, 75, 75)  # Reduced from 15, 100, 100
         
         # Apply style-specific ultra-clean processing with enhanced algorithms
         if processing_type == 'manga_clean':
             # Manga: Ultra-sharp, high-contrast continuous lines
-            edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 3, 3)
-            # Connect broken lines aggressively
-            kernel_connect = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect, iterations=2)
-            # Thicken lines for consistency
-            kernel_thick = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))
-            edges = cv2.dilate(edges, kernel_thick, iterations=1)
+            # Adaptive thresholding based on image brightness
+            if mean_brightness > 240:
+                # For very faint images, use more aggressive threshold
+                edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 15, 20)
+                logger.info("Using aggressive threshold for faint manga image")
+            elif mean_brightness > 200:
+                # For moderately light images
+                edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 11, 10)
+                logger.info("Using moderate threshold for light manga image")
+            else:
+                # Standard threshold for normal images
+                edges = cv2.adaptiveThreshold(gray, 255, cv2.ADAPTIVE_THRESH_MEAN_C, cv2.THRESH_BINARY, 3, 3)
+                logger.info("Using standard threshold for normal manga image")
+            
+            # Check content after thresholding
+            content_after_thresh = np.sum(edges == 0) / edges.size
+            logger.info(f"Content after thresholding: {content_after_thresh:.3f}")
+            
+            # If still no content, try Otsu's method
+            if content_after_thresh < 0.01:
+                logger.warning("Adaptive threshold failed, trying Otsu's method")
+                _, edges = cv2.threshold(gray, 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)
+                content_after_otsu = np.sum(edges == 0) / edges.size
+                logger.info(f"Content after Otsu: {content_after_otsu:.3f}")
+            
+            # Conservative morphological operations for faint images
+            if content_after_thresh > 0.01:  # Only if we have content
+                # Connect broken lines gently
+                kernel_connect = cv2.getStructuringElement(cv2.MORPH_RECT, (2, 2))  # Smaller kernel
+                edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect, iterations=1)  # Fewer iterations
+                
+                # Check content after connecting
+                content_after_connect = np.sum(edges == 0) / edges.size
+                logger.info(f"Content after line connection: {content_after_connect:.3f}")
+                
+                # Only thicken if we still have content and it's very faint
+                if content_after_connect > 0.005 and mean_brightness > 240:
+                    kernel_thick = cv2.getStructuringElement(cv2.MORPH_RECT, (1, 1))  # Minimal thickening
+                    edges = cv2.dilate(edges, kernel_thick, iterations=1)
+                    content_after_thick = np.sum(edges == 0) / edges.size
+                    logger.info(f"Content after thickening: {content_after_thick:.3f}")
+            else:
+                logger.info("Skipping morphological operations - no content detected")
             
         elif processing_type == 'anime_clean':
             # Anime: Perfect cel-animation continuous lines
@@ -307,36 +364,86 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         
         # AGGRESSIVE FINAL PROCESSING for ultra-clean continuous lines
         
-        # Stage 1: Remove small noise particles
-        edges = cv2.medianBlur(edges, 3)
+        # CONSERVATIVE FINAL PROCESSING: Only apply if we have sufficient content
+        content_before_final = np.sum(edges == 0) / edges.size
+        logger.info(f"Content before final processing: {content_before_final:.3f}")
         
-        # Stage 2: Connect nearby line segments aggressively
-        kernel_connect_final = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
-        edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect_final, iterations=3)
+        if content_before_final > 0.03:  # Only process if we have substantial content
+            # Stage 1: Light noise removal
+            edges = cv2.medianBlur(edges, 3)
+            
+            # Stage 2: Connect nearby line segments (reduced iterations)
+            kernel_connect_final = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect_final, iterations=1)  # Reduced from 3
+        else:
+            logger.info("Skipping final processing - insufficient content to risk further loss")
         
-        # Stage 3: Remove tiny isolated artifacts
-        kernel_clean = np.ones((3, 3), np.uint8)
-        edges = cv2.morphologyEx(edges, cv2.MORPH_OPEN, kernel_clean, iterations=1)
+        # Stage 3: Remove tiny isolated artifacts (CONSERVATIVE)
+        # Check content ratio before aggressive cleanup
+        content_before_cleanup = np.sum(edges == 0) / edges.size
+        logger.info(f"Content ratio before cleanup: {content_before_cleanup:.3f}")
         
-        # Stage 4: Final line connection pass
-        edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_clean, iterations=2)
+        if content_before_cleanup > 0.05:  # Only clean if we have substantial content
+            kernel_clean = np.ones((3, 3), np.uint8)
+            edges = cv2.morphologyEx(edges, cv2.MORPH_OPEN, kernel_clean, iterations=1)
+            
+            # Check if we lost too much content
+            content_after_cleanup = np.sum(edges == 0) / edges.size
+            content_loss_ratio = (content_before_cleanup - content_after_cleanup) / content_before_cleanup if content_before_cleanup > 0 else 0
+            
+            if content_loss_ratio > 0.7:  # Lost more than 70%
+                logger.warning(f"Cleanup removed {content_loss_ratio:.1%} of content - reverting")
+                # Revert to pre-cleanup version by re-doing the close operation
+                kernel_connect_final = cv2.getStructuringElement(cv2.MORPH_RECT, (3, 3))
+                edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_connect_final, iterations=3)
+        else:
+            logger.info("Skipping cleanup stage - insufficient content to risk removal")
+        
+        # Stage 4: Final line connection pass (only if we have sufficient content)
+        current_content = np.sum(edges == 0) / edges.size
+        if current_content > 0.02:  # Only if we have reasonable content
+            kernel_final = np.ones((3, 3), np.uint8)
+            edges = cv2.morphologyEx(edges, cv2.MORPH_CLOSE, kernel_final, iterations=1)  # Reduced iterations
+            final_content = np.sum(edges == 0) / edges.size
+            logger.info(f"Content after final connection: {final_content:.3f}")
+        else:
+            logger.info("Skipping final line connection - insufficient content")
         
         # Stage 5: Ensure pure binary image (no gray values)
         _, edges = cv2.threshold(edges, 127, 255, cv2.THRESH_BINARY)
+        
+        # Final content check before PIL processing
+        content_before_pil = np.sum(edges == 0) / edges.size
+        logger.info(f"Content before PIL processing: {content_before_pil:.3f}")
         
         # Convert back to PIL Image
         result = Image.fromarray(edges)
         result = result.convert('RGB')
         
-        # Stage 6: Final enhancement for ultra-clean look
-        enhancer = ImageEnhance.Contrast(result)
-        result = enhancer.enhance(3.0)  # Maximum contrast for ultra-clean lines
+        # Stage 6: Conservative enhancement for faint images
+        if content_before_pil > 0.01:  # Only enhance if we have content
+            if mean_brightness > 240:  # Very faint original
+                # Light enhancement for very faint images
+                enhancer = ImageEnhance.Contrast(result)
+                result = enhancer.enhance(1.5)  # Reduced from 3.0
+                logger.info("Applied light contrast enhancement for faint image")
+            else:
+                # Standard enhancement
+                enhancer = ImageEnhance.Contrast(result)
+                result = enhancer.enhance(2.0)  # Reduced from 3.0
+                logger.info("Applied standard contrast enhancement")
+            
+            # Skip aggressive sharpening and filtering for faint images
+            if content_before_pil > 0.05:  # Only for images with substantial content
+                result = result.filter(ImageFilter.UnsharpMask(radius=1, percent=100, threshold=1))  # Gentler
+                logger.info("Applied gentle sharpening")
+        else:
+            logger.info("Skipping PIL enhancements - insufficient content")
         
-        # Stage 7: Aggressive sharpening for crisp edges
-        result = result.filter(ImageFilter.UnsharpMask(radius=2, percent=300, threshold=1))
-        
-        # Stage 8: Final cleanup pass
-        result = result.filter(ImageFilter.MedianFilter(size=3))
+        # Final content verification
+        final_array = np.array(result.convert('L'))
+        final_content = np.sum(final_array < 128) / final_array.size
+        logger.info(f"FINAL content ratio: {final_content:.3f}")
         
         return result
     
