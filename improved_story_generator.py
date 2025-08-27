@@ -298,12 +298,11 @@ class ImprovedStoryGenerator:
         
         prompts = []
         
-        # Cover prompt with title integration (COLORED)
-        title = story_data['title']
+        # Cover prompt WITHOUT text integration (COLORED)
         cover_prompt = {
             'type': 'cover',
-            'prompt': f"professional children's book cover, {title} integrated as beautiful clean text in the image, {art_style['cover_style']}, {main_character} and {companion}, magical adventure scene, vibrant colors, title as part of the artwork, {complexity}, high quality cover design, clean typography, full page layout",
-            'scene_description': f"Cover for {title} with integrated title text"
+            'prompt': f"professional children's book cover, {art_style['cover_style']}, {main_character} and {companion}, magical adventure scene, vibrant colors, {complexity}, high quality cover design, full page layout, no text, no words, no letters",
+            'scene_description': f"Cover scene with {main_character} and {companion}"
         }
         prompts.append(cover_prompt)
         

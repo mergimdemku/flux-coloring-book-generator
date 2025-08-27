@@ -133,8 +133,8 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         elif prompt_type == 'cover':
             cover_elements = [
                 'vibrant full colors', 'professional book cover design', 
-                'title integrated in image', 'full page cover layout', 
-                'beautiful typography', 'cover art quality'
+                'full page cover layout', 'cover art quality',
+                'no text', 'no words', 'no letters', 'no title text'
             ]
             enhanced_prompt += ", ".join(cover_elements) + ", "
         
@@ -351,9 +351,9 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         story_id = story_data['id']
         title = story_data['title']
         
-        # Build ultra-clean cover prompt with title integration
+        # Build ultra-clean cover prompt WITHOUT text
         enhanced_prompt = self.build_ultra_clean_prompt(
-            base_prompt=f"{prompt_data['prompt']}, title '{title}' beautifully integrated in the image design",
+            base_prompt=prompt_data['prompt'],
             style_name=style_name,
             prompt_type='cover'
         )
@@ -374,6 +374,7 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
             # Generate with enhanced settings for cover quality
             image = self.base_generator.generate(
                 prompt=enhanced_prompt,
+                negative_prompt=negative_prompt,
                 width=width,
                 height=height, 
                 seed=seed,
@@ -456,14 +457,35 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
             prompt_type='coloring_page'
         )
         
-        # Generate base image
-        image = self.generate_with_enhanced_prompts(prompt_data, story_data, width, height)
+        # Generate base image using the enhanced prompts
+        story_id = story_data['id']
+        seed = self.character_seeds.get(f"{story_id}_{story_data.get('main_character', '')}", torch.randint(0, 1000000, (1,)).item())
         
-        if image:
-            # Apply ultra-clean line processing
-            image = self.apply_ultra_clean_line_processing(image, story_data['art_style']['name'])
+        logger.info(f"Generating coloring page with enhanced prompts")
+        logger.info(f"Style: {story_data['art_style']['name']}")
+        logger.info(f"Seed: {seed}")
         
-        return image
+        try:
+            # Generate using enhanced prompts with negative prompts
+            image = self.base_generator.generate(
+                prompt=enhanced_prompt,
+                negative_prompt=negative_prompt,
+                width=width,
+                height=height,
+                seed=seed,
+                num_inference_steps=4,
+                guidance_scale=0.0,
+            )
+            
+            if image:
+                # Apply ultra-clean line processing
+                image = self.apply_ultra_clean_line_processing(image, story_data['art_style']['name'])
+            
+            return image
+            
+        except Exception as e:
+            logger.error(f"Coloring page generation failed: {e}")
+            return None
 
 def test_clean_line_generator():
     """Test the clean line generator"""
