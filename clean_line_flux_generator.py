@@ -125,7 +125,8 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         if prompt_type == 'coloring_page':
             coloring_elements = [
                 'black and white line art only', 'pure white background', 
-                'no text', 'no words', 'no letters', 'no page numbers',
+                'NO TEXT AT ALL', 'NO WORDS', 'NO LETTERS', 'NO NUMBERS', 'NO LOGOS',
+                'wordless image', 'text-free illustration', 'no page numbers',
                 'no shading', 'no gray areas', 'thick black outlines', 
                 'perfect for coloring', 'ultra high contrast', 'clean coloring book page'
             ]
@@ -133,8 +134,9 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         elif prompt_type == 'cover':
             cover_elements = [
                 'vibrant full colors', 'professional book cover design', 
-                'full page cover layout', 'cover art quality',
-                'no text', 'no words', 'no letters', 'no title text'
+                'full page illustration', 'edge to edge artwork', 'full bleed cover',
+                'NO TEXT AT ALL', 'NO WORDS', 'NO LETTERS', 'NO TITLE', 'NO LOGOS',
+                'wordless cover', 'text-free illustration'
             ]
             enhanced_prompt += ", ".join(cover_elements) + ", "
         
@@ -156,20 +158,21 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         
         style_info = self.clean_line_enhancers.get(style_name, self.clean_line_enhancers['Cartoon'])
         
-        # ANATOMICAL ISSUES - Most Critical
+        # ANATOMICAL ISSUES - Most Critical - EXPANDED
         anatomical_issues = [
-            'two heads', 'multiple heads', 'extra heads', 'double head',
-            'three arms', 'four arms', 'extra arms', 'multiple arms', 'wrong number of arms',
-            'three hands', 'four hands', 'extra hands', 'multiple hands', 'missing hands',
-            'three legs', 'four legs', 'five legs', 'six legs', 'extra legs', 'multiple legs',
+            'two heads', 'multiple heads', 'extra heads', 'double head', 'second head',
+            'three arms', 'four arms', 'extra arms', 'multiple arms', 'wrong number of arms', 'third arm',
+            'three hands', 'four hands', 'extra hands', 'multiple hands', 'missing hands', 
+            'six fingers', 'seven fingers', 'extra fingers', 'too many fingers', 'wrong number of fingers',
+            'three legs', 'four legs', 'five legs', 'six legs', 'extra legs', 'multiple legs', 'third leg',
             'three feet', 'four feet', 'five feet', 'six feet', 'extra feet', 'multiple feet',
-            'extra limbs', 'missing limbs', 'malformed limbs', 'wrong anatomy',
-            'extra fingers', 'missing fingers', 'too many fingers', 'malformed hands',
-            'extra eyes', 'missing eyes', 'wrong eye placement', 'asymmetric eyes',
+            'extra limbs', 'missing limbs', 'malformed limbs', 'wrong anatomy', 'deformed',
+            'extra eyes', 'missing eyes', 'wrong eye placement', 'asymmetric eyes', 'third eye',
             'extra ears', 'missing ears', 'malformed ears', 'wrong ear placement',
-            'multiple tails', 'extra tails', 'wrong tail placement',
+            'multiple tails', 'extra tails', 'wrong tail placement', 'extra tail',
             'deformed body', 'twisted anatomy', 'broken proportions', 'incorrect anatomy',
-            'extra body parts', 'duplicate body parts', 'floating limbs', 'disconnected body parts'
+            'extra body parts', 'duplicate body parts', 'floating limbs', 'disconnected body parts',
+            'mutated', 'mutation', 'disfigured', 'malformed', 'body horror', 'anatomical errors'
         ]
         
         # LINE QUALITY ISSUES
@@ -198,16 +201,21 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         # Combine all negative elements
         negative_elements = anatomical_issues + line_quality_issues + quality_issues + inappropriate_content
         
+        # NO TEXT AT ALL - CRITICAL FOR BOTH COVERS AND COLORING PAGES
+        text_issues = [
+            'text', 'words', 'letters', 'numbers', 'writing', 'fonts', 'typography',
+            'page numbers', 'title text', 'captions', 'speech bubbles', 'dialogue',
+            'labels', 'signs', 'banners', 'messages', 'quotes', 'sayings', 'logos',
+            'watermarks', 'signatures', 'credits', 'copyright', 'branding',
+            'alphabet', 'characters', 'symbols', 'inscriptions', 'annotations'
+        ]
+        negative_elements.extend(text_issues)
+        
         if prompt_type == 'coloring_page':
             coloring_specific = [
                 # NO COLORS OR SHADING
                 'colors', 'colored', 'color fill', 'shading', 'shadows', 'gray areas',
                 'gradients', 'tones', 'highlights', 'dark areas', 'light areas',
-                
-                # NO TEXT OR WRITING
-                'text', 'words', 'letters', 'numbers', 'writing', 'fonts',
-                'page numbers', 'title text', 'captions', 'speech bubbles', 'dialogue',
-                'labels', 'signs', 'banners', 'messages', 'quotes', 'sayings',
                 
                 # NO FILLED AREAS
                 'solid colors', 'filled shapes', 'colored backgrounds', 'painted areas'

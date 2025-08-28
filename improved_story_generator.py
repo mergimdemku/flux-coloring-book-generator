@@ -24,6 +24,8 @@ class ImprovedStoryGenerator:
         self.current_style_index = 0
         self.story_count = 0
         self.running = False
+        self.used_stories = []  # Track used stories for variety
+        self.max_used_stories = 10  # Remember last 10 stories to avoid repetition
         
         # Art styles rotation
         self.art_styles = [
@@ -236,34 +238,75 @@ class ImprovedStoryGenerator:
     def select_story_and_customize(self) -> Dict[str, Any]:
         """Select a story template and customize it with random characters"""
         
-        # Select random story template
-        story_key = random.choice(list(self.complete_stories.keys()))
+        # Ensure variety by avoiding recently used stories
+        available_stories = list(self.complete_stories.keys())
+        
+        # If we've used stories recently, try to pick a different one
+        if self.used_stories:
+            unused_stories = [s for s in available_stories if s not in self.used_stories[-5:]]
+            if unused_stories:
+                available_stories = unused_stories
+        
+        story_key = random.choice(available_stories)
+        
+        # Track this story
+        self.used_stories.append(story_key)
+        if len(self.used_stories) > self.max_used_stories:
+            self.used_stories.pop(0)
+        
         base_story = self.complete_stories[story_key].copy()
         
-        # Customize with random characters if needed
+        # Randomly choose gender for main character
+        gender = random.choice(['girl', 'boy'])
+        
+        # Customize with random characters based on gender
         if story_key == "dragon_friendship":
-            main_char = random.choice(self.character_names["girls"])
+            if gender == 'girl':
+                main_char = random.choice(self.character_names["girls"])
+                gender_desc = "young girl"
+            else:
+                main_char = random.choice(self.character_names["boys"])
+                gender_desc = "young boy"
             base_story["title"] = f"{main_char} and the Friendly Dragon"
-            # Replace Emma with chosen character in all scenes
             base_story["scenes"] = [scene.replace("Emma", main_char) for scene in base_story["scenes"]]
             
         elif story_key == "ocean_adventure":
-            main_char = random.choice(self.character_names["girls"])
+            if gender == 'girl':
+                main_char = random.choice(self.character_names["girls"])
+                gender_desc = "young girl"
+            else:
+                main_char = random.choice(self.character_names["boys"])
+                gender_desc = "young boy"
             base_story["title"] = f"{main_char}'s Underwater Treasure Hunt"
             base_story["scenes"] = [scene.replace("Marina", main_char) for scene in base_story["scenes"]]
             
         elif story_key == "space_explorer":
-            main_char = random.choice(self.character_names["girls"] + self.character_names["boys"])
+            if gender == 'girl':
+                main_char = random.choice(self.character_names["girls"])
+                gender_desc = "young girl"
+            else:
+                main_char = random.choice(self.character_names["boys"])
+                gender_desc = "young boy"
             base_story["title"] = f"Captain {main_char}'s Cosmic Quest"
             base_story["scenes"] = [scene.replace("Luna", main_char) for scene in base_story["scenes"]]
             
         elif story_key == "forest_magic":
-            main_char = random.choice(self.character_names["girls"])
+            if gender == 'girl':
+                main_char = random.choice(self.character_names["girls"])
+                gender_desc = "young girl"
+            else:
+                main_char = random.choice(self.character_names["boys"])
+                gender_desc = "young boy"
             base_story["title"] = f"{main_char} and the Enchanted Grove"
             base_story["scenes"] = [scene.replace("Willow", main_char) for scene in base_story["scenes"]]
             
         elif story_key == "superhero_kid":
-            main_char = random.choice(self.character_names["boys"])
+            if gender == 'girl':
+                main_char = random.choice(self.character_names["girls"])
+                gender_desc = "young girl superhero"
+            else:
+                main_char = random.choice(self.character_names["boys"])
+                gender_desc = "young boy superhero"
             base_story["title"] = f"Super {main_char}'s First Day"
             base_story["scenes"] = [scene.replace("Sam", main_char) for scene in base_story["scenes"]]
         
@@ -274,7 +317,9 @@ class ImprovedStoryGenerator:
             "story_template": base_story,
             "main_character": main_char,
             "companion": companion,
-            "story_type": story_key
+            "story_type": story_key,
+            "gender": gender,
+            "gender_description": gender_desc
         }
     
     def create_enhanced_prompts(self, story_data: Dict[str, Any]) -> List[Dict[str, str]]:
@@ -299,10 +344,11 @@ class ImprovedStoryGenerator:
         prompts = []
         
         # Cover prompt WITHOUT text integration (COLORED)
+        gender_desc = story_data.get('gender_description', 'child')
         cover_prompt = {
             'type': 'cover',
-            'prompt': f"professional children's book cover, {art_style['cover_style']}, {main_character} and {companion}, magical adventure scene, vibrant colors, {complexity}, high quality cover design, full page layout, no text, no words, no letters",
-            'scene_description': f"Cover scene with {main_character} and {companion}"
+            'prompt': f"professional children's book cover, {art_style['cover_style']}, {gender_desc} named {main_character} and {companion}, magical adventure scene, vibrant colors, {complexity}, high quality cover design, full page layout, NO TEXT AT ALL, NO WORDS, NO LETTERS, anatomically correct {gender_desc}",
+            'scene_description': f"Cover scene with {gender_desc} {main_character} and {companion}"
         }
         prompts.append(cover_prompt)
         
@@ -311,7 +357,7 @@ class ImprovedStoryGenerator:
             coloring_prompt = {
                 'type': 'coloring_page',
                 'page_number': i + 1,
-                'prompt': f"coloring book page, {scene}, {art_style['coloring_style']}, {art_style['complexity']}, {complexity}, black and white line art only, pure white background, no text, no words, no letters, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages {target_age}, consistent character design for {main_character}",
+                'prompt': f"coloring book page, {scene}, {art_style['coloring_style']}, {art_style['complexity']}, {complexity}, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, no page numbers, no shading, no gray areas, thick black outlines, perfect for coloring, high contrast, ultra clean lines, professional line art, suitable for ages {target_age}, consistent character design for {gender_desc} {main_character}, anatomically correct {gender_desc}",
                 'scene_description': scene
             }
             prompts.append(coloring_prompt)
