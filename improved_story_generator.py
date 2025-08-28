@@ -21,6 +21,8 @@ class ImprovedStoryGenerator:
     """Generates REAL stories with actual narrative progression"""
     
     def __init__(self):
+        # Ensure proper randomization with time-based seed
+        random.seed(int(time.time() * 1000) % 2147483647)
         self.current_style_index = 0
         self.story_count = 0
         self.running = False
@@ -238,6 +240,9 @@ class ImprovedStoryGenerator:
     def select_story_and_customize(self) -> Dict[str, Any]:
         """Select a story template and customize it with random characters"""
         
+        # Add extra randomness with current time microseconds
+        random.seed(int(time.time() * 1000000) % 2147483647)
+        
         # Ensure variety by avoiding recently used stories
         available_stories = list(self.complete_stories.keys())
         
@@ -367,8 +372,8 @@ class ImprovedStoryGenerator:
     def generate_complete_story(self) -> Dict[str, Any]:
         """Generate a complete story with real narrative"""
         
-        # Get current art style
-        current_style = self.art_styles[self.current_style_index]
+        # Randomly select art style instead of cycling
+        current_style = random.choice(self.art_styles)
         
         # Select and customize story
         story_setup = self.select_story_and_customize()
@@ -396,10 +401,10 @@ class ImprovedStoryGenerator:
     def get_next_story_batch(self) -> Dict[str, Any]:
         """Generate next complete story batch"""
         
-        logger.info(f"Generating complete story with style: {self.art_styles[self.current_style_index]['name']}")
-        
-        # Generate real story
+        # Generate real story (art style selected randomly inside)
         story_data = self.generate_complete_story()
+        
+        logger.info(f"Generating complete story with style: {story_data['art_style']['name']}")
         
         # Create enhanced prompts
         prompts = self.create_enhanced_prompts(story_data)
@@ -407,8 +412,7 @@ class ImprovedStoryGenerator:
         # Save to file
         filepath = self.save_story_data(story_data, prompts)
         
-        # Rotate to next art style
-        self.current_style_index = (self.current_style_index + 1) % len(self.art_styles)
+        # Increment counter (no more predictable style cycling)
         self.story_count += 1
         
         return {

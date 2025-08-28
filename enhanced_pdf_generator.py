@@ -136,28 +136,12 @@ class EnhancedPDFGenerator:
         if cover_image:
             title_y = y_offset - 40
         
-        # Draw title (centered)
-        title_width = canvas_obj.stringWidth(title, self.fonts['title'], self.cover_template_settings['title_font_size'])
-        title_x = (page_width - title_width) / 2
-        canvas_obj.drawString(title_x, title_y, title)
-        
-        # Subtitle (theme/style info)
-        subtitle = f"A {story_data.get('art_style', {}).get('name', 'Fun')} Style Adventure"
-        canvas_obj.setFont(self.fonts['subtitle'], self.cover_template_settings['author_font_size'])
-        canvas_obj.setFillColor(self.cover_template_settings['subtitle_color'])
-        
-        subtitle_width = canvas_obj.stringWidth(subtitle, self.fonts['subtitle'], self.cover_template_settings['author_font_size'])
-        subtitle_x = (page_width - subtitle_width) / 2
-        canvas_obj.drawString(subtitle_x, title_y - 30, subtitle)
-        
-        # Age range and page count
-        age_info = f"Ages {story_data.get('target_age', '5-8')} • {story_data.get('page_count', 20)} Coloring Pages"
-        canvas_obj.setFont(self.fonts['body'], self.cover_template_settings['age_range_font_size'])
-        canvas_obj.setFillColor(colors.black)
-        
-        age_width = canvas_obj.stringWidth(age_info, self.fonts['body'], self.cover_template_settings['age_range_font_size'])
-        age_x = (page_width - age_width) / 2
-        canvas_obj.drawString(age_x, title_y - 55, age_info)
+        # NO TEXT AT ALL - USER EXPLICITLY REQUESTED ZERO TEXT
+        # ALL TEXT DRAWING DISABLED
+        # canvas_obj.drawString(title_x, title_y, title)  # DISABLED
+        # canvas_obj.drawString(subtitle_x, title_y - 30, subtitle)  # DISABLED  
+        # canvas_obj.drawString(age_x, title_y - 55, age_info)  # DISABLED
+        pass  # Cover image only, no text overlay
         
         # Add decorative elements
         self._add_cover_decorations(canvas_obj, page_width, page_height)
