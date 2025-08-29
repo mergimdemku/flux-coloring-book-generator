@@ -1,0 +1,176 @@
+{
+  "story": {
+    "id": "story_1756451516_4",
+    "title": "Max's Bakery Adventure",
+    "summary": "A young boy named Max discovers that something precious was stolen in the bakery. With help from a tiny elephant and a moon pearl, they embark on an adventure to save the day.",
+    "scenes": [
+      "young boy Max arriving at the bakery for the first time",
+      "Max noticing that something precious was stolen",
+      "Max meeting a tiny elephant who explains the problem",
+      "The tiny elephant telling Max about the legendary moon pearl",
+      "Max and the tiny elephant deciding to work together",
+      "Max and the tiny elephant exploring the depths of the bakery",
+      "Discovering clues about where to find the moon pearl",
+      "Max solving a puzzle using clever thinking in the bakery",
+      "The tiny elephant protecting Max from danger",
+      "Finding a secret passage in the bakery",
+      "Meeting others affected by the problem: something precious was stolen",
+      "Max rallying everyone to help solve the crisis",
+      "Finally finding the moon pearl in a hidden location",
+      "Learning how to use the moon pearl properly",
+      "The tiny elephant showing unexpected courage",
+      "Max using the moon pearl to fix the problem: something precious was stolen",
+      "The bakery being restored to its former glory",
+      "Everyone celebrating Max and the tiny elephant as heroes",
+      "Max saying goodbye to the tiny elephant but promising to return",
+      "The bakery now peaceful with Max as its protector"
+    ],
+    "theme": "bakery_something precious was stolen",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Pixar",
+      "coloring_style": "Pixar 3D style black and white line art, clean smooth lines",
+      "cover_style": "Pixar 3D animation style with warm colors, professional 3D cover",
+      "complexity": "rounded friendly characters with clean smooth lines"
+    },
+    "protagonist": "Max",
+    "gender": "boy",
+    "gender_desc": "young boy",
+    "companion": "tiny elephant",
+    "setting": "bakery",
+    "problem": "something precious was stolen",
+    "magical_object": "moon pearl",
+    "generated_at": "2025-08-29T09:11:56.935564",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "unique_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "children's book cover illustration, Pixar 3D animation style with warm colors, professional 3D cover, showing young boy Max and a tiny elephant in the bakery holding a moon pearl, vibrant colors, full page illustration, edge to edge artwork, NO TEXT AT ALL, NO WORDS, NO LETTERS, anatomically correct young boy, professional cover art",
+      "scene_description": "Cover showing Max and tiny elephant with moon pearl in bakery"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, young boy Max arriving at the bakery for the first time, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "young boy Max arriving at the bakery for the first time"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Max noticing that something precious was stolen, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max noticing that something precious was stolen"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Max meeting a tiny elephant who explains the problem, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max meeting a tiny elephant who explains the problem"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, The tiny elephant telling Max about the legendary moon pearl, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "The tiny elephant telling Max about the legendary moon pearl"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Max and the tiny elephant deciding to work together, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max and the tiny elephant deciding to work together"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Max and the tiny elephant exploring the depths of the bakery, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max and the tiny elephant exploring the depths of the bakery"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Discovering clues about where to find the moon pearl, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Discovering clues about where to find the moon pearl"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, Max solving a puzzle using clever thinking in the bakery, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max solving a puzzle using clever thinking in the bakery"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, The tiny elephant protecting Max from danger, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "The tiny elephant protecting Max from danger"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Finding a secret passage in the bakery, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Finding a secret passage in the bakery"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Meeting others affected by the problem: something precious was stolen, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Meeting others affected by the problem: something precious was stolen"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, Max rallying everyone to help solve the crisis, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max rallying everyone to help solve the crisis"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Finally finding the moon pearl in a hidden location, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Finally finding the moon pearl in a hidden location"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, Learning how to use the moon pearl properly, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Learning how to use the moon pearl properly"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, The tiny elephant showing unexpected courage, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "The tiny elephant showing unexpected courage"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Max using the moon pearl to fix the problem: something precious was stolen, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max using the moon pearl to fix the problem: something precious was stolen"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, The bakery being restored to its former glory, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "The bakery being restored to its former glory"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Everyone celebrating Max and the tiny elephant as heroes, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Everyone celebrating Max and the tiny elephant as heroes"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Max saying goodbye to the tiny elephant but promising to return, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "Max saying goodbye to the tiny elephant but promising to return"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, The bakery now peaceful with Max as its protector, Pixar 3D style black and white line art, clean smooth lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Max, consistent character design",
+      "scene_description": "The bakery now peaceful with Max as its protector"
+    }
+  ],
+  "generated_at": "2025-08-29T09:11:56.935734"
+}

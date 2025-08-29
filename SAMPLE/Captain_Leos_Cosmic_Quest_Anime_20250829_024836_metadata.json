@@ -1,0 +1,59 @@
+{
+  "story": {
+    "id": "story_1756423837_5",
+    "title": "Captain Leo's Cosmic Quest",
+    "summary": "Brave Captain Luna builds a rocket ship and travels to different planets to help alien friends solve problems and bring peace to the galaxy.",
+    "scenes": [
+      "Leo in her backyard workshop building a rocket ship from cardboard and dreams",
+      "The rocket magically coming to life and taking Leo to space",
+      "Leo's first view of Earth from space, seeing how beautiful it is",
+      "Landing on the Moon and meeting friendly Moon rabbits",
+      "The Moon rabbits asking Leo to help find their lost Moon cheese",
+      "Leo and the rabbits exploring Moon craters and space caves",
+      "Discovering the cheese was stolen by grumpy space pirates",
+      "Leo cleverly trading Earth carrots for the Moon cheese",
+      "Flying to Mars and meeting red rock creatures who are very sad",
+      "Learning that Mars creatures miss having water and plants",
+      "Leo bringing Earth seeds and helping plant the first Mars garden",
+      "The Mars creatures learning to care for their new plants",
+      "Traveling to Jupiter and meeting cloud dancers in the storm",
+      "The cloud dancers teaching Leo how to dance among the stars",
+      "Leo helping resolve a conflict between Mars and Jupiter friends",
+      "Organizing a peaceful meeting between all the planet creatures",
+      "Everyone working together to build a friendship space station",
+      "Leo teaching Earth games to all her new alien friends",
+      "A big celebration party with creatures from every planet",
+      "Leo returning home with a heart full of cosmic friendships"
+    ],
+    "theme": "space_explorer",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Anime",
+      "coloring_style": "anime style black and white line art, crisp clean lines, perfect outlines",
+      "cover_style": "anime style with bright vivid colors, professional anime cover",
+      "complexity": "clean precise lines with large expressive eyes"
+    },
+    "main_character": "Leo",
+    "companion": "Zippy the Squirrel",
+    "generated_at": "2025-08-29T01:30:37.556665",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "generation_info": {
+    "generated_at": "2025-08-29T02:48:37.235254",
+    "pdf_path": "automated_books\\Captain_Leos_Cosmic_Quest_Anime_20250829_024836.pdf",
+    "total_prompts": 21,
+    "successful_images": 21,
+    "failed_images": 0,
+    "pipeline_version": "2.0_improved_stories_clean_lines"
+  },
+  "stats": {
+    "stories_generated": 6,
+    "images_generated": 126,
+    "pdfs_created": 6,
+    "errors": 0,
+    "start_time": "2025-08-28T16:17:13.246323",
+    "last_generation": "2025-08-29T01:30:37.560825"
+  }
+}

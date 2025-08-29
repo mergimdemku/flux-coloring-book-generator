@@ -1,0 +1,59 @@
+{
+  "story": {
+    "id": "story_1756410415_3",
+    "title": "Kai and the Friendly Dragon",
+    "summary": "Little Emma discovers a lonely dragon in the forest and helps him find a new home where he can be happy and make friends.",
+    "scenes": [
+      "Kai walking through the enchanted forest picking flowers",
+      "Kai discovering a sad dragon hiding behind a large tree",
+      "Kai and the dragon sitting together as she listens to his problem",
+      "The dragon showing Kai his old cave that became too small",
+      "Kai and the dragon searching for a perfect new home together",
+      "They find a beautiful mountain cave with a crystal lake",
+      "Kai helping the dragon decorate his new cave with colorful gems",
+      "The dragon practicing flying around his new mountain home",
+      "Village children meeting the friendly dragon for the first time",
+      "The dragon giving the children rides around the mountain",
+      "Kai and friends having a picnic with the dragon by the lake",
+      "The dragon teaching the children about nature and magic",
+      "Everyone working together to plant a beautiful garden",
+      "The dragon using his fire breath to help cook a feast",
+      "All the forest animals coming to welcome the dragon",
+      "The dragon and Kai reading stories under the stars",
+      "The dragon protecting the village from a terrible storm",
+      "The grateful villagers throwing a celebration party",
+      "Kai and the dragon watching the sunset from the mountain top",
+      "The dragon and all his new friends living happily together"
+    ],
+    "theme": "dragon_friendship",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Modern_KPop",
+      "coloring_style": "modern K-pop style black and white line art, stylish clean lines",
+      "cover_style": "modern K-pop style with trendy neon colors, fashionable cover",
+      "complexity": "stylish modern characters with fashion elements, clean trendy lines"
+    },
+    "main_character": "Kai",
+    "companion": "Zippy the Squirrel",
+    "generated_at": "2025-08-28T21:46:55.767506",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "generation_info": {
+    "generated_at": "2025-08-28T23:12:00.586375",
+    "pdf_path": "automated_books\\Kai_and_the_Friendly_Dragon_Modern_KPop_20250828_231159.pdf",
+    "total_prompts": 21,
+    "successful_images": 21,
+    "failed_images": 0,
+    "pipeline_version": "2.0_improved_stories_clean_lines"
+  },
+  "stats": {
+    "stories_generated": 4,
+    "images_generated": 84,
+    "pdfs_created": 4,
+    "errors": 0,
+    "start_time": "2025-08-28T16:17:13.246323",
+    "last_generation": "2025-08-28T21:46:55.772497"
+  }
+}

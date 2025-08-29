@@ -1,5 +1,26 @@
 #!/usr/bin/env python3
 """
+Script to replace the broken template system with true random generation
+"""
+
+import sys
+import shutil
+from pathlib import Path
+
+print("REPLACING BROKEN STORY SYSTEM WITH TRUE RANDOM GENERATOR")
+print("=" * 60)
+
+# Backup old generator
+old_file = Path("improved_story_generator.py")
+backup_file = Path("improved_story_generator.BACKUP.py")
+
+if old_file.exists():
+    shutil.copy(old_file, backup_file)
+    print(f"✅ Backed up old generator to {backup_file}")
+
+# Create new integrated generator
+new_generator_code = '''#!/usr/bin/env python3
+"""
 TRUE RANDOM Story Generator - Generates UNIQUE stories every time!
 """
 
@@ -296,7 +317,7 @@ class ImprovedStoryGenerator:
 if __name__ == "__main__":
     generator = ImprovedStoryGenerator()
     
-    print("\nGenerating 5 UNIQUE stories to demonstrate variety:\n")
+    print("\\nGenerating 5 UNIQUE stories to demonstrate variety:\\n")
     
     for i in range(5):
         batch = generator.get_next_story_batch()
@@ -308,3 +329,18 @@ if __name__ == "__main__":
         print(f"   Problem: {story['problem']}")
         print(f"   Object: {story['magical_object']}")
         print()
+'''
+
+# Write new generator
+with open("improved_story_generator.py", "w") as f:
+    f.write(new_generator_code)
+
+print("✅ Replaced story generator with TRUE RANDOM system")
+print("\nKEY IMPROVEMENTS:")
+print("- 25+ different settings (not just 5)")
+print("- 20+ different problems (not just 5)")  
+print("- 20+ different companions")
+print("- 20+ magical objects")
+print("- Covers that ACTUALLY match the story")
+print("- Truly unique combinations every time")
+print("\n✅ READY TO GENERATE ACTUAL VARIETY!")

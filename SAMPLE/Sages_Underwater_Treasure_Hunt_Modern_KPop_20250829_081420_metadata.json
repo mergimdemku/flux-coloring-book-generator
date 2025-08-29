@@ -1,0 +1,59 @@
+{
+  "story": {
+    "id": "story_1756443284_8",
+    "title": "Sage's Underwater Treasure Hunt",
+    "summary": "Young Marina discovers she can breathe underwater and embarks on an amazing ocean adventure to find a lost treasure and help sea creatures in need.",
+    "scenes": [
+      "Sage playing on the beach and finding a magical seashell",
+      "The seashell glowing and giving Sage the power to breathe underwater",
+      "Sage diving into the ocean for the first time and meeting colorful fish",
+      "A wise old turtle telling Sage about the lost treasure of friendship",
+      "Sage swimming through a beautiful coral reef garden",
+      "Meeting a family of dolphins who need help finding their lost baby",
+      "Sage and the dolphins searching through underwater caves",
+      "Finding the baby dolphin trapped in old fishing nets",
+      "Sage carefully freeing the baby dolphin with help from sea horses",
+      "The grateful dolphin family showing Sage a secret underwater city",
+      "Sage meeting the seahorse king who guards the treasure",
+      "The king explaining that the real treasure is helping others",
+      "Sage helping to clean plastic from the ocean with whale friends",
+      "Building a new home for hermit crabs using clean shells",
+      "Teaching young fish how to stay safe from dangerous currents",
+      "Sage discovering she can talk to all sea creatures",
+      "Organizing a grand underwater parade with all her new friends",
+      "The seahorse king giving Sage a special pearl of kindness",
+      "Sage promising to protect the ocean and visit often",
+      "Sage returning to the beach as the ocean waves goodbye"
+    ],
+    "theme": "ocean_adventure",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Modern_KPop",
+      "coloring_style": "modern K-pop style black and white line art, stylish clean lines",
+      "cover_style": "modern K-pop style with trendy neon colors, fashionable cover",
+      "complexity": "stylish modern characters with fashion elements, clean trendy lines"
+    },
+    "main_character": "Sage",
+    "companion": "Whiskers the Cat",
+    "generated_at": "2025-08-29T06:54:44.403686",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "generation_info": {
+    "generated_at": "2025-08-29T08:14:21.175320",
+    "pdf_path": "automated_books\\Sages_Underwater_Treasure_Hunt_Modern_KPop_20250829_081420.pdf",
+    "total_prompts": 21,
+    "successful_images": 21,
+    "failed_images": 0,
+    "pipeline_version": "2.0_improved_stories_clean_lines"
+  },
+  "stats": {
+    "stories_generated": 9,
+    "images_generated": 189,
+    "pdfs_created": 9,
+    "errors": 0,
+    "start_time": "2025-08-28T16:17:13.246323",
+    "last_generation": "2025-08-29T06:54:44.404713"
+  }
+}

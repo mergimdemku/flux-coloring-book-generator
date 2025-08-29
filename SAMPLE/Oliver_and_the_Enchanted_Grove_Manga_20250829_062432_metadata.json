@@ -1,0 +1,59 @@
+{
+  "story": {
+    "id": "story_1756436804_7",
+    "title": "Oliver and the Enchanted Grove",
+    "summary": "Young Willow discovers she can understand animals and must help save the magical forest from losing its colors and magic.",
+    "scenes": [
+      "Oliver walking in the forest when she hears animals talking",
+      "A worried squirrel telling Oliver that the forest magic is fading",
+      "Oliver seeing that flowers and trees are losing their bright colors",
+      "Meeting the wise owl who explains about the missing Rainbow Crystal",
+      "Oliver and her animal friends beginning their quest to find the crystal",
+      "Following a trail of sparkling dust through the deep forest",
+      "Crossing a babbling brook with help from friendly beavers",
+      "Climbing a tall mountain with encouragement from mountain goats",
+      "Finding a dark cave where the crystal might be hidden",
+      "Meeting a lonely troll who has been guarding the crystal",
+      "Learning that the troll took the crystal because he was sad and alone",
+      "Oliver befriending the troll and inviting him to join the forest community",
+      "The troll happily returning the Rainbow Crystal to its proper place",
+      "The crystal's light immediately restoring color to the forest",
+      "All the flowers blooming brighter and more beautiful than before",
+      "The forest animals celebrating with a joyful dance party",
+      "Oliver teaching the troll how to make friends with other creatures",
+      "The troll becoming the forest's official crystal guardian",
+      "Oliver promising to visit and help whenever the forest needs her",
+      "The magical forest thriving with Oliver as its special friend"
+    ],
+    "theme": "forest_magic",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Manga",
+      "coloring_style": "manga style black and white line art, clean sharp lines, high contrast",
+      "cover_style": "manga anime style with vibrant colors, professional cover art",
+      "complexity": "detailed clean line art with expressive characters"
+    },
+    "main_character": "Oliver",
+    "companion": "Buddy the Dog",
+    "generated_at": "2025-08-29T05:06:44.562676",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "complete_narrative"
+  },
+  "generation_info": {
+    "generated_at": "2025-08-29T06:24:33.631045",
+    "pdf_path": "automated_books\\Oliver_and_the_Enchanted_Grove_Manga_20250829_062432.pdf",
+    "total_prompts": 21,
+    "successful_images": 21,
+    "failed_images": 0,
+    "pipeline_version": "2.0_improved_stories_clean_lines"
+  },
+  "stats": {
+    "stories_generated": 8,
+    "images_generated": 168,
+    "pdfs_created": 8,
+    "errors": 0,
+    "start_time": "2025-08-28T16:17:13.246323",
+    "last_generation": "2025-08-29T05:06:44.562892"
+  }
+}

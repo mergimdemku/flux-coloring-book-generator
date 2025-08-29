@@ -1,0 +1,176 @@
+{
+  "story": {
+    "id": "story_1756451516_0",
+    "title": "Zara's Beach Adventure",
+    "summary": "A young girl named Zara discovers that the stars are falling in the beach. With help from a talking bear and a healing potion, they embark on an adventure to save the day.",
+    "scenes": [
+      "young girl Zara arriving at the beach for the first time",
+      "Zara noticing that the stars are falling",
+      "Zara meeting a talking bear who explains the problem",
+      "The talking bear telling Zara about the legendary healing potion",
+      "Zara and the talking bear deciding to work together",
+      "Zara and the talking bear exploring the depths of the beach",
+      "Discovering clues about where to find the healing potion",
+      "Zara solving a puzzle using clever thinking in the beach",
+      "The talking bear protecting Zara from danger",
+      "Finding a secret passage in the beach",
+      "Meeting others affected by the problem: the stars are falling",
+      "Zara rallying everyone to help solve the crisis",
+      "Finally finding the healing potion in a hidden location",
+      "Learning how to use the healing potion properly",
+      "The talking bear showing unexpected courage",
+      "Zara using the healing potion to fix the problem: the stars are falling",
+      "The beach being restored to its former glory",
+      "Everyone celebrating Zara and the talking bear as heroes",
+      "Zara saying goodbye to the talking bear but promising to return",
+      "The beach now peaceful with Zara as its protector"
+    ],
+    "theme": "beach_the stars are falling",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Cartoon",
+      "coloring_style": "cartoon style black and white line art, bold clean lines",
+      "cover_style": "cartoon style with bright primary colors, fun cartoon cover",
+      "complexity": "simple bold clean lines perfect for young children"
+    },
+    "protagonist": "Zara",
+    "gender": "girl",
+    "gender_desc": "young girl",
+    "companion": "talking bear",
+    "setting": "beach",
+    "problem": "the stars are falling",
+    "magical_object": "healing potion",
+    "generated_at": "2025-08-29T09:11:56.913375",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "unique_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "children's book cover illustration, cartoon style with bright primary colors, fun cartoon cover, showing young girl Zara and a talking bear in the beach holding a healing potion, vibrant colors, full page illustration, edge to edge artwork, NO TEXT AT ALL, NO WORDS, NO LETTERS, anatomically correct young girl, professional cover art",
+      "scene_description": "Cover showing Zara and talking bear with healing potion in beach"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, young girl Zara arriving at the beach for the first time, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "young girl Zara arriving at the beach for the first time"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Zara noticing that the stars are falling, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara noticing that the stars are falling"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Zara meeting a talking bear who explains the problem, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara meeting a talking bear who explains the problem"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, The talking bear telling Zara about the legendary healing potion, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "The talking bear telling Zara about the legendary healing potion"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Zara and the talking bear deciding to work together, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara and the talking bear deciding to work together"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Zara and the talking bear exploring the depths of the beach, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara and the talking bear exploring the depths of the beach"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Discovering clues about where to find the healing potion, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Discovering clues about where to find the healing potion"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, Zara solving a puzzle using clever thinking in the beach, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara solving a puzzle using clever thinking in the beach"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, The talking bear protecting Zara from danger, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "The talking bear protecting Zara from danger"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Finding a secret passage in the beach, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Finding a secret passage in the beach"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Meeting others affected by the problem: the stars are falling, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Meeting others affected by the problem: the stars are falling"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, Zara rallying everyone to help solve the crisis, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara rallying everyone to help solve the crisis"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Finally finding the healing potion in a hidden location, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Finally finding the healing potion in a hidden location"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, Learning how to use the healing potion properly, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Learning how to use the healing potion properly"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, The talking bear showing unexpected courage, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "The talking bear showing unexpected courage"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Zara using the healing potion to fix the problem: the stars are falling, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara using the healing potion to fix the problem: the stars are falling"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, The beach being restored to its former glory, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "The beach being restored to its former glory"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Everyone celebrating Zara and the talking bear as heroes, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Everyone celebrating Zara and the talking bear as heroes"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Zara saying goodbye to the talking bear but promising to return, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "Zara saying goodbye to the talking bear but promising to return"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, The beach now peaceful with Zara as its protector, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Zara, consistent character design",
+      "scene_description": "The beach now peaceful with Zara as its protector"
+    }
+  ],
+  "generated_at": "2025-08-29T09:11:56.913632"
+}

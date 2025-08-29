@@ -1,0 +1,176 @@
+{
+  "story": {
+    "id": "story_1756451516_1",
+    "title": "Jake Saves the Underwater Kingdom",
+    "summary": "A young boy named Jake discovers that something precious was stolen in the underwater kingdom. With help from a magic rabbit and a magic paintbrush, they embark on an adventure to save the day.",
+    "scenes": [
+      "young boy Jake arriving at the underwater kingdom for the first time",
+      "Jake noticing that something precious was stolen",
+      "Jake meeting a magic rabbit who explains the problem",
+      "The magic rabbit telling Jake about the legendary magic paintbrush",
+      "Jake and the magic rabbit deciding to work together",
+      "Jake and the magic rabbit exploring the depths of the underwater kingdom",
+      "Discovering clues about where to find the magic paintbrush",
+      "Jake solving a puzzle using clever thinking in the underwater kingdom",
+      "The magic rabbit protecting Jake from danger",
+      "Finding a secret passage in the underwater kingdom",
+      "Meeting others affected by the problem: something precious was stolen",
+      "Jake rallying everyone to help solve the crisis",
+      "Finally finding the magic paintbrush in a hidden location",
+      "Learning how to use the magic paintbrush properly",
+      "The magic rabbit showing unexpected courage",
+      "Jake using the magic paintbrush to fix the problem: something precious was stolen",
+      "The underwater kingdom being restored to its former glory",
+      "Everyone celebrating Jake and the magic rabbit as heroes",
+      "Jake saying goodbye to the magic rabbit but promising to return",
+      "The underwater kingdom now peaceful with Jake as its protector"
+    ],
+    "theme": "underwater kingdom_something precious was stolen",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Cartoon",
+      "coloring_style": "cartoon style black and white line art, bold clean lines",
+      "cover_style": "cartoon style with bright primary colors, fun cartoon cover",
+      "complexity": "simple bold clean lines perfect for young children"
+    },
+    "protagonist": "Jake",
+    "gender": "boy",
+    "gender_desc": "young boy",
+    "companion": "magic rabbit",
+    "setting": "underwater kingdom",
+    "problem": "something precious was stolen",
+    "magical_object": "magic paintbrush",
+    "generated_at": "2025-08-29T09:11:56.920275",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "unique_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "children's book cover illustration, cartoon style with bright primary colors, fun cartoon cover, showing young boy Jake and a magic rabbit in the underwater kingdom holding a magic paintbrush, vibrant colors, full page illustration, edge to edge artwork, NO TEXT AT ALL, NO WORDS, NO LETTERS, anatomically correct young boy, professional cover art",
+      "scene_description": "Cover showing Jake and magic rabbit with magic paintbrush in underwater kingdom"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, young boy Jake arriving at the underwater kingdom for the first time, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "young boy Jake arriving at the underwater kingdom for the first time"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Jake noticing that something precious was stolen, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake noticing that something precious was stolen"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Jake meeting a magic rabbit who explains the problem, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake meeting a magic rabbit who explains the problem"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, The magic rabbit telling Jake about the legendary magic paintbrush, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "The magic rabbit telling Jake about the legendary magic paintbrush"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Jake and the magic rabbit deciding to work together, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake and the magic rabbit deciding to work together"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Jake and the magic rabbit exploring the depths of the underwater kingdom, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake and the magic rabbit exploring the depths of the underwater kingdom"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Discovering clues about where to find the magic paintbrush, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Discovering clues about where to find the magic paintbrush"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, Jake solving a puzzle using clever thinking in the underwater kingdom, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake solving a puzzle using clever thinking in the underwater kingdom"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, The magic rabbit protecting Jake from danger, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "The magic rabbit protecting Jake from danger"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Finding a secret passage in the underwater kingdom, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Finding a secret passage in the underwater kingdom"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Meeting others affected by the problem: something precious was stolen, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Meeting others affected by the problem: something precious was stolen"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, Jake rallying everyone to help solve the crisis, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake rallying everyone to help solve the crisis"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Finally finding the magic paintbrush in a hidden location, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Finally finding the magic paintbrush in a hidden location"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, Learning how to use the magic paintbrush properly, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Learning how to use the magic paintbrush properly"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, The magic rabbit showing unexpected courage, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "The magic rabbit showing unexpected courage"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Jake using the magic paintbrush to fix the problem: something precious was stolen, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake using the magic paintbrush to fix the problem: something precious was stolen"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, The underwater kingdom being restored to its former glory, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "The underwater kingdom being restored to its former glory"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Everyone celebrating Jake and the magic rabbit as heroes, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Everyone celebrating Jake and the magic rabbit as heroes"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Jake saying goodbye to the magic rabbit but promising to return, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "Jake saying goodbye to the magic rabbit but promising to return"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, The underwater kingdom now peaceful with Jake as its protector, cartoon style black and white line art, bold clean lines, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young boy Jake, consistent character design",
+      "scene_description": "The underwater kingdom now peaceful with Jake as its protector"
+    }
+  ],
+  "generated_at": "2025-08-29T09:11:56.920406"
+}
