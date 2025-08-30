@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Mouse Tiny's Crystal Cave Adventure",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "small mouse with big eyes with cheese wedge hat standing in Crystal Cave; diamond with sun rays floating above; sparkling crystals in background; stone formations at sides; simple composition, large shapes",
+    "back_blurb": "Join Mouse Tiny on a magical quest through Crystal Cave to find the Sun Diamond!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Mouse Tiny! A new adventure awaits.",
+        "scene": "small mouse with big eyes with cheese wedge hat waking up; sun circle behind; sparkling crystals visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Crystal Cave opens before you.",
+        "scene": "arched entrance with sparkling crystals; small mouse with big eyes approaching; stone formations framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice speaks of the Sun Diamond.",
+        "scene": "owl on branch pointing wing; diamond with sun rays shown in thought bubble; small mouse with big eyes listening below"
+      },
+      {
+        "id": 4,
+        "text": "Frog offers to help.",
+        "scene": "green frog on lily pad; small mouse with big eyes shaking hands/paws; stone formations in background"
+      },
+      {
+        "id": 5,
+        "text": "Bee offers to help.",
+        "scene": "bee with striped body; small mouse with big eyes shaking hands/paws; glowing pools in background"
+      },
+      {
+        "id": 6,
+        "text": "Bird offers to help.",
+        "scene": "small bird with musical notes; small mouse with big eyes shaking hands/paws; sparkling crystals in background"
+      },
+      {
+        "id": 7,
+        "text": "Ladybug offers to help.",
+        "scene": "ladybug with seven spots; small mouse with big eyes shaking hands/paws; stone formations in background"
+      },
+      {
+        "id": 8,
+        "text": "Spider offers to help.",
+        "scene": "friendly spider on web; small mouse with big eyes shaking hands/paws; glowing pools in background"
+      },
+      {
+        "id": 9,
+        "text": "Turtle offers to help.",
+        "scene": "turtle with geometric shell; small mouse with big eyes shaking hands/paws; sparkling crystals in background"
+      },
+      {
+        "id": 10,
+        "text": "A river blocks the way forward.",
+        "scene": "small mouse with big eyes at river edge; stepping stones visible; green frog on lily pad pointing across"
+      },
+      {
+        "id": 11,
+        "text": "Three paths appear - which one to choose?",
+        "scene": "three simple paths splitting; small mouse with big eyes thinking; signpost with symbols"
+      },
+      {
+        "id": 12,
+        "text": "A gentle giant needs a friend.",
+        "scene": "large sad creature sitting; small mouse with big eyes offering cheese wedge hat; tears becoming smiles"
+      },
+      {
+        "id": 13,
+        "text": "The bridge of kindness appears.",
+        "scene": "rainbow bridge forming; small mouse with big eyes and friends holding hands; hearts floating"
+      },
+      {
+        "id": 14,
+        "text": "Dancing lights show the way.",
+        "scene": "fireflies in spiral pattern; small mouse with big eyes following; glowing pools glowing"
+      },
+      {
+        "id": 15,
+        "text": "A puzzle door needs solving.",
+        "scene": "door with shape slots; small mouse with big eyes holding shapes; friends helping"
+      },
+      {
+        "id": 16,
+        "text": "The Sun Diamond glows in a secret place.",
+        "scene": "diamond with sun rays on pedestal; small mouse with big eyes reaching up; magical sparkles around"
+      },
+      {
+        "id": 17,
+        "text": "Friends celebrate the discovery!",
+        "scene": "small mouse with big eyes holding diamond with sun rays; all friends dancing in circle; confetti shapes"
+      },
+      {
+        "id": 18,
+        "text": "The Sun Diamond grants a special wish.",
+        "scene": "diamond with sun rays glowing bright; wish bubbles showing happy scenes; small mouse with big eyes smiling"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with everyone.",
+        "scene": "small mouse with big eyes showing diamond with sun rays to group; rainbow connecting everyone; hearts floating"
+      },
+      {
+        "id": 20,
+        "text": "Mouse Tiny returns home with new friends.",
+        "scene": "small mouse with big eyes waving goodbye; friend silhouettes waving back; sunset arc; home visible"
+      }
+    ]
+  }
+}

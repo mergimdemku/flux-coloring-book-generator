@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Fox Luna's Crystal Cave Adventure",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "clever fox with bushy tail with little satchel standing in Crystal Cave; diamond with sun rays floating above; sparkling crystals in background; stone formations at sides; simple composition, large shapes",
+    "back_blurb": "Join Fox Luna on a magical quest through Crystal Cave to find the Sun Diamond!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Fox Luna! A new adventure awaits.",
+        "scene": "clever fox with bushy tail with little satchel waking up; sun circle behind; sparkling crystals visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Crystal Cave opens before you.",
+        "scene": "arched entrance with sparkling crystals; clever fox with bushy tail approaching; stone formations framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice speaks of the Sun Diamond.",
+        "scene": "owl on branch pointing wing; diamond with sun rays shown in thought bubble; clever fox with bushy tail listening below"
+      },
+      {
+        "id": 4,
+        "text": "Spider offers to help.",
+        "scene": "friendly spider on web; clever fox with bushy tail shaking hands/paws; stone formations in background"
+      },
+      {
+        "id": 5,
+        "text": "Ladybug offers to help.",
+        "scene": "ladybug with seven spots; clever fox with bushy tail shaking hands/paws; glowing pools in background"
+      },
+      {
+        "id": 6,
+        "text": "Turtle offers to help.",
+        "scene": "turtle with geometric shell; clever fox with bushy tail shaking hands/paws; sparkling crystals in background"
+      },
+      {
+        "id": 7,
+        "text": "Snail offers to help.",
+        "scene": "snail with spiral shell; clever fox with bushy tail shaking hands/paws; stone formations in background"
+      },
+      {
+        "id": 8,
+        "text": "Frog offers to help.",
+        "scene": "green frog on lily pad; clever fox with bushy tail shaking hands/paws; glowing pools in background"
+      },
+      {
+        "id": 9,
+        "text": "Butterfly offers to help.",
+        "scene": "butterfly with big patterned wings; clever fox with bushy tail shaking hands/paws; sparkling crystals in background"
+      },
+      {
+        "id": 10,
+        "text": "A river blocks the way forward.",
+        "scene": "clever fox with bushy tail at river edge; stepping stones visible; friendly spider on web pointing across"
+      },
+      {
+        "id": 11,
+        "text": "Three paths appear - which one to choose?",
+        "scene": "three simple paths splitting; clever fox with bushy tail thinking; signpost with symbols"
+      },
+      {
+        "id": 12,
+        "text": "A gentle giant needs a friend.",
+        "scene": "large sad creature sitting; clever fox with bushy tail offering little satchel; tears becoming smiles"
+      },
+      {
+        "id": 13,
+        "text": "The bridge of kindness appears.",
+        "scene": "rainbow bridge forming; clever fox with bushy tail and friends holding hands; hearts floating"
+      },
+      {
+        "id": 14,
+        "text": "Dancing lights show the way.",
+        "scene": "fireflies in spiral pattern; clever fox with bushy tail following; glowing pools glowing"
+      },
+      {
+        "id": 15,
+        "text": "A puzzle door needs solving.",
+        "scene": "door with shape slots; clever fox with bushy tail holding shapes; friends helping"
+      },
+      {
+        "id": 16,
+        "text": "The Sun Diamond glows in a secret place.",
+        "scene": "diamond with sun rays on pedestal; clever fox with bushy tail reaching up; magical sparkles around"
+      },
+      {
+        "id": 17,
+        "text": "Friends celebrate the discovery!",
+        "scene": "clever fox with bushy tail holding diamond with sun rays; all friends dancing in circle; confetti shapes"
+      },
+      {
+        "id": 18,
+        "text": "The Sun Diamond grants a special wish.",
+        "scene": "diamond with sun rays glowing bright; wish bubbles showing happy scenes; clever fox with bushy tail smiling"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with everyone.",
+        "scene": "clever fox with bushy tail showing diamond with sun rays to group; rainbow connecting everyone; hearts floating"
+      },
+      {
+        "id": 20,
+        "text": "Fox Luna returns home with new friends.",
+        "scene": "clever fox with bushy tail waving goodbye; friend silhouettes waving back; sunset arc; home visible"
+      }
+    ]
+  }
+}
