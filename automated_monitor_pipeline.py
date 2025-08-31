@@ -161,7 +161,7 @@ class AutomatedMonitorPipeline:
                         prompt=full_prompt,
                         negative_prompt=negative_prompt,
                         width=592,
-                        height=840,
+                        height=832,  # 832 is divisible by 16
                         num_inference_steps=8,  # More steps for cover
                         guidance_scale=0.0
                     )
@@ -174,7 +174,7 @@ class AutomatedMonitorPipeline:
                         prompt=full_prompt,
                         negative_prompt=negative_prompt,
                         width=592,
-                        height=840,
+                        height=832,  # 832 is divisible by 16
                         num_inference_steps=4,
                         guidance_scale=0.0
                     )
@@ -216,11 +216,13 @@ class AutomatedMonitorPipeline:
             pdf_path = self.output_dir / pdf_filename
             
             # Create PDF using enhanced generator
+            coloring_images = [page['image'] for page in images['coloring_pages'] if page['image']]
+            
             self.pdf_generator.generate_complete_book_pdf(
                 story_data=story_data,
                 cover_image=images['cover'],
-                coloring_pages=images['coloring_pages'],
-                output_filename=str(pdf_path)
+                coloring_images=coloring_images,
+                prompts_data=[]  # Add empty prompts_data parameter
             )
             
             self.stats['pdfs_created'] += 1
