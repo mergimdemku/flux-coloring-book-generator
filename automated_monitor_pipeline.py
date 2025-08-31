@@ -208,7 +208,7 @@ class AutomatedMonitorPipeline:
         
         return generated_images
     
-    def create_pdf(self, story_data: Dict[str, Any], images: Dict[str, Any]) -> Optional[str]:
+    def create_pdf(self, story_data: Dict[str, Any], images: Dict[str, Any], prompts: List[Dict[str, str]]) -> Optional[str]:
         """Create PDF from generated images"""
         try:
             timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -262,7 +262,7 @@ class AutomatedMonitorPipeline:
                 return False
             
             # Create PDF
-            pdf_path = self.create_pdf(story_info, images)
+            pdf_path = self.create_pdf(story_info, images, prompts)
             
             if pdf_path:
                 # Move story file to old_stories
