@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Jungle Friends",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Smiling monkey, parrot Ari, tiger Tino, and frog Rino around a big jungle leaf; vines and large flowers; simple bold shapes",
+    "back_blurb": "Meet friendly jungle animals in a leafy world of fun!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Monkey Njeshi swings.",
+        "scene": "monkey on vine; big leaf backdrop; smile"
+      },
+      {
+        "id": 2,
+        "text": "Parrot Ari chats.",
+        "scene": "parrot on branch with note icons; two flowers below"
+      },
+      {
+        "id": 3,
+        "text": "Tiger Tino stretches.",
+        "scene": "tiger lying on rock; palm fronds behind"
+      },
+      {
+        "id": 4,
+        "text": "Frog Rino leaps.",
+        "scene": "frog on lily pad mid-hop; ripple circles"
+      },
+      {
+        "id": 5,
+        "text": "Snake Sia curls.",
+        "scene": "long snake around branch; leaf cluster"
+      },
+      {
+        "id": 6,
+        "text": "Elephant Eli splashes.",
+        "scene": "elephant spraying water; pond edge"
+      },
+      {
+        "id": 7,
+        "text": "Giraffe Goni peeks.",
+        "scene": "giraffe head through leaves; tall trunk"
+      },
+      {
+        "id": 8,
+        "text": "Zebra Zana trots.",
+        "scene": "zebra on path; grass tufts; tree silhouette"
+      },
+      {
+        "id": 9,
+        "text": "Hippo Hila smiles.",
+        "scene": "hippo in water; big simple shapes"
+      },
+      {
+        "id": 10,
+        "text": "Croc Silly grins.",
+        "scene": "friendly crocodile on bank; reeds"
+      },
+      {
+        "id": 11,
+        "text": "Toucan Tori watches.",
+        "scene": "toucan on curved branch; fruit cluster"
+      },
+      {
+        "id": 12,
+        "text": "Butterfly Mira flutters.",
+        "scene": "large-wing butterfly over flowers"
+      },
+      {
+        "id": 13,
+        "text": "Ant Team marches.",
+        "scene": "three ants carrying leaf; path stones"
+      },
+      {
+        "id": 14,
+        "text": "Chameleon Ceni blends.",
+        "scene": "chameleon on twig; leaf pattern shapes"
+      },
+      {
+        "id": 15,
+        "text": "Gorilla Garo rests.",
+        "scene": "gorilla sitting; mountain vine frame"
+      },
+      {
+        "id": 16,
+        "text": "Leopard Leni lounges.",
+        "scene": "leopard on tree limb; tail hanging"
+      },
+      {
+        "id": 17,
+        "text": "Bat Beni naps.",
+        "scene": "bat upside down; crescent moon icon"
+      },
+      {
+        "id": 18,
+        "text": "Fireflies glow.",
+        "scene": "cluster of glowbug circles; jungle leaves"
+      },
+      {
+        "id": 19,
+        "text": "Rain drips softly.",
+        "scene": "big leaf with raindrop icons; puddle"
+      },
+      {
+        "id": 20,
+        "text": "Rainbow over trees.",
+        "scene": "rainbow arch outline above canopy"
+      }
+    ]
+  }
+}

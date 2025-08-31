@@ -1,0 +1,125 @@
+{
+  "book": {
+    "title": "Unicorn Luna Learns About Sharing And Caring",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "white unicorn with horn with rainbow mane in Enchanted Forest; seed with glowing center floating nearby; tall trees with faces in background; mushroom houses at sides; simple composition, large shapes, kid-friendly",
+    "back_blurb": "Join Unicorn Luna on a wonderful learning adventure in Enchanted Forest!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Unicorn Luna! A new day brings adventure!",
+        "scene": "white unicorn with horn with rainbow mane waking up; sunrise circle behind; tall trees with faces visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Enchanted Forest opens before you.",
+        "scene": "arched entrance with tall trees with faces; white unicorn with horn approaching with rainbow mane; mushroom houses framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice tells of the magical Kindness Seed.",
+        "scene": "owl on branch pointing wing; seed with glowing center shown in thought bubble; white unicorn with horn listening with rainbow mane"
+      },
+      {
+        "id": 4,
+        "text": "Unicorn Luna meets Butterfly Belle!",
+        "scene": "white unicorn with horn with rainbow mane meeting Butterfly Belle with rainbow wings; friendly handshake; mushroom houses in background; smiles all around"
+      },
+      {
+        "id": 5,
+        "text": "Unicorn Luna meets Snail Speedy!",
+        "scene": "white unicorn with horn with rainbow mane meeting Snail Speedy with spiral shell; friendly handshake; sparkly streams in background; smiles all around"
+      },
+      {
+        "id": 6,
+        "text": "Unicorn Luna meets Mouse Tiny!",
+        "scene": "white unicorn with horn with rainbow mane meeting Mouse Tiny with big ears; friendly handshake; tall trees with faces in background; smiles all around"
+      },
+      {
+        "id": 7,
+        "text": "Unicorn Luna meets Bird Chirpy!",
+        "scene": "white unicorn with horn with rainbow mane meeting Bird Chirpy with musical notes; friendly handshake; mushroom houses in background; smiles all around"
+      },
+      {
+        "id": 8,
+        "text": "Unicorn Luna meets Frog Hoppy!",
+        "scene": "white unicorn with horn with rainbow mane meeting Frog Hoppy on lily pad; friendly handshake; sparkly streams in background; smiles all around"
+      },
+      {
+        "id": 9,
+        "text": "Unicorn Luna meets Bee Buzzy!",
+        "scene": "white unicorn with horn with rainbow mane meeting Bee Buzzy with stripes; friendly handshake; tall trees with faces in background; smiles all around"
+      },
+      {
+        "id": 10,
+        "text": "Unicorn Luna meets Squirrel Nutkin!",
+        "scene": "white unicorn with horn with rainbow mane meeting Squirrel Nutkin with acorn; friendly handshake; mushroom houses in background; smiles all around"
+      },
+      {
+        "id": 11,
+        "text": "Unicorn Luna meets Rabbit Quick!",
+        "scene": "white unicorn with horn with rainbow mane meeting Rabbit Quick with cotton tail; friendly handshake; sparkly streams in background; smiles all around"
+      },
+      {
+        "id": 12,
+        "text": "Unicorn Luna meets Fox Kit!",
+        "scene": "white unicorn with horn with rainbow mane meeting Fox Kit with fluffy tail; friendly handshake; tall trees with faces in background; smiles all around"
+      },
+      {
+        "id": 13,
+        "text": "A gentle stream blocks the way forward.",
+        "scene": "white unicorn with horn at stream edge with rainbow mane; stepping stones visible; first friend helping point the way"
+      },
+      {
+        "id": 14,
+        "text": "Three paths appear - which one leads to the treasure?",
+        "scene": "three winding paths splitting; white unicorn with horn thinking with rainbow mane; signpost with simple symbols; friends gathered around"
+      },
+      {
+        "id": 15,
+        "text": "A riddle door needs solving with friendship!",
+        "scene": "door with heart symbols; white unicorn with horn and friends working together; rainbow mane glowing; key shapes floating"
+      },
+      {
+        "id": 16,
+        "text": "The magical Kindness Seed appears in a secret grove!",
+        "scene": "seed with glowing center glowing on flower pedestal; white unicorn with horn reaching up with rainbow mane; sparkles everywhere; friends cheering"
+      },
+      {
+        "id": 17,
+        "text": "Everyone celebrates the wonderful discovery!",
+        "scene": "white unicorn with horn holding seed with glowing center with rainbow mane; all friends dancing in circle; confetti shapes; happy expressions"
+      },
+      {
+        "id": 18,
+        "text": "The Kindness Seed grants a special wish for everyone!",
+        "scene": "seed with glowing center glowing bright; wish bubbles showing happy scenes; white unicorn with horn with rainbow mane surrounded by friends"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with the whole world!",
+        "scene": "white unicorn with horn showing seed with glowing center to group; rainbow connecting everyone; hearts floating; rainbow mane sparkling"
+      },
+      {
+        "id": 20,
+        "text": "Unicorn Luna returns home with heart full of friendship!",
+        "scene": "white unicorn with horn with rainbow mane waving goodbye; friend silhouettes waving back; sunset arc; cozy home visible in distance"
+      }
+    ],
+    "metadata": {
+      "character_type": "fantasy_creatures",
+      "story_type": "learning",
+      "theme": "sharing and caring",
+      "setting_type": "nature",
+      "generated_by": "Book-Author-Agent",
+      "generation_time": "2025-08-30T22:20:04.506827"
+    }
+  }
+}

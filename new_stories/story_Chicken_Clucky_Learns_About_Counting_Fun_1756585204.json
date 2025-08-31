@@ -1,0 +1,125 @@
+{
+  "book": {
+    "title": "Chicken Clucky Learns About Counting Fun",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "yellow chicken with red comb with tiny apron in Underwater Palace; star with rainbow colors floating nearby; coral towers in background; bubble windows at sides; simple composition, large shapes, kid-friendly",
+    "back_blurb": "Join Chicken Clucky on a wonderful learning adventure in Underwater Palace!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Chicken Clucky! A new day brings adventure!",
+        "scene": "yellow chicken with red comb with tiny apron waking up; sunrise circle behind; coral towers visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Underwater Palace opens before you.",
+        "scene": "arched entrance with coral towers; yellow chicken with red comb approaching with tiny apron; bubble windows framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice tells of the magical Rainbow Star.",
+        "scene": "owl on branch pointing wing; star with rainbow colors shown in thought bubble; yellow chicken with red comb listening with tiny apron"
+      },
+      {
+        "id": 4,
+        "text": "Chicken Clucky meets Butterfly Belle!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Butterfly Belle with rainbow wings; friendly handshake; bubble windows in background; smiles all around"
+      },
+      {
+        "id": 5,
+        "text": "Chicken Clucky meets Snail Speedy!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Snail Speedy with spiral shell; friendly handshake; seaweed gardens in background; smiles all around"
+      },
+      {
+        "id": 6,
+        "text": "Chicken Clucky meets Mouse Tiny!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Mouse Tiny with big ears; friendly handshake; coral towers in background; smiles all around"
+      },
+      {
+        "id": 7,
+        "text": "Chicken Clucky meets Bird Chirpy!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Bird Chirpy with musical notes; friendly handshake; bubble windows in background; smiles all around"
+      },
+      {
+        "id": 8,
+        "text": "Chicken Clucky meets Frog Hoppy!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Frog Hoppy on lily pad; friendly handshake; seaweed gardens in background; smiles all around"
+      },
+      {
+        "id": 9,
+        "text": "Chicken Clucky meets Bee Buzzy!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Bee Buzzy with stripes; friendly handshake; coral towers in background; smiles all around"
+      },
+      {
+        "id": 10,
+        "text": "Chicken Clucky meets Squirrel Nutkin!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Squirrel Nutkin with acorn; friendly handshake; bubble windows in background; smiles all around"
+      },
+      {
+        "id": 11,
+        "text": "Chicken Clucky meets Rabbit Quick!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Rabbit Quick with cotton tail; friendly handshake; seaweed gardens in background; smiles all around"
+      },
+      {
+        "id": 12,
+        "text": "Chicken Clucky meets Fox Kit!",
+        "scene": "yellow chicken with red comb with tiny apron meeting Fox Kit with fluffy tail; friendly handshake; coral towers in background; smiles all around"
+      },
+      {
+        "id": 13,
+        "text": "A gentle stream blocks the way forward.",
+        "scene": "yellow chicken with red comb at stream edge with tiny apron; stepping stones visible; first friend helping point the way"
+      },
+      {
+        "id": 14,
+        "text": "Three paths appear - which one leads to the treasure?",
+        "scene": "three winding paths splitting; yellow chicken with red comb thinking with tiny apron; signpost with simple symbols; friends gathered around"
+      },
+      {
+        "id": 15,
+        "text": "A riddle door needs solving with friendship!",
+        "scene": "door with heart symbols; yellow chicken with red comb and friends working together; tiny apron glowing; key shapes floating"
+      },
+      {
+        "id": 16,
+        "text": "The magical Rainbow Star appears in a secret grove!",
+        "scene": "star with rainbow colors glowing on flower pedestal; yellow chicken with red comb reaching up with tiny apron; sparkles everywhere; friends cheering"
+      },
+      {
+        "id": 17,
+        "text": "Everyone celebrates the wonderful discovery!",
+        "scene": "yellow chicken with red comb holding star with rainbow colors with tiny apron; all friends dancing in circle; confetti shapes; happy expressions"
+      },
+      {
+        "id": 18,
+        "text": "The Rainbow Star grants a special wish for everyone!",
+        "scene": "star with rainbow colors glowing bright; wish bubbles showing happy scenes; yellow chicken with red comb with tiny apron surrounded by friends"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with the whole world!",
+        "scene": "yellow chicken with red comb showing star with rainbow colors to group; rainbow connecting everyone; hearts floating; tiny apron sparkling"
+      },
+      {
+        "id": 20,
+        "text": "Chicken Clucky returns home with heart full of friendship!",
+        "scene": "yellow chicken with red comb with tiny apron waving goodbye; friend silhouettes waving back; sunset arc; cozy home visible in distance"
+      }
+    ],
+    "metadata": {
+      "character_type": "farm_animals",
+      "story_type": "learning",
+      "theme": "counting fun",
+      "setting_type": "fantasy",
+      "generated_by": "Book-Author-Agent",
+      "generation_time": "2025-08-30T22:20:04.502699"
+    }
+  }
+}

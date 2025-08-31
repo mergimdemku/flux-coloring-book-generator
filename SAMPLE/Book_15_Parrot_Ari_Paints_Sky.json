@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Parrot Ari Paints the Sky",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Parrot Ari holding a paintbrush flying through clouds; rainbow arc forming; big shapes",
+    "back_blurb": "Fly with Parrot Ari as he paints the sky with colors of joy!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Page 1 of Parrot Ari’s painting adventure.",
+        "scene": "scene 1 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 2,
+        "text": "Page 2 of Parrot Ari’s painting adventure.",
+        "scene": "scene 2 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 3,
+        "text": "Page 3 of Parrot Ari’s painting adventure.",
+        "scene": "scene 3 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 4,
+        "text": "Page 4 of Parrot Ari’s painting adventure.",
+        "scene": "scene 4 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 5,
+        "text": "Page 5 of Parrot Ari’s painting adventure.",
+        "scene": "scene 5 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 6,
+        "text": "Page 6 of Parrot Ari’s painting adventure.",
+        "scene": "scene 6 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 7,
+        "text": "Page 7 of Parrot Ari’s painting adventure.",
+        "scene": "scene 7 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 8,
+        "text": "Page 8 of Parrot Ari’s painting adventure.",
+        "scene": "scene 8 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 9,
+        "text": "Page 9 of Parrot Ari’s painting adventure.",
+        "scene": "scene 9 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 10,
+        "text": "Page 10 of Parrot Ari’s painting adventure.",
+        "scene": "scene 10 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 11,
+        "text": "Page 11 of Parrot Ari’s painting adventure.",
+        "scene": "scene 11 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 12,
+        "text": "Page 12 of Parrot Ari’s painting adventure.",
+        "scene": "scene 12 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 13,
+        "text": "Page 13 of Parrot Ari’s painting adventure.",
+        "scene": "scene 13 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 14,
+        "text": "Page 14 of Parrot Ari’s painting adventure.",
+        "scene": "scene 14 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 15,
+        "text": "Page 15 of Parrot Ari’s painting adventure.",
+        "scene": "scene 15 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 16,
+        "text": "Page 16 of Parrot Ari’s painting adventure.",
+        "scene": "scene 16 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 17,
+        "text": "Page 17 of Parrot Ari’s painting adventure.",
+        "scene": "scene 17 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 18,
+        "text": "Page 18 of Parrot Ari’s painting adventure.",
+        "scene": "scene 18 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 19,
+        "text": "Page 19 of Parrot Ari’s painting adventure.",
+        "scene": "scene 19 with Parrot Ari painting the sky and meeting friends"
+      },
+      {
+        "id": 20,
+        "text": "Page 20 of Parrot Ari’s painting adventure.",
+        "scene": "scene 20 with Parrot Ari painting the sky and meeting friends"
+      }
+    ]
+  }
+}

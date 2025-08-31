@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Bobi the Cat Walks in the Streets",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Cat Bobi with small bell collar walking on a simple city sidewalk; street lamps and shop windows as big shapes; friendly pigeon on a post; large clean outlines",
+    "back_blurb": "Join Cat Bobi on a curious walk through friendly city streets!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Bobi steps out for a city day.",
+        "scene": "Cat Bobi leaving a door; simple building facade; sun circle above"
+      },
+      {
+        "id": 2,
+        "text": "A street map helps.",
+        "scene": "Bobi looking at a wall map; arrow icons; bench nearby"
+      },
+      {
+        "id": 3,
+        "text": "Pigeon Pio says hello.",
+        "scene": "Pigeon Pio on a post; Bobi waving a paw; lamp behind"
+      },
+      {
+        "id": 4,
+        "text": "Baker Ceni shares a roll.",
+        "scene": "friendly baker handing round bread; Bobi smiling; shop sign"
+      },
+      {
+        "id": 5,
+        "text": "Crosswalk practice.",
+        "scene": "Bobi waiting at crosswalk; light icons; car silhouette far"
+      },
+      {
+        "id": 6,
+        "text": "Bus stop surprise.",
+        "scene": "Bobi sitting on bench; bus icon sign; people silhouettes"
+      },
+      {
+        "id": 7,
+        "text": "Park trees whisper.",
+        "scene": "Bobi walking under big trees; squirrel Nika on branch"
+      },
+      {
+        "id": 8,
+        "text": "Fountain splash.",
+        "scene": "city fountain with big bowl; Bobi watching water arcs"
+      },
+      {
+        "id": 9,
+        "text": "Street musician plays.",
+        "scene": "guitarist silhouette; Bobi tapping paw; note icons"
+      },
+      {
+        "id": 10,
+        "text": "Friendly dog waves tail.",
+        "scene": "Dog Dimi wagging near hydrant; Bobi smiling; leash loop"
+      },
+      {
+        "id": 11,
+        "text": "Bridge over river.",
+        "scene": "simple arch bridge; Bobi looking at boats; wave lines"
+      },
+      {
+        "id": 12,
+        "text": "Market colors (as outlines!).",
+        "scene": "market stalls with big fruit outlines; Bobi sniffing basket"
+      },
+      {
+        "id": 13,
+        "text": "Library steps.",
+        "scene": "Bobi on wide steps; owl Huti statue; book icon sign"
+      },
+      {
+        "id": 14,
+        "text": "Street artist draws.",
+        "scene": "artist easel; outline portrait; Bobi posing proudly"
+      },
+      {
+        "id": 15,
+        "text": "Toy shop window.",
+        "scene": "Bobi looking at teddy and ball outlines; star shapes"
+      },
+      {
+        "id": 16,
+        "text": "Rain begins softly.",
+        "scene": "cloud with raindrop icons; Bobi under awning; puddle"
+      },
+      {
+        "id": 17,
+        "text": "Umbrella help.",
+        "scene": "child offering umbrella to Bobi; crosswalk behind"
+      },
+      {
+        "id": 18,
+        "text": "Sky clears again.",
+        "scene": "sun peeks; rainbow arc outline; Bobi stretching"
+      },
+      {
+        "id": 19,
+        "text": "Home street at sunset.",
+        "scene": "Bobi walking past warm windows; lamp lights on"
+      },
+      {
+        "id": 20,
+        "text": "Good night, city.",
+        "scene": "Bobi curled on windowsill; moon and stars outside"
+      }
+    ]
+  }
+}

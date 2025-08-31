@@ -1,0 +1,125 @@
+{
+  "book": {
+    "title": "Artist Aria Learns About Sharing And Caring",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "creative artist with paint palette in Big City; heart-shaped crystal floating nearby; tall buildings in background; busy streets at sides; simple composition, large shapes, kid-friendly",
+    "back_blurb": "Join Artist Aria on a wonderful learning adventure in Big City!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Artist Aria! A new day brings adventure!",
+        "scene": "creative artist with paint palette waking up; sunrise circle behind; tall buildings visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Big City opens before you.",
+        "scene": "arched entrance with tall buildings; creative artist approaching with paint palette; busy streets framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice tells of the magical Crystal Heart.",
+        "scene": "owl on branch pointing wing; heart-shaped crystal shown in thought bubble; creative artist listening with paint palette"
+      },
+      {
+        "id": 4,
+        "text": "Artist Aria meets Butterfly Belle!",
+        "scene": "creative artist with paint palette meeting Butterfly Belle with rainbow wings; friendly handshake; busy streets in background; smiles all around"
+      },
+      {
+        "id": 5,
+        "text": "Artist Aria meets Snail Speedy!",
+        "scene": "creative artist with paint palette meeting Snail Speedy with spiral shell; friendly handshake; parks in background; smiles all around"
+      },
+      {
+        "id": 6,
+        "text": "Artist Aria meets Mouse Tiny!",
+        "scene": "creative artist with paint palette meeting Mouse Tiny with big ears; friendly handshake; tall buildings in background; smiles all around"
+      },
+      {
+        "id": 7,
+        "text": "Artist Aria meets Bird Chirpy!",
+        "scene": "creative artist with paint palette meeting Bird Chirpy with musical notes; friendly handshake; busy streets in background; smiles all around"
+      },
+      {
+        "id": 8,
+        "text": "Artist Aria meets Frog Hoppy!",
+        "scene": "creative artist with paint palette meeting Frog Hoppy on lily pad; friendly handshake; parks in background; smiles all around"
+      },
+      {
+        "id": 9,
+        "text": "Artist Aria meets Bee Buzzy!",
+        "scene": "creative artist with paint palette meeting Bee Buzzy with stripes; friendly handshake; tall buildings in background; smiles all around"
+      },
+      {
+        "id": 10,
+        "text": "Artist Aria meets Squirrel Nutkin!",
+        "scene": "creative artist with paint palette meeting Squirrel Nutkin with acorn; friendly handshake; busy streets in background; smiles all around"
+      },
+      {
+        "id": 11,
+        "text": "Artist Aria meets Rabbit Quick!",
+        "scene": "creative artist with paint palette meeting Rabbit Quick with cotton tail; friendly handshake; parks in background; smiles all around"
+      },
+      {
+        "id": 12,
+        "text": "Artist Aria meets Fox Kit!",
+        "scene": "creative artist with paint palette meeting Fox Kit with fluffy tail; friendly handshake; tall buildings in background; smiles all around"
+      },
+      {
+        "id": 13,
+        "text": "A gentle stream blocks the way forward.",
+        "scene": "creative artist at stream edge with paint palette; stepping stones visible; first friend helping point the way"
+      },
+      {
+        "id": 14,
+        "text": "Three paths appear - which one leads to the treasure?",
+        "scene": "three winding paths splitting; creative artist thinking with paint palette; signpost with simple symbols; friends gathered around"
+      },
+      {
+        "id": 15,
+        "text": "A riddle door needs solving with friendship!",
+        "scene": "door with heart symbols; creative artist and friends working together; paint palette glowing; key shapes floating"
+      },
+      {
+        "id": 16,
+        "text": "The magical Crystal Heart appears in a secret grove!",
+        "scene": "heart-shaped crystal glowing on flower pedestal; creative artist reaching up with paint palette; sparkles everywhere; friends cheering"
+      },
+      {
+        "id": 17,
+        "text": "Everyone celebrates the wonderful discovery!",
+        "scene": "creative artist holding heart-shaped crystal with paint palette; all friends dancing in circle; confetti shapes; happy expressions"
+      },
+      {
+        "id": 18,
+        "text": "The Crystal Heart grants a special wish for everyone!",
+        "scene": "heart-shaped crystal glowing bright; wish bubbles showing happy scenes; creative artist with paint palette surrounded by friends"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with the whole world!",
+        "scene": "creative artist showing heart-shaped crystal to group; rainbow connecting everyone; hearts floating; paint palette sparkling"
+      },
+      {
+        "id": 20,
+        "text": "Artist Aria returns home with heart full of friendship!",
+        "scene": "creative artist with paint palette waving goodbye; friend silhouettes waving back; sunset arc; cozy home visible in distance"
+      }
+    ],
+    "metadata": {
+      "character_type": "professions",
+      "story_type": "learning",
+      "theme": "sharing and caring",
+      "setting_type": "everyday",
+      "generated_by": "Book-Author-Agent",
+      "generation_time": "2025-08-30T22:20:04.511009"
+    }
+  }
+}

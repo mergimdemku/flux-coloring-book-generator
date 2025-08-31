@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Dog Dimi Joins the Circus",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Dog Dimi with clown hat juggling balls; circus tent outline in background; large shapes",
+    "back_blurb": "Laugh and play with Dog Dimi as he becomes part of the circus show!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Page 1 of Dog Dimi’s circus fun.",
+        "scene": "scene 1 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 2,
+        "text": "Page 2 of Dog Dimi’s circus fun.",
+        "scene": "scene 2 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 3,
+        "text": "Page 3 of Dog Dimi’s circus fun.",
+        "scene": "scene 3 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 4,
+        "text": "Page 4 of Dog Dimi’s circus fun.",
+        "scene": "scene 4 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 5,
+        "text": "Page 5 of Dog Dimi’s circus fun.",
+        "scene": "scene 5 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 6,
+        "text": "Page 6 of Dog Dimi’s circus fun.",
+        "scene": "scene 6 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 7,
+        "text": "Page 7 of Dog Dimi’s circus fun.",
+        "scene": "scene 7 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 8,
+        "text": "Page 8 of Dog Dimi’s circus fun.",
+        "scene": "scene 8 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 9,
+        "text": "Page 9 of Dog Dimi’s circus fun.",
+        "scene": "scene 9 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 10,
+        "text": "Page 10 of Dog Dimi’s circus fun.",
+        "scene": "scene 10 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 11,
+        "text": "Page 11 of Dog Dimi’s circus fun.",
+        "scene": "scene 11 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 12,
+        "text": "Page 12 of Dog Dimi’s circus fun.",
+        "scene": "scene 12 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 13,
+        "text": "Page 13 of Dog Dimi’s circus fun.",
+        "scene": "scene 13 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 14,
+        "text": "Page 14 of Dog Dimi’s circus fun.",
+        "scene": "scene 14 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 15,
+        "text": "Page 15 of Dog Dimi’s circus fun.",
+        "scene": "scene 15 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 16,
+        "text": "Page 16 of Dog Dimi’s circus fun.",
+        "scene": "scene 16 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 17,
+        "text": "Page 17 of Dog Dimi’s circus fun.",
+        "scene": "scene 17 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 18,
+        "text": "Page 18 of Dog Dimi’s circus fun.",
+        "scene": "scene 18 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 19,
+        "text": "Page 19 of Dog Dimi’s circus fun.",
+        "scene": "scene 19 with Dog Dimi performing circus tricks"
+      },
+      {
+        "id": 20,
+        "text": "Page 20 of Dog Dimi’s circus fun.",
+        "scene": "scene 20 with Dog Dimi performing circus tricks"
+      }
+    ]
+  }
+}

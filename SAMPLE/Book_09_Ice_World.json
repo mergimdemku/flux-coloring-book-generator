@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Ice World",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Penguin, polar bear, seal, and arctic fox on snowy ice; iceberg in background; snowflakes big and simple",
+    "back_blurb": "Chill out with arctic animals in their icy home!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Penguin slides.",
+        "scene": "penguin on ice slope; snow lines"
+      },
+      {
+        "id": 2,
+        "text": "Polar bear waves.",
+        "scene": "bear on iceberg; snowflakes"
+      },
+      {
+        "id": 3,
+        "text": "Seal claps.",
+        "scene": "seal on ice; fish outline"
+      },
+      {
+        "id": 4,
+        "text": "Arctic fox trots.",
+        "scene": "fox walking; snow drift"
+      },
+      {
+        "id": 5,
+        "text": "Walrus rests.",
+        "scene": "walrus with tusks; ice block"
+      },
+      {
+        "id": 6,
+        "text": "Snowy owl watches.",
+        "scene": "owl perched; stars"
+      },
+      {
+        "id": 7,
+        "text": "Caribou walks.",
+        "scene": "caribou antlers; snowy hill"
+      },
+      {
+        "id": 8,
+        "text": "Husky runs.",
+        "scene": "dog sled husky; harness outline"
+      },
+      {
+        "id": 9,
+        "text": "Narwhal swims.",
+        "scene": "narwhal with tusk; waves"
+      },
+      {
+        "id": 10,
+        "text": "Puffin stands.",
+        "scene": "puffin on rock; waves"
+      },
+      {
+        "id": 11,
+        "text": "Orca leaps.",
+        "scene": "orca above water; spray"
+      },
+      {
+        "id": 12,
+        "text": "Snow hare hops.",
+        "scene": "hare hopping; snow mound"
+      },
+      {
+        "id": 13,
+        "text": "Musk ox grazes.",
+        "scene": "ox on snow; tufts"
+      },
+      {
+        "id": 14,
+        "text": "Ice fish glitters.",
+        "scene": "fish under ice; cracks"
+      },
+      {
+        "id": 15,
+        "text": "Aurora lights sky.",
+        "scene": "aurora arc; stars; animals looking"
+      },
+      {
+        "id": 16,
+        "text": "Blizzard blows.",
+        "scene": "swirl lines of snow; fox crouching"
+      },
+      {
+        "id": 17,
+        "text": "Snow fort built.",
+        "scene": "kids building snow fort; penguin nearby"
+      },
+      {
+        "id": 18,
+        "text": "Igloo stands.",
+        "scene": "igloo with entrance; smoke line"
+      },
+      {
+        "id": 19,
+        "text": "Snowball fight.",
+        "scene": "two kids throwing snowballs; snow piles"
+      },
+      {
+        "id": 20,
+        "text": "Northern star shines.",
+        "scene": "big star above; polar bear silhouette"
+      }
+    ]
+  }
+}

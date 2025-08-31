@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Cat Cora in the Big City",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Cat Cora with scarf standing on city street; tall buildings as simple blocks; sun circle above",
+    "back_blurb": "Walk with Cat Cora through the busy big city full of friendly surprises!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Page 1 of Cat Cora’s city walk.",
+        "scene": "scene 1 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 2,
+        "text": "Page 2 of Cat Cora’s city walk.",
+        "scene": "scene 2 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 3,
+        "text": "Page 3 of Cat Cora’s city walk.",
+        "scene": "scene 3 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 4,
+        "text": "Page 4 of Cat Cora’s city walk.",
+        "scene": "scene 4 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 5,
+        "text": "Page 5 of Cat Cora’s city walk.",
+        "scene": "scene 5 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 6,
+        "text": "Page 6 of Cat Cora’s city walk.",
+        "scene": "scene 6 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 7,
+        "text": "Page 7 of Cat Cora’s city walk.",
+        "scene": "scene 7 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 8,
+        "text": "Page 8 of Cat Cora’s city walk.",
+        "scene": "scene 8 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 9,
+        "text": "Page 9 of Cat Cora’s city walk.",
+        "scene": "scene 9 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 10,
+        "text": "Page 10 of Cat Cora’s city walk.",
+        "scene": "scene 10 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 11,
+        "text": "Page 11 of Cat Cora’s city walk.",
+        "scene": "scene 11 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 12,
+        "text": "Page 12 of Cat Cora’s city walk.",
+        "scene": "scene 12 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 13,
+        "text": "Page 13 of Cat Cora’s city walk.",
+        "scene": "scene 13 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 14,
+        "text": "Page 14 of Cat Cora’s city walk.",
+        "scene": "scene 14 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 15,
+        "text": "Page 15 of Cat Cora’s city walk.",
+        "scene": "scene 15 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 16,
+        "text": "Page 16 of Cat Cora’s city walk.",
+        "scene": "scene 16 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 17,
+        "text": "Page 17 of Cat Cora’s city walk.",
+        "scene": "scene 17 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 18,
+        "text": "Page 18 of Cat Cora’s city walk.",
+        "scene": "scene 18 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 19,
+        "text": "Page 19 of Cat Cora’s city walk.",
+        "scene": "scene 19 with Cat Cora exploring big city places"
+      },
+      {
+        "id": 20,
+        "text": "Page 20 of Cat Cora’s city walk.",
+        "scene": "scene 20 with Cat Cora exploring big city places"
+      }
+    ]
+  }
+}

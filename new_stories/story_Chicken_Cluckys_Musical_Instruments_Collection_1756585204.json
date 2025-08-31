@@ -1,0 +1,125 @@
+{
+  "book": {
+    "title": "Chicken Clucky's Musical Instruments Collection",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "yellow chicken with red comb with tiny apron in Magic Garden; treasure map with X mark floating nearby; singing flowers in background; fruit trees at sides; simple composition, large shapes, kid-friendly",
+    "back_blurb": "Join Chicken Clucky on a wonderful collections adventure in Magic Garden!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Welcome to Chicken Clucky's musical instruments adventure!",
+        "scene": "yellow chicken with red comb with tiny apron standing at entrance; welcome sign with pictures; singing flowers framing scene"
+      },
+      {
+        "id": 2,
+        "text": "Look! Chicken Clucky found a Lion!",
+        "scene": "yellow chicken with red comb pointing at proud lion with mane; sitting on rock with tail swishing; tiny apron visible; simple background with fountain center"
+      },
+      {
+        "id": 3,
+        "text": "Look! Chicken Clucky found a Elephant!",
+        "scene": "yellow chicken with red comb pointing at grey elephant with trunk; spraying water playfully; tiny apron visible; simple background with singing flowers"
+      },
+      {
+        "id": 4,
+        "text": "Look! Chicken Clucky found a Giraffe!",
+        "scene": "yellow chicken with red comb pointing at tall giraffe with spots; eating leaves from tall tree; tiny apron visible; simple background with fruit trees"
+      },
+      {
+        "id": 5,
+        "text": "Look! Chicken Clucky found a Monkey!",
+        "scene": "yellow chicken with red comb pointing at playful monkey; swinging from branch with banana; tiny apron visible; simple background with fountain center"
+      },
+      {
+        "id": 6,
+        "text": "Look! Chicken Clucky found a Zebra!",
+        "scene": "yellow chicken with red comb pointing at striped zebra; running with flowing mane; tiny apron visible; simple background with singing flowers"
+      },
+      {
+        "id": 7,
+        "text": "Look! Chicken Clucky found a Penguin!",
+        "scene": "yellow chicken with red comb pointing at cute penguin; sliding on ice with flippers out; tiny apron visible; simple background with fruit trees"
+      },
+      {
+        "id": 8,
+        "text": "Look! Chicken Clucky found a Tiger!",
+        "scene": "yellow chicken with red comb pointing at orange tiger with stripes; stretching like a big cat; tiny apron visible; simple background with fountain center"
+      },
+      {
+        "id": 9,
+        "text": "Look! Chicken Clucky found a Hippo!",
+        "scene": "yellow chicken with red comb pointing at round hippo; yawning with big mouth open; tiny apron visible; simple background with singing flowers"
+      },
+      {
+        "id": 10,
+        "text": "Look! Chicken Clucky found a Kangaroo!",
+        "scene": "yellow chicken with red comb pointing at hopping kangaroo; with baby in pouch; tiny apron visible; simple background with fruit trees"
+      },
+      {
+        "id": 11,
+        "text": "Look! Chicken Clucky found a Panda!",
+        "scene": "yellow chicken with red comb pointing at black and white panda; eating bamboo stick; tiny apron visible; simple background with fountain center"
+      },
+      {
+        "id": 12,
+        "text": "Look! Chicken Clucky found a Flamingo!",
+        "scene": "yellow chicken with red comb pointing at pink flamingo; standing on one leg; tiny apron visible; simple background with singing flowers"
+      },
+      {
+        "id": 13,
+        "text": "Look! Chicken Clucky found a Seal!",
+        "scene": "yellow chicken with red comb pointing at spotted seal; balancing ball on nose; tiny apron visible; simple background with fruit trees"
+      },
+      {
+        "id": 14,
+        "text": "Look! Chicken Clucky found a Parrot!",
+        "scene": "yellow chicken with red comb pointing at colorful parrot; perched with wings spread; tiny apron visible; simple background with fountain center"
+      },
+      {
+        "id": 15,
+        "text": "Look! Chicken Clucky found a Snake!",
+        "scene": "yellow chicken with red comb pointing at friendly snake; coiled in sunny spot; tiny apron visible; simple background with singing flowers"
+      },
+      {
+        "id": 16,
+        "text": "Look! Chicken Clucky found a Turtle!",
+        "scene": "yellow chicken with red comb pointing at old turtle; walking slowly with patient smile; tiny apron visible; simple background with fruit trees"
+      },
+      {
+        "id": 17,
+        "text": "Look! Chicken Clucky found a Bear!",
+        "scene": "yellow chicken with red comb pointing at brown bear; fishing at stream; tiny apron visible; simple background with fountain center"
+      },
+      {
+        "id": 18,
+        "text": "Look! Chicken Clucky found a Wolf!",
+        "scene": "yellow chicken with red comb pointing at grey wolf; howling at moon; tiny apron visible; simple background with singing flowers"
+      },
+      {
+        "id": 19,
+        "text": "Look! Chicken Clucky found a Owl!",
+        "scene": "yellow chicken with red comb pointing at wise owl; perched on branch with big eyes; tiny apron visible; simple background with fruit trees"
+      },
+      {
+        "id": 20,
+        "text": "Chicken Clucky learned about so many wonderful things!",
+        "scene": "yellow chicken with red comb surrounded by small versions of all the items; happy expression; singing flowers in background"
+      }
+    ],
+    "metadata": {
+      "character_type": "farm_animals",
+      "story_type": "collections",
+      "theme": "musical instruments",
+      "setting_type": "nature",
+      "generated_by": "Book-Author-Agent",
+      "generation_time": "2025-08-30T22:20:04.490769"
+    }
+  }
+}

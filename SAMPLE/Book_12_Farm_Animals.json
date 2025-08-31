@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Farm Animals",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Cow, pig, chicken, goat on green field; barn silhouette in back; sun circle",
+    "back_blurb": "Meet the cheerful animals who live on the farm!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Cow Clara munches grass.",
+        "scene": "cow with big spots; fence behind"
+      },
+      {
+        "id": 2,
+        "text": "Pig Pino plays in mud.",
+        "scene": "pig rolling; puddle outlines"
+      },
+      {
+        "id": 3,
+        "text": "Chicken Pia clucks.",
+        "scene": "hen on nest; eggs visible"
+      },
+      {
+        "id": 4,
+        "text": "Horse Hani trots.",
+        "scene": "horse with mane flowing; barn"
+      },
+      {
+        "id": 5,
+        "text": "Duck Doro swims.",
+        "scene": "duck on pond; reeds"
+      },
+      {
+        "id": 6,
+        "text": "Goat Gani climbs.",
+        "scene": "goat on bale; barn wall"
+      },
+      {
+        "id": 7,
+        "text": "Dog Dimi guards.",
+        "scene": "dog wagging tail; gate"
+      },
+      {
+        "id": 8,
+        "text": "Cat Cora naps.",
+        "scene": "cat on haystack; loft window"
+      },
+      {
+        "id": 9,
+        "text": "Sheep Shira rests.",
+        "scene": "sheep with wool; field"
+      },
+      {
+        "id": 10,
+        "text": "Rooster Ylli crows.",
+        "scene": "rooster on fence; sun circle"
+      },
+      {
+        "id": 11,
+        "text": "Farmer Fredi waves.",
+        "scene": "farmer with hat; rake"
+      },
+      {
+        "id": 12,
+        "text": "Tractor Tom works.",
+        "scene": "tractor plowing; smoke puff"
+      },
+      {
+        "id": 13,
+        "text": "Rabbit Pia hops.",
+        "scene": "rabbit on ground; carrot patch"
+      },
+      {
+        "id": 14,
+        "text": "Goose Gabby honks.",
+        "scene": "goose with wings spread; pond"
+      },
+      {
+        "id": 15,
+        "text": "Turkey Toni struts.",
+        "scene": "turkey feathers spread; barnyard"
+      },
+      {
+        "id": 16,
+        "text": "Donkey Don brays.",
+        "scene": "donkey near stable; fence"
+      },
+      {
+        "id": 17,
+        "text": "Mouse Ina peeks.",
+        "scene": "mouse by sack; cheese shape"
+      },
+      {
+        "id": 18,
+        "text": "Owl Huti watches.",
+        "scene": "owl on post; moon shape"
+      },
+      {
+        "id": 19,
+        "text": "Cat kittens play.",
+        "scene": "two kittens chasing yarn"
+      },
+      {
+        "id": 20,
+        "text": "Evening on farm.",
+        "scene": "barn silhouette; moon arc"
+      }
+    ]
+  }
+}

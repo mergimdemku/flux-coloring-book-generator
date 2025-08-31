@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Fox Rrumbullak’s Forest Games",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Fox Rrumbullak holding a ball in a forest clearing; trees with large leaves; sun circle above",
+    "back_blurb": "Join Fox Rrumbullak for playful games in the forest with friends!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Page 1 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 1 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 2,
+        "text": "Page 2 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 2 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 3,
+        "text": "Page 3 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 3 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 4,
+        "text": "Page 4 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 4 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 5,
+        "text": "Page 5 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 5 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 6,
+        "text": "Page 6 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 6 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 7,
+        "text": "Page 7 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 7 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 8,
+        "text": "Page 8 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 8 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 9,
+        "text": "Page 9 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 9 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 10,
+        "text": "Page 10 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 10 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 11,
+        "text": "Page 11 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 11 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 12,
+        "text": "Page 12 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 12 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 13,
+        "text": "Page 13 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 13 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 14,
+        "text": "Page 14 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 14 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 15,
+        "text": "Page 15 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 15 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 16,
+        "text": "Page 16 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 16 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 17,
+        "text": "Page 17 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 17 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 18,
+        "text": "Page 18 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 18 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 19,
+        "text": "Page 19 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 19 with Fox Rrumbullak and forest friends playing games"
+      },
+      {
+        "id": 20,
+        "text": "Page 20 of Fox Rrumbullak’s playful forest games.",
+        "scene": "scene 20 with Fox Rrumbullak and forest friends playing games"
+      }
+    ]
+  }
+}

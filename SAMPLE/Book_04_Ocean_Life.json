@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Ocean Life",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Dolphin Dany jumping over simple waves; turtle Tina and whale Wally below; coral shapes; big clear outlines",
+    "back_blurb": "Dive into a friendly sea filled with playful ocean creatures!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Dolphin Dany leaps.",
+        "scene": "dolphin over wave arc; splashes"
+      },
+      {
+        "id": 2,
+        "text": "Turtle Tina glides.",
+        "scene": "sea turtle with big shell; seaweed"
+      },
+      {
+        "id": 3,
+        "text": "Whale Wally sings.",
+        "scene": "whale spouting; bubbles"
+      },
+      {
+        "id": 4,
+        "text": "Octopus Oli waves arms.",
+        "scene": "octopus with eight curved arms; sand"
+      },
+      {
+        "id": 5,
+        "text": "Crab Carlo clicks.",
+        "scene": "crab with raised claws; shells"
+      },
+      {
+        "id": 6,
+        "text": "Starfish Stella rests.",
+        "scene": "starfish on rock; simple coral"
+      },
+      {
+        "id": 7,
+        "text": "Seahorse Sia drifts.",
+        "scene": "seahorse near kelp; bubble dots"
+      },
+      {
+        "id": 8,
+        "text": "Jellyfish Joni floats.",
+        "scene": "jellyfish with long tentacles; water lines"
+      },
+      {
+        "id": 9,
+        "text": "Shark Shila smiles.",
+        "scene": "friendly shark; fish silhouettes"
+      },
+      {
+        "id": 10,
+        "text": "Swordfish Seno darts.",
+        "scene": "swordfish with long bill; current lines"
+      },
+      {
+        "id": 11,
+        "text": "Penguin Pia dives.",
+        "scene": "penguin underwater; bubbles; ice shard"
+      },
+      {
+        "id": 12,
+        "text": "Seal Seno balances.",
+        "scene": "seal with ball; simple waves"
+      },
+      {
+        "id": 13,
+        "text": "Coral garden grows.",
+        "scene": "varied coral shapes; fish"
+      },
+      {
+        "id": 14,
+        "text": "Sea turtle family.",
+        "scene": "two turtles swimming; seaweed"
+      },
+      {
+        "id": 15,
+        "text": "Diver Dana waves.",
+        "scene": "diver with mask; fish around"
+      },
+      {
+        "id": 16,
+        "text": "Submarine passes.",
+        "scene": "cartoon submarine; portholes; bubbles"
+      },
+      {
+        "id": 17,
+        "text": "Treasure chest found.",
+        "scene": "chest half-open; coins outlines"
+      },
+      {
+        "id": 18,
+        "text": "School of fish turns.",
+        "scene": "many fish in a swirl; current"
+      },
+      {
+        "id": 19,
+        "text": "Sunlight through water.",
+        "scene": "rays from surface; silhouettes"
+      },
+      {
+        "id": 20,
+        "text": "Moon over calm sea.",
+        "scene": "moon above waves; horizon line"
+      }
+    ]
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Donky Don Travels",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Donkey Don with small saddle bags on a country road; milestone post; hills and a big sun; large simple forms",
+    "back_blurb": "Walk along with Donky Don on a friendly road trip through villages and fields!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Don waves goodbye to the stable.",
+        "scene": "donkey leaving barn door; hay bale; sun circle"
+      },
+      {
+        "id": 2,
+        "text": "A bridge over a creek.",
+        "scene": "donkey crossing small arch bridge; water lines"
+      },
+      {
+        "id": 3,
+        "text": "Cow Clara says hello.",
+        "scene": "cow by fence; donkey smiling; flowers"
+      },
+      {
+        "id": 4,
+        "text": "Windmill turns slowly.",
+        "scene": "donkey on road; big windmill blades"
+      },
+      {
+        "id": 5,
+        "text": "Market in the square.",
+        "scene": "stalls with big fruit outlines; donkey carrying basket"
+      },
+      {
+        "id": 6,
+        "text": "Goat Gani climbs a rock.",
+        "scene": "goat on rock; donkey watching; mountain line"
+      },
+      {
+        "id": 7,
+        "text": "Train passes by.",
+        "scene": "train silhouette; donkey at crossing; signal sign"
+      },
+      {
+        "id": 8,
+        "text": "Picnic by a tree.",
+        "scene": "donkey resting under tree; blanket and apple outline"
+      },
+      {
+        "id": 9,
+        "text": "Sheep Shira crosses path.",
+        "scene": "sheep flock; donkey waiting kindly"
+      },
+      {
+        "id": 10,
+        "text": "Old tower on the hill.",
+        "scene": "donkey looking up at tower; steps path"
+      },
+      {
+        "id": 11,
+        "text": "River ferry ride.",
+        "scene": "donkey on simple ferry; rope line; waves"
+      },
+      {
+        "id": 12,
+        "text": "Friendly fox guide.",
+        "scene": "fox Rrumbullak pointing sign; donkey nodding"
+      },
+      {
+        "id": 13,
+        "text": "Forest tunnel of trees.",
+        "scene": "arched trees over road; donkey walking"
+      },
+      {
+        "id": 14,
+        "text": "Camp under stars.",
+        "scene": "small tent; donkey near fire icon; stars"
+      },
+      {
+        "id": 15,
+        "text": "Morning rooster call.",
+        "scene": "rooster on fence; donkey yawning"
+      },
+      {
+        "id": 16,
+        "text": "Stone bridge to village.",
+        "scene": "donkey crossing into village; houses simple"
+      },
+      {
+        "id": 17,
+        "text": "Parade greeting.",
+        "scene": "villagers waving; flags; donkey bowing"
+      },
+      {
+        "id": 18,
+        "text": "Gift of a bell.",
+        "scene": "child giving small bell collar; donkey happy"
+      },
+      {
+        "id": 19,
+        "text": "New friends made.",
+        "scene": "group silhouette photo; donkey center"
+      },
+      {
+        "id": 20,
+        "text": "Home with stories.",
+        "scene": "donkey back at barn; sunset arc"
+      }
+    ]
+  }
+}

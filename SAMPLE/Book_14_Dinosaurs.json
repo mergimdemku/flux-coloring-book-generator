@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Dinosaurs",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "T-Rex, Triceratops, Stegosaurus, and Brontosaurus together in simple prehistoric landscape; volcano in back",
+    "back_blurb": "Step back in time to meet the mighty dinosaurs!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "T-Rex Tito roars.",
+        "scene": "T-Rex with open mouth; volcano back"
+      },
+      {
+        "id": 2,
+        "text": "Triceratops Tina eats leaves.",
+        "scene": "triceratops at tree; big frill"
+      },
+      {
+        "id": 3,
+        "text": "Stegosaurus Soni stomps.",
+        "scene": "stegosaurus plates; grass"
+      },
+      {
+        "id": 4,
+        "text": "Brontosaurus Bina drinks.",
+        "scene": "brontosaurus at river; long neck"
+      },
+      {
+        "id": 5,
+        "text": "Raptor Rani runs fast.",
+        "scene": "raptor mid-stride; rocks"
+      },
+      {
+        "id": 6,
+        "text": "Ankylosaurus Ari swings.",
+        "scene": "ankylosaurus with club tail"
+      },
+      {
+        "id": 7,
+        "text": "Pachy Pali bumps head.",
+        "scene": "pachycephalosaurus with dome head"
+      },
+      {
+        "id": 8,
+        "text": "Baby dino hatches.",
+        "scene": "egg cracked; baby dinosaur"
+      },
+      {
+        "id": 9,
+        "text": "Flying pterosaur Pio.",
+        "scene": "pterosaur in sky; clouds"
+      },
+      {
+        "id": 10,
+        "text": "Spinosaurus Sira fishes.",
+        "scene": "spinosaurus with sail; fish outline"
+      },
+      {
+        "id": 11,
+        "text": "Velociraptor duo.",
+        "scene": "two velociraptors running"
+      },
+      {
+        "id": 12,
+        "text": "Ceratops group.",
+        "scene": "two triceratops grazing"
+      },
+      {
+        "id": 13,
+        "text": "Stego family.",
+        "scene": "adult and baby stegosaurus"
+      },
+      {
+        "id": 14,
+        "text": "Bronto herd.",
+        "scene": "several brontosaurus walking"
+      },
+      {
+        "id": 15,
+        "text": "Allosaurus roars.",
+        "scene": "allosaurus with teeth bared"
+      },
+      {
+        "id": 16,
+        "text": "Dino footprints.",
+        "scene": "big footprints in mud"
+      },
+      {
+        "id": 17,
+        "text": "Volcano smokes.",
+        "scene": "smoking volcano with dinosaurs watching"
+      },
+      {
+        "id": 18,
+        "text": "Meteor lights sky.",
+        "scene": "meteor arc; dinos looking"
+      },
+      {
+        "id": 19,
+        "text": "Jungle plants.",
+        "scene": "big leaves and ferns; dinosaurs nearby"
+      },
+      {
+        "id": 20,
+        "text": "Sunrise of new day.",
+        "scene": "dinosaurs under sunrise arc"
+      }
+    ]
+  }
+}

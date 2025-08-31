@@ -1,0 +1,125 @@
+{
+  "book": {
+    "title": "Firefighter Max's Sunny Beach Adventure",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "brave firefighter with red helmet in Sunny Beach; glowing golden acorn floating nearby; palm trees in background; seashells at sides; simple composition, large shapes, kid-friendly",
+    "back_blurb": "Join Firefighter Max on a wonderful everyday adventure in Sunny Beach!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Firefighter Max! A new day brings adventure!",
+        "scene": "brave firefighter with red helmet waking up; sunrise circle behind; palm trees visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Sunny Beach opens before you.",
+        "scene": "arched entrance with palm trees; brave firefighter approaching with red helmet; seashells framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice tells of the magical Golden Acorn.",
+        "scene": "owl on branch pointing wing; glowing golden acorn shown in thought bubble; brave firefighter listening with red helmet"
+      },
+      {
+        "id": 4,
+        "text": "Firefighter Max meets Butterfly Belle!",
+        "scene": "brave firefighter with red helmet meeting Butterfly Belle with rainbow wings; friendly handshake; seashells in background; smiles all around"
+      },
+      {
+        "id": 5,
+        "text": "Firefighter Max meets Snail Speedy!",
+        "scene": "brave firefighter with red helmet meeting Snail Speedy with spiral shell; friendly handshake; sand castles in background; smiles all around"
+      },
+      {
+        "id": 6,
+        "text": "Firefighter Max meets Mouse Tiny!",
+        "scene": "brave firefighter with red helmet meeting Mouse Tiny with big ears; friendly handshake; palm trees in background; smiles all around"
+      },
+      {
+        "id": 7,
+        "text": "Firefighter Max meets Bird Chirpy!",
+        "scene": "brave firefighter with red helmet meeting Bird Chirpy with musical notes; friendly handshake; seashells in background; smiles all around"
+      },
+      {
+        "id": 8,
+        "text": "Firefighter Max meets Frog Hoppy!",
+        "scene": "brave firefighter with red helmet meeting Frog Hoppy on lily pad; friendly handshake; sand castles in background; smiles all around"
+      },
+      {
+        "id": 9,
+        "text": "Firefighter Max meets Bee Buzzy!",
+        "scene": "brave firefighter with red helmet meeting Bee Buzzy with stripes; friendly handshake; palm trees in background; smiles all around"
+      },
+      {
+        "id": 10,
+        "text": "Firefighter Max meets Squirrel Nutkin!",
+        "scene": "brave firefighter with red helmet meeting Squirrel Nutkin with acorn; friendly handshake; seashells in background; smiles all around"
+      },
+      {
+        "id": 11,
+        "text": "Firefighter Max meets Rabbit Quick!",
+        "scene": "brave firefighter with red helmet meeting Rabbit Quick with cotton tail; friendly handshake; sand castles in background; smiles all around"
+      },
+      {
+        "id": 12,
+        "text": "Firefighter Max meets Fox Kit!",
+        "scene": "brave firefighter with red helmet meeting Fox Kit with fluffy tail; friendly handshake; palm trees in background; smiles all around"
+      },
+      {
+        "id": 13,
+        "text": "A gentle stream blocks the way forward.",
+        "scene": "brave firefighter at stream edge with red helmet; stepping stones visible; first friend helping point the way"
+      },
+      {
+        "id": 14,
+        "text": "Three paths appear - which one leads to the treasure?",
+        "scene": "three winding paths splitting; brave firefighter thinking with red helmet; signpost with simple symbols; friends gathered around"
+      },
+      {
+        "id": 15,
+        "text": "A riddle door needs solving with friendship!",
+        "scene": "door with heart symbols; brave firefighter and friends working together; red helmet glowing; key shapes floating"
+      },
+      {
+        "id": 16,
+        "text": "The magical Golden Acorn appears in a secret grove!",
+        "scene": "glowing golden acorn glowing on flower pedestal; brave firefighter reaching up with red helmet; sparkles everywhere; friends cheering"
+      },
+      {
+        "id": 17,
+        "text": "Everyone celebrates the wonderful discovery!",
+        "scene": "brave firefighter holding glowing golden acorn with red helmet; all friends dancing in circle; confetti shapes; happy expressions"
+      },
+      {
+        "id": 18,
+        "text": "The Golden Acorn grants a special wish for everyone!",
+        "scene": "glowing golden acorn glowing bright; wish bubbles showing happy scenes; brave firefighter with red helmet surrounded by friends"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with the whole world!",
+        "scene": "brave firefighter showing glowing golden acorn to group; rainbow connecting everyone; hearts floating; red helmet sparkling"
+      },
+      {
+        "id": 20,
+        "text": "Firefighter Max returns home with heart full of friendship!",
+        "scene": "brave firefighter with red helmet waving goodbye; friend silhouettes waving back; sunset arc; cozy home visible in distance"
+      }
+    ],
+    "metadata": {
+      "character_type": "professions",
+      "story_type": "everyday",
+      "theme": "helping at home",
+      "setting_type": "nature",
+      "generated_by": "Book-Author-Agent",
+      "generation_time": "2025-08-30T22:20:04.498892"
+    }
+  }
+}

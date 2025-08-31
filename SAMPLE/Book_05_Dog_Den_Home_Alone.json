@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Dog Den Home Alone",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Dog Den with bandana sitting in a cozy living room; big couch outline; toy bone and ball; window with sun",
+    "back_blurb": "Spend a silly, safe day with Dog Den while home alone!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Den watches the door.",
+        "scene": "dog sitting by door; welcome mat; leash hook"
+      },
+      {
+        "id": 2,
+        "text": "Snack time plan.",
+        "scene": "dog looking at bowl; kibble icons; water dish"
+      },
+      {
+        "id": 3,
+        "text": "Couch jump (small!).",
+        "scene": "dog hopping onto couch; pillow shapes"
+      },
+      {
+        "id": 4,
+        "text": "Toy bone rescue.",
+        "scene": "dog tugging toy bone from under sofa; paw out"
+      },
+      {
+        "id": 5,
+        "text": "Window patrol.",
+        "scene": "dog on windowsill; birds outside; curtain"
+      },
+      {
+        "id": 6,
+        "text": "Mail arrives.",
+        "scene": "mail slot; envelope outline; dog curious"
+      },
+      {
+        "id": 7,
+        "text": "Ball roll chase.",
+        "scene": "ball rolling; dog sliding; rug"
+      },
+      {
+        "id": 8,
+        "text": "Hide in blanket cave.",
+        "scene": "blanket tent; dog nose poking out"
+      },
+      {
+        "id": 9,
+        "text": "Kitchen sniff tour.",
+        "scene": "dog sniffing counter; fruit outlines"
+      },
+      {
+        "id": 10,
+        "text": "Water slurp break.",
+        "scene": "dog drinking; bowl; drip icons"
+      },
+      {
+        "id": 11,
+        "text": "Nap in sun spot.",
+        "scene": "dog curled in sunlight patch; window light"
+      },
+      {
+        "id": 12,
+        "text": "Dream of parks.",
+        "scene": "thought bubble with trees and ball; dog sleeping"
+      },
+      {
+        "id": 13,
+        "text": "Thunder rumbles.",
+        "scene": "cloud and lightning icon; dog ears up"
+      },
+      {
+        "id": 14,
+        "text": "Favorite blanket hug.",
+        "scene": "dog clutching blanket; cozy corner"
+      },
+      {
+        "id": 15,
+        "text": "Quiet puzzle toy.",
+        "scene": "dog pawing treat puzzle; small shapes"
+      },
+      {
+        "id": 16,
+        "text": "Clean-up helper.",
+        "scene": "dog carrying sock to basket; laundry icons"
+      },
+      {
+        "id": 17,
+        "text": "Doorbell ding.",
+        "scene": "door with bell icon; dog tilting head"
+      },
+      {
+        "id": 18,
+        "text": "Happy reunion.",
+        "scene": "family silhouettes entering; dog jumping gently"
+      },
+      {
+        "id": 19,
+        "text": "Evening cuddle.",
+        "scene": "dog on couch with child; heart icon"
+      },
+      {
+        "id": 20,
+        "text": "Good night, Den.",
+        "scene": "dog in bed; moon at window; stars"
+      }
+    ]
+  }
+}

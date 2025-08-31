@@ -1,0 +1,117 @@
+{
+  "book": {
+    "title": "Wild Animals",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Lion, elephant, giraffe, and zebra standing together in savanna; sun circle; big tree silhouette; large shapes",
+    "back_blurb": "Roam with the wild animals of the savanna and beyond!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Lion roars.",
+        "scene": "lion standing on rock; mane big shapes"
+      },
+      {
+        "id": 2,
+        "text": "Elephant splashes.",
+        "scene": "elephant spraying water; tree silhouette"
+      },
+      {
+        "id": 3,
+        "text": "Giraffe eats leaves.",
+        "scene": "giraffe neck reaching branch; leaf outlines"
+      },
+      {
+        "id": 4,
+        "text": "Zebra runs fast.",
+        "scene": "zebra galloping; grass shapes"
+      },
+      {
+        "id": 5,
+        "text": "Rhino stomps gently.",
+        "scene": "rhino on path; tree outline"
+      },
+      {
+        "id": 6,
+        "text": "Hippo yawns.",
+        "scene": "hippo in water; big mouth outline"
+      },
+      {
+        "id": 7,
+        "text": "Cheetah speeds.",
+        "scene": "cheetah running fast; dust lines"
+      },
+      {
+        "id": 8,
+        "text": "Monkey swings.",
+        "scene": "monkey on vine; jungle leaves"
+      },
+      {
+        "id": 9,
+        "text": "Parrot squawks.",
+        "scene": "parrot on branch; two flowers"
+      },
+      {
+        "id": 10,
+        "text": "Crocodile smiles.",
+        "scene": "crocodile on river bank; reeds"
+      },
+      {
+        "id": 11,
+        "text": "Ostrich runs.",
+        "scene": "ostrich with big feathers; ground lines"
+      },
+      {
+        "id": 12,
+        "text": "Buffalo grazes.",
+        "scene": "buffalo with horns; grass patch"
+      },
+      {
+        "id": 13,
+        "text": "Hyena laughs.",
+        "scene": "hyena standing; moon circle"
+      },
+      {
+        "id": 14,
+        "text": "Wildebeest herd.",
+        "scene": "two wildebeest silhouettes; savanna"
+      },
+      {
+        "id": 15,
+        "text": "Meerkat stands.",
+        "scene": "meerkat on rock; horizon line"
+      },
+      {
+        "id": 16,
+        "text": "Antelope leaps.",
+        "scene": "antelope jumping; grass lines"
+      },
+      {
+        "id": 17,
+        "text": "Vulture circles.",
+        "scene": "vulture flying above; sun circle"
+      },
+      {
+        "id": 18,
+        "text": "Baboon walks.",
+        "scene": "baboon with baby; path line"
+      },
+      {
+        "id": 19,
+        "text": "Camel rests.",
+        "scene": "camel on sand; palm silhouette"
+      },
+      {
+        "id": 20,
+        "text": "Savanna sunset.",
+        "scene": "sunset arc; animal silhouettes"
+      }
+    ]
+  }
+}
