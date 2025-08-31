@@ -41,6 +41,13 @@ class AutomatedMonitorPipeline:
         self.flux_generator = CleanLineFluxGenerator()
         self.pdf_generator = EnhancedPDFGenerator(str(self.output_dir))
         
+        # Load FLUX model
+        logger.info("Loading FLUX model...")
+        if not self.flux_generator.load_model():
+            logger.error("Failed to load FLUX model - exiting")
+            raise RuntimeError("FLUX model failed to load")
+        logger.info("✅ FLUX model loaded successfully")
+        
         self.check_interval = 300  # 5 minutes in seconds
         self.running = True
         
@@ -149,34 +156,37 @@ class AutomatedMonitorPipeline:
                 negative_prompt = prompt_data.get('negative', '')
                 
                 if prompt_data['type'] == 'cover':
-                    # Generate colored cover
-                    image = self.flux_generator.pipe(
+                    # Generate colored cover using the proper method
+                    image = self.flux_generator.base_generator.generate(
                         prompt=full_prompt,
                         negative_prompt=negative_prompt,
                         width=592,
                         height=840,
                         num_inference_steps=8,  # More steps for cover
                         guidance_scale=0.0
-                    ).images[0]
+                    )
                     
                     generated_images['cover'] = image
                     
                 else:
-                    # Generate coloring page
-                    image = self.flux_generator.pipe(
+                    # Generate coloring page using the proper method
+                    image = self.flux_generator.base_generator.generate(
                         prompt=full_prompt,
                         negative_prompt=negative_prompt,
                         width=592,
                         height=840,
                         num_inference_steps=4,
                         guidance_scale=0.0
-                    ).images[0]
+                    )
                     
                     # Apply line processing for coloring pages
-                    processed = self.flux_generator.apply_ultra_clean_line_processing(
-                        image, 
-                        story_data.get('style', 'Simple')
-                    )
+                    if image:
+                        processed = self.flux_generator.apply_ultra_clean_line_processing(
+                            image, 
+                            story_data.get('style', 'Simple')
+                        )
+                    else:
+                        processed = None
                     
                     generated_images['coloring_pages'].append({
                         'page_number': prompt_data['page_number'],
