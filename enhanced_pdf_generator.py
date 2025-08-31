@@ -259,7 +259,7 @@ class EnhancedPDFGenerator:
         safe_title = "".join(c for c in story_data.get('title', 'ColoringBook') if c.isalnum() or c in (' ', '-', '_')).rstrip()
         safe_title = safe_title.replace(' ', '_')[:30]
         
-        filename = f"{safe_title}_{story_data['art_style']['name']}_{timestamp}.pdf"
+        filename = f"{safe_title}_{story_data.get('style', 'unknown')}_{timestamp}.pdf"
         filepath = self.output_dir / filename
         
         logger.info(f"Generating PDF: {filename}")

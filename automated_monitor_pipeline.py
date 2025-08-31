@@ -104,6 +104,7 @@ class AutomatedMonitorPipeline:
             'title': book['title'],
             'age_range': book['age_range'],
             'style': book['style'],
+            'art_style': {'name': book['style']},  # Add for compatibility
             'negative': book['negative'],
             'cover_prompt': book['cover_prompt'],
             'character_description': character_desc,
@@ -218,11 +219,11 @@ class AutomatedMonitorPipeline:
             # Create PDF using enhanced generator
             coloring_images = [page['image'] for page in images['coloring_pages'] if page['image']]
             
-            self.pdf_generator.generate_complete_book_pdf(
+            pdf_path = self.pdf_generator.generate_complete_book_pdf(
                 story_data=story_data,
                 cover_image=images['cover'],
                 coloring_images=coloring_images,
-                prompts_data=[]  # Add empty prompts_data parameter
+                prompts_data=prompts  # Pass actual prompts instead of empty list
             )
             
             self.stats['pdfs_created'] += 1
