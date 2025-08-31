@@ -117,7 +117,10 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
             'professional illustration', 'high quality artwork', 'pristine unbroken lines',
             'sharp clean edges', 'perfect continuous outlines', 'crisp line work',
             'anatomically correct', 'proper proportions', 'correct anatomy',
-            'perfect body structure', 'normal human anatomy', 'realistic proportions'
+            'perfect body structure', 'normal human anatomy', 'realistic proportions',
+            'correct number of limbs', 'two arms two legs', 'five fingers per hand',
+            'symmetrical body', 'proper animal anatomy', 'realistic animal form',
+            'clear gender presentation', 'consistent character design', 'accurate species traits'
         ]
         enhanced_prompt += ", ".join(ultra_clean_boosters) + ", "
         
@@ -158,21 +161,40 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         
         style_info = self.clean_line_enhancers.get(style_name, self.clean_line_enhancers['Cartoon'])
         
-        # ANATOMICAL ISSUES - Most Critical - EXPANDED
+        # ANATOMICAL ISSUES - CRITICAL FOR REALISTIC FORMS
         anatomical_issues = [
-            'two heads', 'multiple heads', 'extra heads', 'double head', 'second head',
-            'three arms', 'four arms', 'extra arms', 'multiple arms', 'wrong number of arms', 'third arm',
-            'three hands', 'four hands', 'extra hands', 'multiple hands', 'missing hands', 
+            # Head/Face issues
+            'two heads', 'multiple heads', 'extra heads', 'double head', 'second head', 'no head',
+            'distorted face', 'asymmetric face', 'wrong face proportions', 'melting face',
+            
+            # Arms/Hands - Very specific
+            'three arms', 'four arms', 'five arms', 'extra arms', 'multiple arms', 'wrong number of arms', 
+            'third arm', 'missing arms', 'one arm', 'asymmetric arms', 'different length arms',
+            'three hands', 'four hands', 'extra hands', 'multiple hands', 'missing hands', 'no hands',
             'six fingers', 'seven fingers', 'extra fingers', 'too many fingers', 'wrong number of fingers',
-            'three legs', 'four legs', 'five legs', 'six legs', 'extra legs', 'multiple legs', 'third leg',
+            'missing fingers', 'fused fingers', 'webbed fingers', 'claw hands', 'paws instead of hands',
+            
+            # Legs/Feet - Must be correct
+            'three legs', 'four legs', 'five legs', 'six legs', 'extra legs', 'multiple legs', 
+            'third leg', 'missing legs', 'one leg', 'asymmetric legs', 'different length legs',
             'three feet', 'four feet', 'five feet', 'six feet', 'extra feet', 'multiple feet',
-            'extra limbs', 'missing limbs', 'malformed limbs', 'wrong anatomy', 'deformed',
-            'extra eyes', 'missing eyes', 'wrong eye placement', 'asymmetric eyes', 'third eye',
-            'extra ears', 'missing ears', 'malformed ears', 'wrong ear placement',
-            'multiple tails', 'extra tails', 'wrong tail placement', 'extra tail',
-            'deformed body', 'twisted anatomy', 'broken proportions', 'incorrect anatomy',
+            'missing feet', 'no feet', 'wrong number of toes', 'paws instead of feet', 'hooves',
+            
+            # Animal-specific (for dogs, cats, etc.)
+            'five legs on animal', 'three legs on animal', 'two tails', 'multiple tails', 'extra tail',
+            'no tail when should have tail', 'wrong number of ears', 'human face on animal',
+            'wrong animal proportions', 'hybrid creature', 'chimera', 'mixed species',
+            
+            # Body issues
             'extra body parts', 'duplicate body parts', 'floating limbs', 'disconnected body parts',
-            'mutated', 'mutation', 'disfigured', 'malformed', 'body horror', 'anatomical errors'
+            'deformed body', 'twisted anatomy', 'broken proportions', 'incorrect anatomy',
+            'mutated', 'mutation', 'disfigured', 'malformed', 'body horror', 'anatomical errors',
+            'wrong torso', 'multiple torsos', 'elongated body', 'compressed body',
+            
+            # Gender mixing - IMPORTANT
+            'ambiguous gender', 'mixed gender features', 'androgynous when should be clear',
+            'boy with girl features', 'girl with boy features', 'unclear gender',
+            'wrong gender characteristics', 'gender confusion'
         ]
         
         # LINE QUALITY ISSUES
@@ -201,13 +223,16 @@ class CleanLineFluxGenerator(EnhancedFluxGenerator):
         # Combine all negative elements
         negative_elements = anatomical_issues + line_quality_issues + quality_issues + inappropriate_content
         
-        # NO TEXT AT ALL - CRITICAL FOR BOTH COVERS AND COLORING PAGES
+        # NO TEXT AT ALL - ABSOLUTELY CRITICAL
         text_issues = [
             'text', 'words', 'letters', 'numbers', 'writing', 'fonts', 'typography',
             'page numbers', 'title text', 'captions', 'speech bubbles', 'dialogue',
             'labels', 'signs', 'banners', 'messages', 'quotes', 'sayings', 'logos',
             'watermarks', 'signatures', 'credits', 'copyright', 'branding',
-            'alphabet', 'characters', 'symbols', 'inscriptions', 'annotations'
+            'alphabet', 'characters', 'symbols', 'inscriptions', 'annotations',
+            'ABC', '123', 'numerals', 'written content', 'readable text', 'any text',
+            'shop signs', 'street signs', 'book titles', 'name tags', 'written words',
+            'letter shapes', 'number shapes', 'text on clothing', 'text on objects'
         ]
         negative_elements.extend(text_issues)
         

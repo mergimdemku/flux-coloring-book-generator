@@ -157,37 +157,42 @@ class AutomatedMonitorPipeline:
                 negative_prompt = prompt_data.get('negative', '')
                 
                 if prompt_data['type'] == 'cover':
-                    # Generate colored cover using the proper method
-                    image = self.flux_generator.base_generator.generate(
-                        prompt=full_prompt,
-                        negative_prompt=negative_prompt,
+                    # Use the proper enhanced cover generation method
+                    cover_prompt_data = {
+                        'prompt': full_prompt,
+                        'negative': negative_prompt,
+                        'type': 'cover'
+                    }
+                    
+                    # Generate high-quality cover with all enhancements
+                    image = self.flux_generator.generate_perfect_cover(
+                        prompt_data=cover_prompt_data,
+                        story_data=story_data,
                         width=592,
-                        height=832,  # 832 is divisible by 16
-                        num_inference_steps=8,  # More steps for cover
-                        guidance_scale=0.0
+                        height=832
                     )
                     
                     generated_images['cover'] = image
                     
                 else:
-                    # Generate coloring page using the proper method
-                    image = self.flux_generator.base_generator.generate(
-                        prompt=full_prompt,
-                        negative_prompt=negative_prompt,
+                    # Use the proper enhanced coloring page generation method
+                    page_prompt_data = {
+                        'prompt': full_prompt,
+                        'negative': negative_prompt,
+                        'type': 'coloring_page',
+                        'page_number': prompt_data.get('page_number', i)
+                    }
+                    
+                    # Generate ultra-clean coloring page with all processing
+                    processed = self.flux_generator.generate_ultra_clean_coloring_page(
+                        prompt_data=page_prompt_data,
+                        story_data=story_data,
                         width=592,
-                        height=832,  # 832 is divisible by 16
-                        num_inference_steps=4,
-                        guidance_scale=0.0
+                        height=832
                     )
                     
-                    # Apply line processing for coloring pages
-                    if image:
-                        processed = self.flux_generator.apply_ultra_clean_line_processing(
-                            image, 
-                            story_data.get('style', 'Simple')
-                        )
-                    else:
-                        processed = None
+                    if not processed:
+                        logger.warning(f"Failed to generate page {i+1}")
                     
                     generated_images['coloring_pages'].append({
                         'page_number': prompt_data['page_number'],

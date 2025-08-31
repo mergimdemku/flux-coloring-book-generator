@@ -1,0 +1,125 @@
+{
+  "book": {
+    "title": "Teacher Emma's Cozy Village Adventure",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "friendly teacher with glasses and books in Cozy Village; star with rainbow colors floating nearby; small houses in background; garden paths at sides; simple composition, large shapes, kid-friendly",
+    "back_blurb": "Join Teacher Emma on a wonderful fantasy adventure in Cozy Village!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Good morning, Teacher Emma! A new day brings adventure!",
+        "scene": "friendly teacher with glasses and books waking up; sunrise circle behind; small houses visible through window"
+      },
+      {
+        "id": 2,
+        "text": "The path to Cozy Village opens before you.",
+        "scene": "arched entrance with small houses; friendly teacher approaching with glasses and books; garden paths framing sides"
+      },
+      {
+        "id": 3,
+        "text": "A wise voice tells of the magical Rainbow Star.",
+        "scene": "owl on branch pointing wing; star with rainbow colors shown in thought bubble; friendly teacher listening with glasses and books"
+      },
+      {
+        "id": 4,
+        "text": "Teacher Emma meets Butterfly Belle!",
+        "scene": "friendly teacher with glasses and books meeting Butterfly Belle with rainbow wings; friendly handshake; garden paths in background; smiles all around"
+      },
+      {
+        "id": 5,
+        "text": "Teacher Emma meets Snail Speedy!",
+        "scene": "friendly teacher with glasses and books meeting Snail Speedy with spiral shell; friendly handshake; market squares in background; smiles all around"
+      },
+      {
+        "id": 6,
+        "text": "Teacher Emma meets Mouse Tiny!",
+        "scene": "friendly teacher with glasses and books meeting Mouse Tiny with big ears; friendly handshake; small houses in background; smiles all around"
+      },
+      {
+        "id": 7,
+        "text": "Teacher Emma meets Bird Chirpy!",
+        "scene": "friendly teacher with glasses and books meeting Bird Chirpy with musical notes; friendly handshake; garden paths in background; smiles all around"
+      },
+      {
+        "id": 8,
+        "text": "Teacher Emma meets Frog Hoppy!",
+        "scene": "friendly teacher with glasses and books meeting Frog Hoppy on lily pad; friendly handshake; market squares in background; smiles all around"
+      },
+      {
+        "id": 9,
+        "text": "Teacher Emma meets Bee Buzzy!",
+        "scene": "friendly teacher with glasses and books meeting Bee Buzzy with stripes; friendly handshake; small houses in background; smiles all around"
+      },
+      {
+        "id": 10,
+        "text": "Teacher Emma meets Squirrel Nutkin!",
+        "scene": "friendly teacher with glasses and books meeting Squirrel Nutkin with acorn; friendly handshake; garden paths in background; smiles all around"
+      },
+      {
+        "id": 11,
+        "text": "Teacher Emma meets Rabbit Quick!",
+        "scene": "friendly teacher with glasses and books meeting Rabbit Quick with cotton tail; friendly handshake; market squares in background; smiles all around"
+      },
+      {
+        "id": 12,
+        "text": "Teacher Emma meets Fox Kit!",
+        "scene": "friendly teacher with glasses and books meeting Fox Kit with fluffy tail; friendly handshake; small houses in background; smiles all around"
+      },
+      {
+        "id": 13,
+        "text": "A gentle stream blocks the way forward.",
+        "scene": "friendly teacher at stream edge with glasses and books; stepping stones visible; first friend helping point the way"
+      },
+      {
+        "id": 14,
+        "text": "Three paths appear - which one leads to the treasure?",
+        "scene": "three winding paths splitting; friendly teacher thinking with glasses and books; signpost with simple symbols; friends gathered around"
+      },
+      {
+        "id": 15,
+        "text": "A riddle door needs solving with friendship!",
+        "scene": "door with heart symbols; friendly teacher and friends working together; glasses and books glowing; key shapes floating"
+      },
+      {
+        "id": 16,
+        "text": "The magical Rainbow Star appears in a secret grove!",
+        "scene": "star with rainbow colors glowing on flower pedestal; friendly teacher reaching up with glasses and books; sparkles everywhere; friends cheering"
+      },
+      {
+        "id": 17,
+        "text": "Everyone celebrates the wonderful discovery!",
+        "scene": "friendly teacher holding star with rainbow colors with glasses and books; all friends dancing in circle; confetti shapes; happy expressions"
+      },
+      {
+        "id": 18,
+        "text": "The Rainbow Star grants a special wish for everyone!",
+        "scene": "star with rainbow colors glowing bright; wish bubbles showing happy scenes; friendly teacher with glasses and books surrounded by friends"
+      },
+      {
+        "id": 19,
+        "text": "Time to share the magic with the whole world!",
+        "scene": "friendly teacher showing star with rainbow colors to group; rainbow connecting everyone; hearts floating; glasses and books sparkling"
+      },
+      {
+        "id": 20,
+        "text": "Teacher Emma returns home with heart full of friendship!",
+        "scene": "friendly teacher with glasses and books waving goodbye; friend silhouettes waving back; sunset arc; cozy home visible in distance"
+      }
+    ],
+    "metadata": {
+      "character_type": "professions",
+      "story_type": "fantasy",
+      "theme": "princess adventure",
+      "setting_type": "everyday",
+      "generated_by": "Book-Author-Agent",
+      "generation_time": "2025-08-31T22:27:55.534413"
+    }
+  }
+}

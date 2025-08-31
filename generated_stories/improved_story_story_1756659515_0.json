@@ -1,0 +1,176 @@
+{
+  "story": {
+    "id": "story_1756659515_0",
+    "title": "Ivy's Underground Caves Adventure",
+    "summary": "A young girl named Ivy discovers that lost treasure needs to be found in the underground caves. With help from a fairy and a crystal ball, they embark on an adventure to save the day.",
+    "scenes": [
+      "young girl Ivy arriving at the underground caves for the first time",
+      "Ivy noticing that lost treasure needs to be found",
+      "Ivy meeting a fairy who explains the problem",
+      "The fairy telling Ivy about the legendary crystal ball",
+      "Ivy and the fairy deciding to work together",
+      "Ivy and the fairy exploring the depths of the underground caves",
+      "Discovering clues about where to find the crystal ball",
+      "Ivy solving a puzzle using clever thinking in the underground caves",
+      "The fairy protecting Ivy from danger",
+      "Finding a secret passage in the underground caves",
+      "Meeting others affected by the problem: lost treasure needs to be found",
+      "Ivy rallying everyone to help solve the crisis",
+      "Finally finding the crystal ball in a hidden location",
+      "Learning how to use the crystal ball properly",
+      "The fairy showing unexpected courage",
+      "Ivy using the crystal ball to fix the problem: lost treasure needs to be found",
+      "The underground caves being restored to its former glory",
+      "Everyone celebrating Ivy and the fairy as heroes",
+      "Ivy saying goodbye to the fairy but promising to return",
+      "The underground caves now peaceful with Ivy as its protector"
+    ],
+    "theme": "underground caves_lost treasure needs to be found",
+    "target_age": "5-8",
+    "art_style": {
+      "name": "Disney",
+      "coloring_style": "Disney style black and white line art, smooth clean lines, classic style",
+      "cover_style": "Disney animation style with magical colors, professional Disney cover",
+      "complexity": "classic Disney character design with flowing clean lines"
+    },
+    "protagonist": "Ivy",
+    "gender": "girl",
+    "gender_desc": "young girl",
+    "companion": "fairy",
+    "setting": "underground caves",
+    "problem": "lost treasure needs to be found",
+    "magical_object": "crystal ball",
+    "generated_at": "2025-08-31T18:58:35.347291",
+    "page_count": 20,
+    "consistent_character": true,
+    "story_type": "unique_narrative"
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "prompt": "children's book cover illustration, Disney animation style with magical colors, professional Disney cover, showing young girl Ivy and a fairy in the underground caves holding a crystal ball, vibrant colors, full page illustration, edge to edge artwork, NO TEXT AT ALL, NO WORDS, NO LETTERS, anatomically correct young girl, professional cover art",
+      "scene_description": "Cover showing Ivy and fairy with crystal ball in underground caves"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "prompt": "coloring book page, young girl Ivy arriving at the underground caves for the first time, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "young girl Ivy arriving at the underground caves for the first time"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "prompt": "coloring book page, Ivy noticing that lost treasure needs to be found, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy noticing that lost treasure needs to be found"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "prompt": "coloring book page, Ivy meeting a fairy who explains the problem, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy meeting a fairy who explains the problem"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "prompt": "coloring book page, The fairy telling Ivy about the legendary crystal ball, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "The fairy telling Ivy about the legendary crystal ball"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "prompt": "coloring book page, Ivy and the fairy deciding to work together, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy and the fairy deciding to work together"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "prompt": "coloring book page, Ivy and the fairy exploring the depths of the underground caves, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy and the fairy exploring the depths of the underground caves"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "prompt": "coloring book page, Discovering clues about where to find the crystal ball, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Discovering clues about where to find the crystal ball"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "prompt": "coloring book page, Ivy solving a puzzle using clever thinking in the underground caves, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy solving a puzzle using clever thinking in the underground caves"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "prompt": "coloring book page, The fairy protecting Ivy from danger, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "The fairy protecting Ivy from danger"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "prompt": "coloring book page, Finding a secret passage in the underground caves, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Finding a secret passage in the underground caves"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "prompt": "coloring book page, Meeting others affected by the problem: lost treasure needs to be found, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Meeting others affected by the problem: lost treasure needs to be found"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 12,
+      "prompt": "coloring book page, Ivy rallying everyone to help solve the crisis, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy rallying everyone to help solve the crisis"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 13,
+      "prompt": "coloring book page, Finally finding the crystal ball in a hidden location, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Finally finding the crystal ball in a hidden location"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 14,
+      "prompt": "coloring book page, Learning how to use the crystal ball properly, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Learning how to use the crystal ball properly"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 15,
+      "prompt": "coloring book page, The fairy showing unexpected courage, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "The fairy showing unexpected courage"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 16,
+      "prompt": "coloring book page, Ivy using the crystal ball to fix the problem: lost treasure needs to be found, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy using the crystal ball to fix the problem: lost treasure needs to be found"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 17,
+      "prompt": "coloring book page, The underground caves being restored to its former glory, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "The underground caves being restored to its former glory"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 18,
+      "prompt": "coloring book page, Everyone celebrating Ivy and the fairy as heroes, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Everyone celebrating Ivy and the fairy as heroes"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 19,
+      "prompt": "coloring book page, Ivy saying goodbye to the fairy but promising to return, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "Ivy saying goodbye to the fairy but promising to return"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 20,
+      "prompt": "coloring book page, The underground caves now peaceful with Ivy as its protector, Disney style black and white line art, smooth clean lines, classic style, black and white line art only, pure white background, NO TEXT AT ALL, NO WORDS, NO LETTERS, NO NUMBERS, NO LOGOS, thick black outlines, perfect for coloring, anatomically correct young girl Ivy, consistent character design",
+      "scene_description": "The underground caves now peaceful with Ivy as its protector"
+    }
+  ],
+  "generated_at": "2025-08-31T18:58:35.347526"
+}

@@ -1,0 +1,26 @@
+{
+  "book": {
+    "title": "Bunny Pip's Test Adventure",
+    "age_range": "4-7",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "cute bunny with floppy ears with tiny blue bow in magical garden; big rainbow above; butterflies around; simple composition",
+    "back_blurb": "Join Bunny Pip on a test adventure!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Bunny Pip wakes up to a beautiful morning!",
+        "scene": "cute bunny with floppy ears with tiny blue bow waking up; sunrise circle behind; cozy burrow home"
+      }
+    ],
+    "metadata": {
+      "generated_for": "testing",
+      "timestamp": "2025-08-31"
+    }
+  }
+}
