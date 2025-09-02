@@ -18,9 +18,17 @@ class OptimizedFluxGenerator:
     """FLUX generator optimized for CLIP's 77 token limit"""
     
     def __init__(self, model_path: str = "black-forest-labs/FLUX.1-schnell"):
+        # Import and apply model configuration
+        from model_config import MODEL_CONFIG, CACHE_DIR
+        
         self.model_path = model_path
+        self.cache_dir = str(CACHE_DIR)
+        self.model_config = MODEL_CONFIG
         self.pipe = None
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
+        
+        logger.info(f"Using model cache at: {self.cache_dir}")
+        logger.info("Will use existing cached models - no download needed")
         
         # CRITICAL: Prioritized prompt elements (most important first)
         self.prompt_priorities = {
@@ -128,15 +136,20 @@ class OptimizedFluxGenerator:
         return negative_prompt
     
     def load_model(self):
-        """Load FLUX model"""
+        """Load FLUX model from cache"""
         if self.pipe is None:
-            logger.info("Loading FLUX model...")
+            logger.info("Loading FLUX model from cache...")
+            
+            # Use your cached model - no download
             self.pipe = FluxPipeline.from_pretrained(
                 self.model_path,
+                cache_dir=self.cache_dir,
+                local_files_only=True,  # Don't download, use cached only
                 torch_dtype=torch.float16 if self.device == "cuda" else torch.float32
             )
             self.pipe = self.pipe.to(self.device)
-            logger.info(f"Model loaded on {self.device}")
+            logger.info(f"✅ Model loaded from cache on {self.device}")
+            logger.info("✅ No download needed - using existing files")
     
     def generate_image(self,
                       character: str,

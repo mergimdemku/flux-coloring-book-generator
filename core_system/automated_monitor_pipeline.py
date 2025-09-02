@@ -19,7 +19,7 @@ import os
 sys.path.append(os.path.dirname(__file__))
 sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'archived_old_versions'))
 
-from clean_line_flux_generator import CleanLineFluxGenerator
+from optimized_flux_generator import OptimizedFluxGenerator
 from enhanced_pdf_generator import EnhancedPDFGenerator
 
 logging.basicConfig(
@@ -43,7 +43,7 @@ class AutomatedMonitorPipeline:
         
         # Initialize generators
         logger.info("Initializing generators...")
-        self.flux_generator = CleanLineFluxGenerator()
+        self.flux_generator = OptimizedFluxGenerator()
         self.pdf_generator = EnhancedPDFGenerator(str(self.output_dir))
         
         # Load FLUX model
