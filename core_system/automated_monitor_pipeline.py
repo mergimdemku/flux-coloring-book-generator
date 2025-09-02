@@ -14,6 +14,11 @@ from typing import Dict, Any, List, Optional
 import torch
 import gc
 
+import sys
+import os
+sys.path.append(os.path.dirname(__file__))
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'archived_old_versions'))
+
 from clean_line_flux_generator import CleanLineFluxGenerator
 from enhanced_pdf_generator import EnhancedPDFGenerator
 

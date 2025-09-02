@@ -10,6 +10,9 @@ import numpy as np
 from PIL import Image, ImageEnhance, ImageFilter, ImageDraw, ImageFont
 from pathlib import Path
 import logging
+import sys
+import os
+sys.path.append(os.path.join(os.path.dirname(__file__), '..', 'archived_old_versions'))
 from enhanced_flux_generator import EnhancedFluxGenerator
 from typing import Dict, Any, Optional
 
