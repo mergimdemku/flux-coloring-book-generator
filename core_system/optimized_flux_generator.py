@@ -214,6 +214,26 @@ class OptimizedFluxGenerator:
         
         # Convert back to PIL
         return Image.fromarray(binary, mode='L').convert('RGB')
+    
+    def generate_perfect_cover(self, character_desc: str, scene_desc: str, seed: Optional[int] = None) -> Image.Image:
+        """Generate perfect cover - wrapper for compatibility"""
+        logger.info("Generating cover with optimized prompts...")
+        return self.generate_image(
+            character=character_desc,
+            scene=scene_desc,
+            prompt_type='cover',
+            seed=seed
+        )
+    
+    def generate_ultra_clean_coloring_page(self, character_desc: str, scene_desc: str, seed: Optional[int] = None) -> Image.Image:
+        """Generate ultra clean coloring page - wrapper for compatibility"""
+        logger.info("Generating coloring page with optimized prompts...")
+        return self.generate_image(
+            character=character_desc,
+            scene=scene_desc,
+            prompt_type='coloring_page',
+            seed=seed
+        )
 
 
 def demonstrate_optimization():
