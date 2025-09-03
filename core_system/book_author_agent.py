@@ -185,8 +185,8 @@ class BookAuthorAgent:
         # Generate story pages
         pages = self.generate_creative_pages(character, setting, theme, quest, story_type)
         
-        # Create cover prompt with specific visuals
-        cover_prompt = f"{character['desc']} with {character['trait']} in {setting['name']}; {quest['desc']} floating nearby; {setting['elements'][0]} in background; {setting['elements'][1]} at sides; simple composition, large shapes, kid-friendly"
+        # Create cover prompt - COLORFUL book cover style (not coloring page)
+        cover_prompt = f"{character['desc']} with {character['trait']} in {setting['name']}; {quest['desc']} floating nearby; {setting['elements'][0]} in background; {setting['elements'][1]} at sides; vibrant colors, book cover illustration, no text, child-friendly"
         
         return {
             "book": {

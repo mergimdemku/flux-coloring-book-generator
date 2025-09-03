@@ -33,37 +33,43 @@ class OptimizedFluxGenerator:
         # CRITICAL: Prioritized prompt elements (most important first)
         self.prompt_priorities = {
             'coloring_page': {
-                'essential': [  # First 30-35 tokens - THESE WILL BE READ
+                'essential': [  # First 25-30 tokens - THESE WILL BE READ
                     'black white line art',
                     'coloring book page',
                     'no text no words',
-                    'thick outlines only',
-                    'white background'
+                    'correct anatomy',
+                    'proper proportions'
                 ],
                 'character': [],  # 15-20 tokens for character description
                 'style': [  # 10-15 tokens
-                    'simple', 'clear', 'bold lines'
+                    'thick outlines', 'simple', 'clear'
                 ],
-                'negative_critical': [  # For negative prompt
-                    'color', 'gray', 'shading', 'text', 'words', 
+                'negative_critical': [  # For negative prompt - MAX 77 tokens
+                    'color', 'gray', 'shading', 'text', 'words',
+                    'extra limbs', 'missing limbs', 'extra fingers', 'missing fingers',
+                    'deformed hands', 'malformed anatomy', 'wrong proportions',
+                    'six fingers', 'four fingers', 'extra arms', 'extra legs',
                     'gradient', 'photo', 'realistic'
                 ]
             },
             'cover': {
-                'essential': [  # First 30-35 tokens
-                    'colorful illustration',
-                    'book cover',
-                    'no text no title',
-                    'full page art',
-                    'vibrant colors'
+                'essential': [  # First 25-30 tokens - MOST CRITICAL
+                    'colorful children book illustration',
+                    'NO TEXT NO WORDS',
+                    'wordless image',
+                    'correct anatomy',
+                    'proper proportions'
                 ],
                 'character': [],  # 15-20 tokens for character
                 'style': [  # 10-15 tokens
-                    'cartoon', 'child-friendly', 'happy'
+                    'cartoon style', 'child-friendly', 'vibrant'
                 ],
-                'negative_critical': [
-                    'text', 'words', 'title', 'letters',
-                    'dark', 'scary', 'violent'
+                'negative_critical': [  # For negative prompt - MAX 77 tokens
+                    'text', 'words', 'title', 'letters', 'writing',
+                    'extra limbs', 'missing limbs', 'extra fingers', 'missing fingers',
+                    'deformed hands', 'malformed anatomy', 'wrong proportions',
+                    'six fingers', 'four fingers', 'extra arms', 'extra legs',
+                    'book title', 'logos', 'numbers', 'dark', 'scary'
                 ]
             }
         }
@@ -124,16 +130,23 @@ class OptimizedFluxGenerator:
         return final_prompt
     
     def build_optimized_negative(self, prompt_type: str = 'coloring_page') -> str:
-        """Build negative prompt within token limits"""
+        """Build negative prompt within CLIP 77 token limit"""
         priorities = self.prompt_priorities[prompt_type]
         negative_parts = priorities['negative_critical']
         
-        # Keep negative prompt short and focused
-        negative_prompt = ', '.join(negative_parts[:10])  # Max 10 concepts
+        # Build negative prompt within 77 token limit
+        current_prompt = ""
+        for part in negative_parts:
+            test_prompt = f"{current_prompt}, {part}" if current_prompt else part
+            token_count = self.count_tokens(test_prompt)
+            
+            if token_count > 75:  # Leave buffer for safety
+                break
+            current_prompt = test_prompt
         
-        token_count = self.count_tokens(negative_prompt)
-        logger.info(f"Negative prompt ({token_count} tokens): {negative_prompt}")
-        return negative_prompt
+        token_count = self.count_tokens(current_prompt)
+        logger.info(f"Negative prompt ({token_count} tokens): {current_prompt}")
+        return current_prompt
     
     def load_model(self):
         """Load FLUX model from cache"""

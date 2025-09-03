@@ -119,20 +119,27 @@ class AutomatedMonitorPipeline:
         # Create prompts from pages
         prompts = []
         
-        # Cover prompt
+        # Cover prompt - convert to colorful cover style
+        cover_character = book['cover_prompt'].split(';')[0]  # Get main character part
         prompts.append({
             'type': 'cover',
-            'prompt': f"{book['cover_prompt']}, {book['style']}",
+            'character': cover_character,  # Pass character separately
+            'scene': book['cover_prompt'],  # Pass full scene
             'negative': book['negative'],
             'scene_description': "Cover"
         })
         
-        # Page prompts
+        # Page prompts - preserve character names from story text
         for page in book['pages']:
+            # Extract character name from story text (e.g., "Dolphin Dany leaps" -> "Dolphin Dany")
+            story_text = page['text']
+            character_name = ' '.join(story_text.split()[:2])  # First two words usually character name
+            
             prompts.append({
                 'type': 'coloring_page',
                 'page_number': page['id'],
-                'prompt': f"{page['scene']}, {book['style']}",
+                'character': character_name,  # Pass character name
+                'scene': page['scene'],  # Pass scene description
                 'negative': book['negative'],
                 'scene_description': page['text'],
                 'scene_visual': page['scene']
@@ -157,22 +164,11 @@ class AutomatedMonitorPipeline:
             try:
                 logger.info(f"Generating {prompt_data['type']} {i+1}/{len(prompts)}")
                 
-                # Add negative prompt if specified
-                full_prompt = prompt_data['prompt']
-                negative_prompt = prompt_data.get('negative', '')
-                
                 if prompt_data['type'] == 'cover':
-                    # Use the proper enhanced cover generation method
-                    cover_prompt_data = {
-                        'prompt': full_prompt,
-                        'negative': negative_prompt,
-                        'type': 'cover'
-                    }
-                    
-                    # Generate high-quality cover with all enhancements
+                    # Pass character and scene directly to cover generator
                     image = self.flux_generator.generate_perfect_cover(
-                        prompt_data=cover_prompt_data,
-                        story_data=story_data,
+                        character_desc=prompt_data['character'],
+                        scene_desc=prompt_data['scene'],
                         width=592,
                         height=832
                     )
@@ -180,18 +176,10 @@ class AutomatedMonitorPipeline:
                     generated_images['cover'] = image
                     
                 else:
-                    # Use the proper enhanced coloring page generation method
-                    page_prompt_data = {
-                        'prompt': full_prompt,
-                        'negative': negative_prompt,
-                        'type': 'coloring_page',
-                        'page_number': prompt_data.get('page_number', i)
-                    }
-                    
-                    # Generate ultra-clean coloring page with all processing
+                    # Pass character and scene directly to coloring page generator
                     processed = self.flux_generator.generate_ultra_clean_coloring_page(
-                        prompt_data=page_prompt_data,
-                        story_data=story_data,
+                        character_desc=prompt_data['character'],
+                        scene_desc=prompt_data['scene'],
                         width=592,
                         height=832
                     )

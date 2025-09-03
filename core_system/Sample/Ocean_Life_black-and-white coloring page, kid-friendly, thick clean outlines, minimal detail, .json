@@ -1,0 +1,24 @@
+{
+  "story": {
+    "id": "story_1756895218",
+    "title": "Ocean Life",
+    "age_range": "4-7",
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "art_style": {
+      "name": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text"
+    },
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "Dolphin Dany jumping over simple waves; turtle Tina and whale Wally below; coral shapes; big clear outlines",
+    "character_description": "Dolphin Dany jumping over simple waves",
+    "generated_at": "2025-09-03T12:26:58.521730"
+  },
+  "pdf_path": "automated_books\\Ocean_Life_black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text_20250903_134437.pdf",
+  "processed_at": "2025-09-03T13:44:37.944200",
+  "stats": {
+    "stories_processed": 2,
+    "images_generated": 42,
+    "pdfs_created": 2,
+    "errors": 0,
+    "start_time": "2025-09-03T08:11:06.573417"
+  }
+}
