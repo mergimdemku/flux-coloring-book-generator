@@ -215,9 +215,15 @@ class OptimizedFluxGenerator:
         # Convert back to PIL
         return Image.fromarray(binary, mode='L').convert('RGB')
     
-    def generate_perfect_cover(self, character_desc: str, scene_desc: str, seed: Optional[int] = None) -> Image.Image:
+    def generate_perfect_cover(self, character_desc: str, scene_desc: str, seed: Optional[int] = None, **kwargs) -> Image.Image:
         """Generate perfect cover - wrapper for compatibility"""
         logger.info("Generating cover with optimized prompts...")
+        # Extract character and scene from prompt_data if provided
+        prompt_data = kwargs.get('prompt_data', {})
+        if prompt_data:
+            character_desc = prompt_data.get('character', character_desc)
+            scene_desc = prompt_data.get('scene', scene_desc)
+        
         return self.generate_image(
             character=character_desc,
             scene=scene_desc,
@@ -225,9 +231,15 @@ class OptimizedFluxGenerator:
             seed=seed
         )
     
-    def generate_ultra_clean_coloring_page(self, character_desc: str, scene_desc: str, seed: Optional[int] = None) -> Image.Image:
+    def generate_ultra_clean_coloring_page(self, character_desc: str, scene_desc: str, seed: Optional[int] = None, **kwargs) -> Image.Image:
         """Generate ultra clean coloring page - wrapper for compatibility"""
         logger.info("Generating coloring page with optimized prompts...")
+        # Extract character and scene from prompt_data if provided
+        prompt_data = kwargs.get('prompt_data', {})
+        if prompt_data:
+            character_desc = prompt_data.get('character', character_desc)
+            scene_desc = prompt_data.get('scene', scene_desc)
+            
         return self.generate_image(
             character=character_desc,
             scene=scene_desc,
