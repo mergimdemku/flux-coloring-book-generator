@@ -140,16 +140,22 @@ class OptimizedFluxGenerator:
         if self.pipe is None:
             logger.info("Loading FLUX model from cache...")
             
-            # Use your cached model - no download
-            self.pipe = FluxPipeline.from_pretrained(
-                self.model_path,
-                cache_dir=self.cache_dir,
-                local_files_only=True,  # Don't download, use cached only
-                torch_dtype=torch.float16 if self.device == "cuda" else torch.float32
-            )
-            self.pipe = self.pipe.to(self.device)
-            logger.info(f"✅ Model loaded from cache on {self.device}")
-            logger.info("✅ No download needed - using existing files")
+            try:
+                # Use your cached model - no download
+                self.pipe = FluxPipeline.from_pretrained(
+                    self.model_path,
+                    cache_dir=self.cache_dir,
+                    local_files_only=True,  # Don't download, use cached only
+                    torch_dtype=torch.float16 if self.device == "cuda" else torch.float32
+                )
+                self.pipe = self.pipe.to(self.device)
+                logger.info(f"✅ Model loaded from cache on {self.device}")
+                logger.info("✅ No download needed - using existing files")
+                return True
+            except Exception as e:
+                logger.error(f"Failed to load model: {e}")
+                return False
+        return True  # Already loaded
     
     def generate_image(self,
                       character: str,
