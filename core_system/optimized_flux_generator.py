@@ -6,7 +6,7 @@ Respects 77 token limit for maximum quality
 import torch
 from diffusers import FluxPipeline
 import logging
-from typing import Optional, Dict
+from typing import Optional, Dict, List
 import os
 from PIL import Image
 import numpy as np
@@ -36,7 +36,8 @@ class OptimizedFluxGenerator:
                 'essential': [  # First 25-30 tokens - THESE WILL BE READ
                     'black white line art',
                     'coloring book page',
-                    'no text no words',
+                    'NO TEXT NO WORDS',
+                    'wordless image',
                     'correct anatomy',
                     'proper proportions'
                 ],
@@ -44,12 +45,15 @@ class OptimizedFluxGenerator:
                 'style': [  # 10-15 tokens
                     'thick outlines', 'simple', 'clear'
                 ],
-                'negative_critical': [  # For negative prompt - MAX 77 tokens
-                    'color', 'gray', 'shading', 'text', 'words',
+                'negative_critical': [  # For negative prompt - MAX 77 tokens - PRIORITIZE TEXT PREVENTION
+                    'text', 'words', 'letters', 'writing', 'typography',
+                    'welcome', 'look', 'title', 'caption', 'label',
+                    'copyright', 'watermark', 'logo', 'brand', 'signature',
+                    'numbers', 'digits', 'alphabet', 'font', 'script',
                     'extra limbs', 'missing limbs', 'extra fingers', 'missing fingers',
                     'deformed hands', 'malformed anatomy', 'wrong proportions',
                     'six fingers', 'four fingers', 'extra arms', 'extra legs',
-                    'gradient', 'photo', 'realistic'
+                    'color', 'gray', 'shading', 'gradient', 'photo', 'realistic'
                 ]
             },
             'cover': {
@@ -57,6 +61,7 @@ class OptimizedFluxGenerator:
                     'colorful children book illustration',
                     'NO TEXT NO WORDS',
                     'wordless image',
+                    'text-free illustration',
                     'correct anatomy',
                     'proper proportions'
                 ],
@@ -64,12 +69,16 @@ class OptimizedFluxGenerator:
                 'style': [  # 10-15 tokens
                     'cartoon style', 'child-friendly', 'vibrant'
                 ],
-                'negative_critical': [  # For negative prompt - MAX 77 tokens
-                    'text', 'words', 'title', 'letters', 'writing',
+                'negative_critical': [  # For negative prompt - MAX 77 tokens - PRIORITIZE TEXT PREVENTION
+                    'text', 'words', 'title', 'letters', 'writing', 'typography',
+                    'book title', 'caption', 'label', 'welcome', 'look',
+                    'copyright', 'watermark', 'logo', 'brand', 'signature',
+                    'numbers', 'digits', 'alphabet', 'font', 'script',
+                    'generated on', 'AI-created', 'coloring book',
                     'extra limbs', 'missing limbs', 'extra fingers', 'missing fingers',
                     'deformed hands', 'malformed anatomy', 'wrong proportions',
                     'six fingers', 'four fingers', 'extra arms', 'extra legs',
-                    'book title', 'logos', 'numbers', 'dark', 'scary'
+                    'dark', 'scary'
                 ]
             }
         }
@@ -82,31 +91,49 @@ class OptimizedFluxGenerator:
     def build_optimized_prompt(self, 
                               character_desc: str,
                               scene_desc: str,
+                              scene_objects: List[str] = None,
                               prompt_type: str = 'coloring_page',
                               style: str = 'simple') -> str:
         """
         Build prompt that fits within CLIP's 77 token limit
-        Priority order: Essential > Character > Scene > Style
+        Priority order: Essential > Character > Scene Objects > Scene > Style
         """
         
         priorities = self.prompt_priorities[prompt_type]
+        scene_objects = scene_objects or []
         
-        # Start with essentials (30-35 tokens)
+        # Start with essentials (25-30 tokens)
         prompt_parts = priorities['essential'].copy()
         
-        # Add character description (keep it SHORT - max 15 tokens)
+        # Add character description (keep it SHORT - max 10 tokens)
         if character_desc:
             # Extract only the most important character elements
             char_parts = character_desc.split(',')[0].split(';')[0]
-            char_words = char_parts.split()[:10]  # Max 10 words for character
+            char_words = char_parts.split()[:8]  # Max 8 words for character
             prompt_parts.append(' '.join(char_words))
         
-        # Add scene action (keep it SHORT - max 10 tokens)  
+        # PRIORITY: Add scene objects explicitly (NEW - max 10 tokens)
+        if scene_objects:
+            # Emphasize the most important objects (first 3)
+            key_objects = scene_objects[:3]  # Take first 3 objects for emphasis
+            if key_objects:
+                objects_str = ', '.join(key_objects)
+                prompt_parts.append(f"with {objects_str}")
+        
+        # Add scene action (reduced to max 8 tokens to make room for objects)  
         if scene_desc:
             # Extract only the action, not the background
             scene_parts = scene_desc.split(';')[0].split(',')[0]
-            scene_words = scene_parts.split()[:7]  # Max 7 words for action
-            prompt_parts.append(' '.join(scene_words))
+            scene_words = scene_parts.split()[:6]  # Reduced from 7 to 6 words
+            scene_action = ' '.join(scene_words)
+            # Avoid redundancy with objects already mentioned
+            if scene_objects:
+                # Filter out object words already mentioned
+                action_words = [w for w in scene_words if w.lower() not in [obj.lower() for obj in scene_objects]]
+                if action_words:
+                    scene_action = ' '.join(action_words[:5])
+            if scene_action:
+                prompt_parts.append(scene_action)
         
         # Add style if space remains
         current_prompt = ', '.join(prompt_parts)
@@ -173,6 +200,7 @@ class OptimizedFluxGenerator:
     def generate_image(self,
                       character: str,
                       scene: str,
+                      scene_objects: List[str] = None,
                       prompt_type: str = 'coloring_page',
                       style: str = 'simple',
                       seed: Optional[int] = None,
@@ -183,7 +211,8 @@ class OptimizedFluxGenerator:
         self.load_model()
         
         # Build optimized prompts
-        prompt = self.build_optimized_prompt(character, scene, prompt_type, style)
+        scene_objects = scene_objects or []
+        prompt = self.build_optimized_prompt(character, scene, scene_objects, prompt_type, style)
         negative_prompt = self.build_optimized_negative(prompt_type)
         
         # Set seed for consistency
@@ -194,14 +223,18 @@ class OptimizedFluxGenerator:
         
         # Generate with FLUX
         logger.info(f"Generating {prompt_type}...")
+        logger.info(f"Final prompt: {prompt}")
+        logger.info(f"Negative prompt: {negative_prompt}")
         
         num_steps = 8 if prompt_type == 'cover' else 4
+        # Use slightly higher guidance for better instruction following (text prevention)
+        guidance = 0.5 if prompt_type == 'coloring_page' else 0.0
         
         image = self.pipe(
             prompt=prompt,
             negative_prompt=negative_prompt,
             num_inference_steps=num_steps,
-            guidance_scale=0.0,  # FLUX.1-schnell uses 0.0
+            guidance_scale=guidance,  # Slightly higher guidance for coloring pages
             width=width,
             height=height,
             generator=generator
@@ -245,11 +278,12 @@ class OptimizedFluxGenerator:
         return self.generate_image(
             character=character_desc,
             scene=scene_desc,
+            scene_objects=[],  # Covers typically don't have multiple objects
             prompt_type='cover',
             seed=seed
         )
     
-    def generate_ultra_clean_coloring_page(self, character_desc: str = "", scene_desc: str = "", seed: Optional[int] = None, **kwargs) -> Image.Image:
+    def generate_ultra_clean_coloring_page(self, character_desc: str = "", scene_desc: str = "", scene_objects: List[str] = None, seed: Optional[int] = None, **kwargs) -> Image.Image:
         """Generate ultra clean coloring page - wrapper for compatibility"""
         logger.info("Generating coloring page with optimized prompts...")
         
@@ -258,14 +292,17 @@ class OptimizedFluxGenerator:
         if prompt_data:
             character_desc = prompt_data.get('character', character_desc or "friendly character")
             scene_desc = prompt_data.get('scene', scene_desc or "simple scene")
+            scene_objects = prompt_data.get('scene_objects', scene_objects or [])
         else:
             # If no prompt_data and no character/scene provided, use defaults
             character_desc = character_desc or "friendly character"
             scene_desc = scene_desc or "simple scene"
+            scene_objects = scene_objects or []
             
         return self.generate_image(
             character=character_desc,
             scene=scene_desc,
+            scene_objects=scene_objects,  # Pass scene objects
             prompt_type='coloring_page',
             seed=seed
         )

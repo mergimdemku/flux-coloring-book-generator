@@ -1,0 +1,24 @@
+{
+  "story": {
+    "id": "story_1756952370",
+    "title": "Whale Wally's Fruits And Vegetables Collection",
+    "age_range": "4-7",
+    "style": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text",
+    "art_style": {
+      "name": "black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text"
+    },
+    "negative": "color, grey, shading, gradients, tiny patterns, cluttered backgrounds, logos, watermarks, photorealism, text, numbers, letters, words",
+    "cover_prompt": "blue whale with water spout with captain's hat in Crystal Cave; heart-shaped crystal floating nearby; glowing crystals in background; underground pools at sides; vibrant colors, book cover illustration, no text, child-friendly",
+    "character_description": "blue whale with water spout with captain's hat in Crystal Cave",
+    "generated_at": "2025-09-04T04:19:30.910891"
+  },
+  "pdf_path": "automated_books\\Whale_Wallys_Fruits_And_Vegeta_black-and-white coloring page, kid-friendly, thick clean outlines, minimal detail, high contrast, no grayscale, no text_20250904_045531.pdf",
+  "processed_at": "2025-09-04T04:55:32.788504",
+  "stats": {
+    "stories_processed": 13,
+    "images_generated": 273,
+    "pdfs_created": 13,
+    "errors": 0,
+    "start_time": "2025-09-03T20:02:26.229055"
+  }
+}

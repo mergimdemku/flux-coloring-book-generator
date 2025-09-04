@@ -131,15 +131,51 @@ class AutomatedMonitorPipeline:
         
         # Page prompts - preserve character names from story text
         for page in book['pages']:
-            # Extract character name from story text (e.g., "Dolphin Dany leaps" -> "Dolphin Dany")
+            # Extract character name from story text with improved logic
             story_text = page['text']
-            character_name = ' '.join(story_text.split()[:2])  # First two words usually character name
+            
+            # Handle different story text formats
+            if "found a" in story_text:
+                # Format: "Look! Whale Wally found a Lion!" -> extract "Whale Wally"
+                # Split and find character name before "found"
+                words = story_text.split()
+                found_idx = None
+                for i, word in enumerate(words):
+                    if word in ["found", "sees", "meets"]:
+                        found_idx = i
+                        break
+                
+                if found_idx and found_idx >= 2:
+                    # Take the 2 words before "found" as character name
+                    character_name = ' '.join(words[found_idx-2:found_idx])
+                else:
+                    # Fallback to first 2 meaningful words (skip "Look!")
+                    meaningful_words = [w for w in words if w.lower() not in ["look!", "look", "wow!", "see!"]]
+                    character_name = ' '.join(meaningful_words[:2])
+            else:
+                # Standard format: "Dolphin Dany leaps" -> "Dolphin Dany"
+                character_name = ' '.join(story_text.split()[:2])
+            
+            # Extract scene objects for emphasis (animals, objects mentioned)
+            scene_objects = []
+            scene_lower = page['scene'].lower()
+            common_objects = [
+                'lion', 'elephant', 'giraffe', 'monkey', 'zebra', 'penguin', 'tiger', 
+                'hippo', 'kangaroo', 'panda', 'flamingo', 'seal', 'parrot', 'snake',
+                'turtle', 'bear', 'wolf', 'owl', 'tree', 'rock', 'ball', 'banana',
+                'bamboo', 'branch', 'water', 'ice', 'stream'
+            ]
+            
+            for obj in common_objects:
+                if obj in scene_lower:
+                    scene_objects.append(obj)
             
             prompts.append({
                 'type': 'coloring_page',
                 'page_number': page['id'],
                 'character': character_name,  # Pass character name
-                'scene': page['scene'],  # Pass scene description
+                'scene': page['scene'],  # Pass scene description  
+                'scene_objects': scene_objects,  # NEW: Pass extracted objects for emphasis
                 'negative': book['negative'],
                 'scene_description': page['text'],
                 'scene_visual': page['scene']
@@ -176,10 +212,11 @@ class AutomatedMonitorPipeline:
                     generated_images['cover'] = image
                     
                 else:
-                    # Pass character and scene directly to coloring page generator
+                    # Pass character, scene, and objects to coloring page generator
                     processed = self.flux_generator.generate_ultra_clean_coloring_page(
                         character_desc=prompt_data['character'],
                         scene_desc=prompt_data['scene'],
+                        scene_objects=prompt_data.get('scene_objects', []),  # NEW: Pass scene objects
                         width=592,
                         height=832
                     )
