@@ -30,55 +30,38 @@ class OptimizedFluxGenerator:
         logger.info(f"Using model cache at: {self.cache_dir}")
         logger.info("Will use existing cached models - no download needed")
         
-        # CRITICAL: Prioritized prompt elements (most important first)
+        # CRITICAL: Positive-only prompts for FLUX.1-schnell (no negative prompts support)
         self.prompt_priorities = {
             'coloring_page': {
                 'essential': [  # First 25-30 tokens - THESE WILL BE READ
-                    'black white line art',
-                    'coloring book page',
-                    'NO TEXT NO WORDS',
-                    'wordless image',
-                    'correct anatomy',
-                    'proper proportions'
+                    'simple black and white line drawing',
+                    'coloring book page for children',
+                    'clean outlines only',
+                    'no shading or colors'
+                ],
+                'spatial': [  # Spatial organization for multi-object scenes
+                    'foreground showing',
+                    'background with',
+                    'centered composition'
                 ],
                 'character': [],  # 15-20 tokens for character description
                 'style': [  # 10-15 tokens
-                    'thick outlines', 'simple', 'clear'
-                ],
-                'negative_critical': [  # For negative prompt - MAX 77 tokens - PRIORITIZE TEXT PREVENTION
-                    'text', 'words', 'letters', 'writing', 'typography',
-                    'welcome', 'look', 'title', 'caption', 'label',
-                    'copyright', 'watermark', 'logo', 'brand', 'signature',
-                    'numbers', 'digits', 'alphabet', 'font', 'script',
-                    'extra limbs', 'missing limbs', 'extra fingers', 'missing fingers',
-                    'deformed hands', 'malformed anatomy', 'wrong proportions',
-                    'six fingers', 'four fingers', 'extra arms', 'extra legs',
-                    'color', 'gray', 'shading', 'gradient', 'photo', 'realistic'
+                    'thick black outlines', 'simple shapes', 'clear forms'
                 ]
             },
             'cover': {
                 'essential': [  # First 25-30 tokens - MOST CRITICAL
-                    'colorful children book illustration',
-                    'NO TEXT NO WORDS',
-                    'wordless image',
-                    'text-free illustration',
-                    'correct anatomy',
-                    'proper proportions'
+                    'colorful children book cover illustration',
+                    'vibrant cartoon style',
+                    'friendly characters'
+                ],
+                'spatial': [  # Spatial organization
+                    'main character in center',
+                    'decorative background'
                 ],
                 'character': [],  # 15-20 tokens for character
                 'style': [  # 10-15 tokens
-                    'cartoon style', 'child-friendly', 'vibrant'
-                ],
-                'negative_critical': [  # For negative prompt - MAX 77 tokens - PRIORITIZE TEXT PREVENTION
-                    'text', 'words', 'title', 'letters', 'writing', 'typography',
-                    'book title', 'caption', 'label', 'welcome', 'look',
-                    'copyright', 'watermark', 'logo', 'brand', 'signature',
-                    'numbers', 'digits', 'alphabet', 'font', 'script',
-                    'generated on', 'AI-created', 'coloring book',
-                    'extra limbs', 'missing limbs', 'extra fingers', 'missing fingers',
-                    'deformed hands', 'malformed anatomy', 'wrong proportions',
-                    'six fingers', 'four fingers', 'extra arms', 'extra legs',
-                    'dark', 'scary'
+                    'bright colors', 'child-friendly', 'cheerful mood'
                 ]
             }
         }
@@ -95,85 +78,59 @@ class OptimizedFluxGenerator:
                               prompt_type: str = 'coloring_page',
                               style: str = 'simple') -> str:
         """
-        Build prompt that fits within CLIP's 77 token limit
-        Priority order: Essential > Character > Scene Objects > Scene > Style
+        Build FLUX.1-schnell optimized prompt with spatial organization
+        Uses positive-only prompting (no negatives supported by schnell)
         """
         
         priorities = self.prompt_priorities[prompt_type]
         scene_objects = scene_objects or []
         
-        # Start with essentials (25-30 tokens)
-        prompt_parts = priorities['essential'].copy()
+        # Start with essentials
+        prompt_parts = []
+        prompt_parts.extend(priorities['essential'])
         
-        # Add character description (keep it SHORT - max 10 tokens)
-        if character_desc:
-            # Extract only the most important character elements
+        # Build spatial organization for multi-object scenes
+        if character_desc and scene_objects:
+            # Use spatial organization to prevent fusion/confusion
+            spatial_prompt = f"foreground showing {character_desc}"
+            
+            # Add the main scene object with clear spatial separation
+            if len(scene_objects) > 0:
+                spatial_prompt += f", middle ground with {scene_objects[0]}"
+            if len(scene_objects) > 1:
+                spatial_prompt += f", background including {', '.join(scene_objects[1:3])}"
+            
+            prompt_parts.append(spatial_prompt)
+        elif character_desc:
+            # Simple single character scene
             char_parts = character_desc.split(',')[0].split(';')[0]
-            char_words = char_parts.split()[:8]  # Max 8 words for character
-            prompt_parts.append(' '.join(char_words))
+            prompt_parts.append(f"centered {char_parts}")
         
-        # PRIORITY: Add scene objects explicitly (NEW - max 10 tokens)
-        if scene_objects:
-            # Emphasize the most important objects (first 3)
-            key_objects = scene_objects[:3]  # Take first 3 objects for emphasis
-            if key_objects:
-                objects_str = ', '.join(key_objects)
-                prompt_parts.append(f"with {objects_str}")
+        # Add scene action if relevant
+        if scene_desc and "pointing" in scene_desc.lower():
+            prompt_parts.append("character gesturing toward object")
         
-        # Add scene action (reduced to max 8 tokens to make room for objects)  
-        if scene_desc:
-            # Extract only the action, not the background
-            scene_parts = scene_desc.split(';')[0].split(',')[0]
-            scene_words = scene_parts.split()[:6]  # Reduced from 7 to 6 words
-            scene_action = ' '.join(scene_words)
-            # Avoid redundancy with objects already mentioned
-            if scene_objects:
-                # Filter out object words already mentioned
-                action_words = [w for w in scene_words if w.lower() not in [obj.lower() for obj in scene_objects]]
-                if action_words:
-                    scene_action = ' '.join(action_words[:5])
-            if scene_action:
-                prompt_parts.append(scene_action)
+        # Add style elements
+        prompt_parts.extend(priorities['style'])
         
-        # Add style if space remains
-        current_prompt = ', '.join(prompt_parts)
-        current_tokens = self.count_tokens(current_prompt)
-        
-        if current_tokens < 65:  # Leave buffer for style
-            prompt_parts.extend(priorities['style'])
-        
-        # Build final prompt
+        # Build final prompt - clear, direct, spatial
         final_prompt = ', '.join(prompt_parts)
         
         # Verify token count
         token_count = self.count_tokens(final_prompt)
         if token_count > 77:
-            # Trim if needed
             words = final_prompt.split()[:57]  # ~77 tokens
             final_prompt = ' '.join(words)
             logger.warning(f"Prompt trimmed to fit 77 token limit")
         
-        logger.info(f"Optimized prompt ({token_count} tokens): {final_prompt}")
+        logger.info(f"Spatial prompt ({token_count} tokens): {final_prompt}")
         return final_prompt
     
     def build_optimized_negative(self, prompt_type: str = 'coloring_page') -> str:
-        """Build negative prompt within CLIP 77 token limit"""
-        priorities = self.prompt_priorities[prompt_type]
-        negative_parts = priorities['negative_critical']
-        
-        # Build negative prompt within 77 token limit
-        current_prompt = ""
-        for part in negative_parts:
-            test_prompt = f"{current_prompt}, {part}" if current_prompt else part
-            token_count = self.count_tokens(test_prompt)
-            
-            if token_count > 75:  # Leave buffer for safety
-                break
-            current_prompt = test_prompt
-        
-        token_count = self.count_tokens(current_prompt)
-        logger.info(f"Negative prompt ({token_count} tokens): {current_prompt}")
-        return current_prompt
+        """DEPRECATED: FLUX.1-schnell doesn't support negative prompts"""
+        # Returning None - negative prompts are ineffective with schnell
+        logger.debug("Negative prompts not used - FLUX.1-schnell doesn't support them")
+        return None
     
     def load_model(self):
         """Load FLUX model from cache"""
@@ -210,10 +167,9 @@ class OptimizedFluxGenerator:
         
         self.load_model()
         
-        # Build optimized prompts
+        # Build optimized prompts (positive only for FLUX.1-schnell)
         scene_objects = scene_objects or []
         prompt = self.build_optimized_prompt(character, scene, scene_objects, prompt_type, style)
-        negative_prompt = self.build_optimized_negative(prompt_type)
         
         # Set seed for consistency
         if seed is not None:
@@ -224,17 +180,16 @@ class OptimizedFluxGenerator:
         # Generate with FLUX
         logger.info(f"Generating {prompt_type}...")
         logger.info(f"Final prompt: {prompt}")
-        logger.info(f"Negative prompt: {negative_prompt}")
         
-        num_steps = 8 if prompt_type == 'cover' else 4
-        # Use slightly higher guidance for better instruction following (text prevention)
-        guidance = 0.5 if prompt_type == 'coloring_page' else 0.0
+        # FLUX.1-schnell ALWAYS uses guidance_scale=0.0 and doesn't support negative prompts
+        num_steps = 4  # Schnell is optimized for 4 steps
+        guidance = 0.0  # CRITICAL: Must be 0.0 for schnell model
         
         image = self.pipe(
             prompt=prompt,
-            negative_prompt=negative_prompt,
+            # negative_prompt removed - ineffective with schnell
             num_inference_steps=num_steps,
-            guidance_scale=guidance,  # Slightly higher guidance for coloring pages
+            guidance_scale=guidance,  # Always 0.0 for schnell
             width=width,
             height=height,
             generator=generator
