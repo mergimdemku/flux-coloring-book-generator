@@ -110,14 +110,28 @@ class EnhancedPDFGenerator:
             x_offset = (page_width - new_width) / 2
             y_offset = page_height - self.margin - new_height
             
-            # Convert PIL image to reportlab format
+            # Convert PIL image to reportlab format with compatibility fixes
             img_buffer = io.BytesIO()
-            cover_image.save(img_buffer, format='PNG')
+            
+            # Ensure cover is in RGB mode for better compatibility
+            if cover_image.mode not in ['RGB', 'L']:
+                if cover_image.mode == 'RGBA':
+                    # Convert RGBA to RGB with white background
+                    rgb_cover = Image.new('RGB', cover_image.size, (255, 255, 255))
+                    rgb_cover.paste(cover_image, mask=cover_image.split()[3] if len(cover_image.split()) > 3 else None)
+                    cover_image = rgb_cover
+                else:
+                    cover_image = cover_image.convert('RGB')
+            
+            # Save as JPEG for better compatibility and smaller size
+            cover_image.save(img_buffer, format='JPEG', quality=95, optimize=True)
             img_buffer.seek(0)
             img_reader = ImageReader(img_buffer)
             
-            # Draw image
-            canvas_obj.drawImage(img_reader, x_offset, y_offset, width=new_width, height=new_height)
+            # Draw image with better rendering options
+            canvas_obj.drawImage(img_reader, x_offset, y_offset, 
+                               width=new_width, height=new_height,
+                               preserveAspectRatio=True, anchor='c')
             
             # Draw border around image
             canvas_obj.setStrokeColor(colors.black)
@@ -236,14 +250,28 @@ class EnhancedPDFGenerator:
         x_offset = (self.page_width - new_width) / 2
         y_offset = (self.page_height - new_height) / 2 + 20  # Offset up for page number
         
-        # Convert PIL image to reportlab format
+        # Convert PIL image to reportlab format with compatibility fixes
         img_buffer = io.BytesIO()
-        page_image.save(img_buffer, format='PNG')
+        
+        # Ensure image is in RGB mode for better compatibility
+        if page_image.mode not in ['RGB', 'L']:
+            if page_image.mode == 'RGBA':
+                # Convert RGBA to RGB with white background
+                rgb_image = Image.new('RGB', page_image.size, (255, 255, 255))
+                rgb_image.paste(page_image, mask=page_image.split()[3] if len(page_image.split()) > 3 else None)
+                page_image = rgb_image
+            else:
+                page_image = page_image.convert('RGB')
+        
+        # Save as JPEG for better compatibility (smaller size too)
+        page_image.save(img_buffer, format='JPEG', quality=95, optimize=True)
         img_buffer.seek(0)
         img_reader = ImageReader(img_buffer)
         
-        # Draw image
-        canvas_obj.drawImage(img_reader, x_offset, y_offset, width=new_width, height=new_height)
+        # Draw image with preserveAspectRatio for better rendering
+        canvas_obj.drawImage(img_reader, x_offset, y_offset, 
+                           width=new_width, height=new_height,
+                           preserveAspectRatio=True, anchor='c')
         
         # NO TEXT ON COLORING PAGES - User explicitly requested this
         # Pages should be completely clean with only the coloring image
@@ -266,8 +294,20 @@ class EnhancedPDFGenerator:
         logger.info(f"Cover image: {'Yes' if cover_image else 'No'}")
         logger.info(f"Coloring pages: {len(coloring_images)}")
         
-        # Create PDF
-        pdf_canvas = canvas.Canvas(str(filepath), pagesize=A4)
+        # Create PDF with better compatibility settings
+        pdf_canvas = canvas.Canvas(
+            str(filepath), 
+            pagesize=A4,
+            compress=1,  # Enable compression
+            verbosity=0  # Reduce verbose output
+        )
+        
+        # Set PDF metadata for better compatibility
+        pdf_canvas.setAuthor("Coloring Books Generator")
+        pdf_canvas.setTitle(story_data.get('title', 'Coloring Book'))
+        pdf_canvas.setSubject("Children's Coloring Book")
+        pdf_canvas.setCreator("FLUX Coloring Book Generator")
+        pdf_canvas.setProducer("ReportLab PDF Library")
         
         try:
             # Create cover page
@@ -280,7 +320,7 @@ class EnhancedPDFGenerator:
                 self.create_coloring_page(pdf_canvas, image, i + 1, scene_desc)
                 pdf_canvas.showPage()
             
-            # Save PDF
+            # Save PDF with proper finalization
             pdf_canvas.save()
             
             logger.info(f"✅ PDF generated successfully: {filepath}")
