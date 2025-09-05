@@ -213,16 +213,17 @@ class OptimizedFluxGenerator:
         threshold = 200  # Higher threshold for cleaner lines
         binary = np.where(img_array < threshold, 0, 255).astype(np.uint8)
         
-        # Basic text removal by detecting rectangular regions
-        # Text often appears as dense horizontal lines
-        from scipy import ndimage
+        # Skip text removal if scipy not available
+        # This is optional enhancement - not critical for functionality
         try:
+            from scipy import ndimage
             # Remove small horizontal elements (likely text)
             kernel = np.ones((1, 15), np.uint8)  # Horizontal kernel
             text_mask = ndimage.binary_opening(binary < 128, structure=kernel)
             binary[text_mask] = 255  # Make text areas white
-        except:
+        except ImportError:
             # If scipy not available, skip text removal
+            logger.debug("Scipy not available - skipping text removal enhancement")
             pass
         
         # Convert back to PIL

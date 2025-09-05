@@ -131,13 +131,16 @@ class AutomatedMonitorPipeline:
         
         # Page prompts - preserve character names from story text
         for page in book['pages']:
-            # Extract character name from story text with improved logic
+            # Extract character name from story text with theme-based support
             story_text = page['text']
             
-            # Handle different story text formats
-            if "found a" in story_text:
-                # Format: "Look! Whale Wally found a Lion!" -> extract "Whale Wally"
-                # Split and find character name before "found"
+            # Handle theme-based format: "Color the teapot!" -> extract object name
+            if story_text.startswith("Color the "):
+                # Theme-based format: extract the object being colored
+                object_name = story_text.replace("Color the ", "").replace("!", "").strip()
+                character_name = object_name  # Use object as the main subject
+            elif "found a" in story_text:
+                # Old story format: "Look! Whale Wally found a Lion!" -> extract "Whale Wally"
                 words = story_text.split()
                 found_idx = None
                 for i, word in enumerate(words):
@@ -146,15 +149,14 @@ class AutomatedMonitorPipeline:
                         break
                 
                 if found_idx and found_idx >= 2:
-                    # Take the 2 words before "found" as character name
                     character_name = ' '.join(words[found_idx-2:found_idx])
                 else:
-                    # Fallback to first 2 meaningful words (skip "Look!")
                     meaningful_words = [w for w in words if w.lower() not in ["look!", "look", "wow!", "see!"]]
                     character_name = ' '.join(meaningful_words[:2])
             else:
-                # Standard format: "Dolphin Dany leaps" -> "Dolphin Dany"
-                character_name = ' '.join(story_text.split()[:2])
+                # Standard format: extract first meaningful words
+                meaningful_words = [w for w in story_text.split() if w.lower() not in ["color", "the", "!"]]
+                character_name = ' '.join(meaningful_words[:2]) if meaningful_words else "object"
             
             # Extract scene objects for emphasis (animals, objects mentioned)
             scene_objects = []
