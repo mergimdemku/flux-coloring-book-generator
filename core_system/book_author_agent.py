@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-Book-Author Agent - Continuously generates diverse kids' story/coloring book JSONs
-Inspired by ChatGPT stories but with AI creativity for endless variety
+Coloring Books Author - Generates simple theme-based coloring books
+No complex stories - just themed collections of individual images
 """
 
 import json
@@ -12,11 +12,11 @@ from pathlib import Path
 from typing import Dict, List, Any
 import logging
 
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - [BOOK-AUTHOR] %(message)s')
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - [COLORING-BOOKS-AUTHOR] %(message)s')
 logger = logging.getLogger(__name__)
 
-class BookAuthorAgent:
-    """AI Book Author - Creates endless variety of kids' coloring book stories"""
+class ColoringBooksAuthor:
+    """Coloring Books Author - Creates simple theme-based coloring books"""
     
     def __init__(self):
         random.seed(int(time.time() * 1000000) % 2147483647)
@@ -31,33 +31,106 @@ class BookAuthorAgent:
         self.init_story_elements()
         
     def init_story_elements(self):
-        """Initialize massive variety of story elements for creativity"""
+        """Initialize simple theme-based coloring book elements"""
         
-        # CHARACTER TYPES with specific visual traits
-        self.character_types = {
-            # ANIMALS
-            "forest_animals": [
-                {"name": "Bunny Pip", "desc": "cute bunny with floppy ears", "trait": "tiny blue bow", "personality": "curious"},
-                {"name": "Fox Finn", "desc": "clever red fox with bushy tail", "trait": "green scarf", "personality": "adventurous"},
-                {"name": "Bear Bruno", "desc": "friendly brown bear with round belly", "trait": "honey pot hat", "personality": "gentle"},
-                {"name": "Owl Olivia", "desc": "wise owl with big round eyes", "trait": "tiny glasses", "personality": "smart"},
-                {"name": "Squirrel Sam", "desc": "energetic squirrel with fluffy tail", "trait": "acorn backpack", "personality": "playful"},
-                {"name": "Deer Daisy", "desc": "graceful deer with spots", "trait": "flower crown", "personality": "kind"},
-                {"name": "Raccoon Rex", "desc": "mischievous raccoon with mask markings", "trait": "striped bandana", "personality": "funny"}
-            ],
+        # SIMPLE THEMES - Each book focuses on ONE theme only
+        self.themes = {
+            "farm_animals": {
+                "title": "Farm Animals Coloring Book",
+                "items": [
+                    "cow standing in meadow",
+                    "pig rolling in mud", 
+                    "chicken pecking grain",
+                    "horse running in field",
+                    "sheep grazing grass",
+                    "duck swimming in pond",
+                    "goat climbing rock",
+                    "rabbit eating carrot",
+                    "cat sleeping in barn",
+                    "dog herding sheep"
+                ]
+            },
             
-            "farm_animals": [
-                {"name": "Pig Penelope", "desc": "pink pig with curly tail", "trait": "mud boots", "personality": "cheerful"},
-                {"name": "Cow Bella", "desc": "spotted cow with big eyes", "trait": "flower hat", "personality": "sweet"},
-                {"name": "Horse Henry", "desc": "brown horse with flowing mane", "trait": "western saddle", "personality": "brave"},
-                {"name": "Chicken Clucky", "desc": "yellow chicken with red comb", "trait": "tiny apron", "personality": "busy"},
-                {"name": "Duck Quacky", "desc": "white duck with orange beak", "trait": "sailor hat", "personality": "adventurous"},
-                {"name": "Sheep Shelly", "desc": "fluffy white sheep", "trait": "rainbow wool", "personality": "dreamy"},
-                {"name": "Goat Gary", "desc": "white goat with horns", "trait": "bell collar", "personality": "mischievous"}
-            ],
+            "wild_animals": {
+                "title": "Wild Animals Coloring Book", 
+                "items": [
+                    "lion sitting proudly",
+                    "elephant spraying water",
+                    "giraffe eating leaves", 
+                    "tiger stretching body",
+                    "bear catching fish",
+                    "wolf howling at moon",
+                    "fox in forest",
+                    "deer drinking water",
+                    "monkey swinging branch",
+                    "zebra running plains"
+                ]
+            },
             
-            "ocean_animals": [
-                {"name": "Dolphin Splash", "desc": "friendly dolphin with smile", "trait": "star on forehead", "personality": "playful"},
+            "ocean_life": {
+                "title": "Ocean Life Coloring Book",
+                "items": [
+                    "whale swimming deep",
+                    "dolphin jumping waves",
+                    "shark patrolling waters", 
+                    "octopus hiding rocks",
+                    "seahorse floating seaweed",
+                    "starfish on beach",
+                    "crab walking sand",
+                    "turtle swimming coral",
+                    "fish schooling together",
+                    "jellyfish drifting current"
+                ]
+            },
+            
+            "kitchen_items": {
+                "title": "Kitchen Items Coloring Book",
+                "items": [
+                    "teapot on stove",
+                    "mixing bowl with spoon",
+                    "cutting board with knife",
+                    "frying pan on burner", 
+                    "coffee mug steaming",
+                    "plate with fork",
+                    "glass with juice",
+                    "pot with lid",
+                    "toaster with bread",
+                    "blender with fruit"
+                ]
+            },
+            
+            "vehicles": {
+                "title": "Vehicles Coloring Book", 
+                "items": [
+                    "car driving road",
+                    "truck hauling cargo",
+                    "bus picking passengers",
+                    "motorcycle racing street",
+                    "bicycle in park",
+                    "train on tracks",
+                    "airplane in sky",
+                    "boat on water",
+                    "helicopter flying",
+                    "tractor in field"
+                ]
+            },
+            
+            "flowers": {
+                "title": "Beautiful Flowers Coloring Book",
+                "items": [
+                    "rose in garden",
+                    "sunflower facing sun",
+                    "tulip in spring",
+                    "daisy in meadow", 
+                    "lily by pond",
+                    "orchid in pot",
+                    "poppy in field",
+                    "iris blooming",
+                    "carnation bouquet",
+                    "daffodil yellow bright"
+                ]
+            }
+        }
                 {"name": "Turtle Shelly", "desc": "green sea turtle", "trait": "coral shell decorations", "personality": "wise"},
                 {"name": "Octopus Ollie", "desc": "purple octopus with eight arms", "trait": "tiny crown", "personality": "helpful"},
                 {"name": "Seahorse Sparkle", "desc": "colorful seahorse with curled tail", "trait": "glittery fins", "personality": "magical"},

@@ -202,7 +202,7 @@ class OptimizedFluxGenerator:
         return image
     
     def process_to_line_art(self, image: Image.Image) -> Image.Image:
-        """Simple, effective line art conversion"""
+        """Simple line art conversion with text removal"""
         # Convert to grayscale
         gray = image.convert('L')
         
@@ -212,6 +212,18 @@ class OptimizedFluxGenerator:
         # Simple threshold - works better than complex processing
         threshold = 200  # Higher threshold for cleaner lines
         binary = np.where(img_array < threshold, 0, 255).astype(np.uint8)
+        
+        # Basic text removal by detecting rectangular regions
+        # Text often appears as dense horizontal lines
+        from scipy import ndimage
+        try:
+            # Remove small horizontal elements (likely text)
+            kernel = np.ones((1, 15), np.uint8)  # Horizontal kernel
+            text_mask = ndimage.binary_opening(binary < 128, structure=kernel)
+            binary[text_mask] = 255  # Make text areas white
+        except:
+            # If scipy not available, skip text removal
+            pass
         
         # Convert back to PIL
         return Image.fromarray(binary, mode='L').convert('RGB')
