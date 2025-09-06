@@ -150,12 +150,9 @@ class EnhancedPDFGenerator:
         if cover_image:
             title_y = y_offset - 40
         
-        # NO TEXT AT ALL - USER EXPLICITLY REQUESTED ZERO TEXT
-        # ALL TEXT DRAWING DISABLED
-        # canvas_obj.drawString(title_x, title_y, title)  # DISABLED
-        # canvas_obj.drawString(subtitle_x, title_y - 30, subtitle)  # DISABLED  
-        # canvas_obj.drawString(age_x, title_y - 55, age_info)  # DISABLED
-        pass  # Cover image only, no text overlay
+        # ABSOLUTELY NO TEXT ANYWHERE - USER DEMANDED ZERO TEXT
+        # Pure image-only covers and pages
+        pass
         
         # Add decorative elements
         self._add_cover_decorations(canvas_obj, page_width, page_height)
@@ -273,8 +270,7 @@ class EnhancedPDFGenerator:
                            width=new_width, height=new_height,
                            preserveAspectRatio=True, anchor='c')
         
-        # NO TEXT ON COLORING PAGES - User explicitly requested this
-        # Pages should be completely clean with only the coloring image
+        # ZERO TEXT ON PAGES - User demanded absolutely no text anywhere
     
     def generate_complete_book_pdf(self, story_data: Dict[str, Any], 
                                   cover_image: Optional[Image.Image],

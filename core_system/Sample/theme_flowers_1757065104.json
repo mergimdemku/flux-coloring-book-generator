@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Beautiful Flowers Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "colorful garden with blooming flowers",
+    "back_blurb": "Fun flowers coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the daffodil!",
+        "scene": "daffodil yellow bright"
+      },
+      {
+        "id": 2,
+        "text": "Color the orchid!",
+        "scene": "orchid in pot"
+      },
+      {
+        "id": 3,
+        "text": "Color the poppy!",
+        "scene": "poppy in field"
+      },
+      {
+        "id": 4,
+        "text": "Color the carnation!",
+        "scene": "carnation bouquet"
+      },
+      {
+        "id": 5,
+        "text": "Color the sunflower!",
+        "scene": "sunflower facing sun"
+      },
+      {
+        "id": 6,
+        "text": "Color the rose!",
+        "scene": "rose in garden"
+      },
+      {
+        "id": 7,
+        "text": "Color the daisy!",
+        "scene": "daisy in meadow"
+      },
+      {
+        "id": 8,
+        "text": "Color the iris!",
+        "scene": "iris blooming"
+      },
+      {
+        "id": 9,
+        "text": "Color the tulip!",
+        "scene": "tulip in spring"
+      },
+      {
+        "id": 10,
+        "text": "Color the lily!",
+        "scene": "lily by pond"
+      }
+    ],
+    "metadata": {
+      "theme": "flowers",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T11:38:24.617267"
+    }
+  }
+}

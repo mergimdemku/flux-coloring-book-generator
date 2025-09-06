@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Vehicles Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "busy street with different vehicles",
+    "back_blurb": "Fun vehicles coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the helicopter!",
+        "scene": "helicopter flying"
+      },
+      {
+        "id": 2,
+        "text": "Color the train!",
+        "scene": "train on tracks"
+      },
+      {
+        "id": 3,
+        "text": "Color the motorcycle!",
+        "scene": "motorcycle racing street"
+      },
+      {
+        "id": 4,
+        "text": "Color the truck!",
+        "scene": "truck hauling cargo"
+      },
+      {
+        "id": 5,
+        "text": "Color the bicycle!",
+        "scene": "bicycle in park"
+      },
+      {
+        "id": 6,
+        "text": "Color the tractor!",
+        "scene": "tractor in field"
+      },
+      {
+        "id": 7,
+        "text": "Color the bus!",
+        "scene": "bus picking passengers"
+      },
+      {
+        "id": 8,
+        "text": "Color the airplane!",
+        "scene": "airplane in sky"
+      },
+      {
+        "id": 9,
+        "text": "Color the boat!",
+        "scene": "boat on water"
+      },
+      {
+        "id": 10,
+        "text": "Color the car!",
+        "scene": "car driving road"
+      }
+    ],
+    "metadata": {
+      "theme": "vehicles",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T09:58:24.447675"
+    }
+  }
+}

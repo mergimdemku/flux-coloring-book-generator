@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Ocean Life Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "underwater scene with coral and sea creatures",
+    "back_blurb": "Fun ocean life coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the crab!",
+        "scene": "crab walking sand"
+      },
+      {
+        "id": 2,
+        "text": "Color the turtle!",
+        "scene": "turtle swimming coral"
+      },
+      {
+        "id": 3,
+        "text": "Color the shark!",
+        "scene": "shark patrolling waters"
+      },
+      {
+        "id": 4,
+        "text": "Color the octopus!",
+        "scene": "octopus hiding rocks"
+      },
+      {
+        "id": 5,
+        "text": "Color the jellyfish!",
+        "scene": "jellyfish drifting current"
+      },
+      {
+        "id": 6,
+        "text": "Color the whale!",
+        "scene": "whale swimming deep"
+      },
+      {
+        "id": 7,
+        "text": "Color the dolphin!",
+        "scene": "dolphin jumping waves"
+      },
+      {
+        "id": 8,
+        "text": "Color the seahorse!",
+        "scene": "seahorse floating seaweed"
+      },
+      {
+        "id": 9,
+        "text": "Color the starfish!",
+        "scene": "starfish on beach"
+      },
+      {
+        "id": 10,
+        "text": "Color the fish!",
+        "scene": "fish schooling together"
+      }
+    ],
+    "metadata": {
+      "theme": "ocean_life",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T09:48:24.421253"
+    }
+  }
+}

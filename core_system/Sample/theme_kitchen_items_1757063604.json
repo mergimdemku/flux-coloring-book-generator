@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Kitchen Items Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "cozy kitchen with cooking utensils and appliances",
+    "back_blurb": "Fun kitchen items coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the toaster!",
+        "scene": "toaster with bread"
+      },
+      {
+        "id": 2,
+        "text": "Color the cutting!",
+        "scene": "cutting board with knife"
+      },
+      {
+        "id": 3,
+        "text": "Color the blender!",
+        "scene": "blender with fruit"
+      },
+      {
+        "id": 4,
+        "text": "Color the frying!",
+        "scene": "frying pan on burner"
+      },
+      {
+        "id": 5,
+        "text": "Color the glass!",
+        "scene": "glass with juice"
+      },
+      {
+        "id": 6,
+        "text": "Color the mixing!",
+        "scene": "mixing bowl with spoon"
+      },
+      {
+        "id": 7,
+        "text": "Color the teapot!",
+        "scene": "teapot on stove"
+      },
+      {
+        "id": 8,
+        "text": "Color the plate!",
+        "scene": "plate with fork"
+      },
+      {
+        "id": 9,
+        "text": "Color the coffee!",
+        "scene": "coffee mug steaming"
+      },
+      {
+        "id": 10,
+        "text": "Color the pot!",
+        "scene": "pot with lid"
+      }
+    ],
+    "metadata": {
+      "theme": "kitchen_items",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T11:13:24.565957"
+    }
+  }
+}

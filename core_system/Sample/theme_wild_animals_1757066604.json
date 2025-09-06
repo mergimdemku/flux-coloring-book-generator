@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Wild Animals Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "jungle scene with various wild animals",
+    "back_blurb": "Fun wild animals coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the lion!",
+        "scene": "lion sitting proudly"
+      },
+      {
+        "id": 2,
+        "text": "Color the zebra!",
+        "scene": "zebra running plains"
+      },
+      {
+        "id": 3,
+        "text": "Color the wolf!",
+        "scene": "wolf howling at moon"
+      },
+      {
+        "id": 4,
+        "text": "Color the deer!",
+        "scene": "deer drinking water"
+      },
+      {
+        "id": 5,
+        "text": "Color the bear!",
+        "scene": "bear catching fish"
+      },
+      {
+        "id": 6,
+        "text": "Color the tiger!",
+        "scene": "tiger stretching body"
+      },
+      {
+        "id": 7,
+        "text": "Color the monkey!",
+        "scene": "monkey swinging branch"
+      },
+      {
+        "id": 8,
+        "text": "Color the giraffe!",
+        "scene": "giraffe eating leaves"
+      },
+      {
+        "id": 9,
+        "text": "Color the fox!",
+        "scene": "fox in forest"
+      },
+      {
+        "id": 10,
+        "text": "Color the elephant!",
+        "scene": "elephant spraying water"
+      }
+    ],
+    "metadata": {
+      "theme": "wild_animals",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T12:03:24.650430"
+    }
+  }
+}

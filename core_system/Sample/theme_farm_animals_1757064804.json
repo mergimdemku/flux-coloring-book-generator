@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Farm Animals Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "friendly farm with barn and animals",
+    "back_blurb": "Fun farm animals coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the chicken!",
+        "scene": "chicken pecking grain"
+      },
+      {
+        "id": 2,
+        "text": "Color the pig!",
+        "scene": "pig rolling in mud"
+      },
+      {
+        "id": 3,
+        "text": "Color the sheep!",
+        "scene": "sheep grazing grass"
+      },
+      {
+        "id": 4,
+        "text": "Color the horse!",
+        "scene": "horse running in field"
+      },
+      {
+        "id": 5,
+        "text": "Color the duck!",
+        "scene": "duck swimming in pond"
+      },
+      {
+        "id": 6,
+        "text": "Color the dog!",
+        "scene": "dog herding sheep"
+      },
+      {
+        "id": 7,
+        "text": "Color the goat!",
+        "scene": "goat climbing rock"
+      },
+      {
+        "id": 8,
+        "text": "Color the rabbit!",
+        "scene": "rabbit eating carrot"
+      },
+      {
+        "id": 9,
+        "text": "Color the cow!",
+        "scene": "cow standing in meadow"
+      },
+      {
+        "id": 10,
+        "text": "Color the cat!",
+        "scene": "cat sleeping in barn"
+      }
+    ],
+    "metadata": {
+      "theme": "farm_animals",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T11:33:24.604857"
+    }
+  }
+}

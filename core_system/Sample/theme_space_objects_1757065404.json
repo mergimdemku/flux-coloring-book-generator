@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Space Objects Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "space scene with planets and stars",
+    "back_blurb": "Fun space objects coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the moon!",
+        "scene": "moon with craters"
+      },
+      {
+        "id": 2,
+        "text": "Color the astronaut!",
+        "scene": "astronaut floating"
+      },
+      {
+        "id": 3,
+        "text": "Color the rocket!",
+        "scene": "rocket ship flying"
+      },
+      {
+        "id": 4,
+        "text": "Color the space!",
+        "scene": "space station"
+      },
+      {
+        "id": 5,
+        "text": "Color the planet!",
+        "scene": "planet with rings"
+      },
+      {
+        "id": 6,
+        "text": "Color the solar!",
+        "scene": "solar system planets"
+      },
+      {
+        "id": 7,
+        "text": "Color the alien!",
+        "scene": "alien spaceship"
+      },
+      {
+        "id": 8,
+        "text": "Color the satellite!",
+        "scene": "satellite orbiting"
+      },
+      {
+        "id": 9,
+        "text": "Color the shooting!",
+        "scene": "shooting star trail"
+      },
+      {
+        "id": 10,
+        "text": "Color the comet!",
+        "scene": "comet blazing"
+      }
+    ],
+    "metadata": {
+      "theme": "space_objects",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T11:43:24.624429"
+    }
+  }
+}

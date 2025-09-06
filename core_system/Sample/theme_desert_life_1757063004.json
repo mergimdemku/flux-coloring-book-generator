@@ -1,0 +1,73 @@
+{
+  "book": {
+    "title": "Desert Life Coloring Book",
+    "age_range": "4-8",
+    "paper": {
+      "size": "8.5x11in",
+      "dpi": 300,
+      "orientation": "portrait"
+    },
+    "style": "simple black and white line drawing, thick outlines, no shading",
+    "negative": "",
+    "cover_prompt": "desert landscape with cacti and desert animals",
+    "back_blurb": "Fun desert life coloring book for kids!",
+    "pages": [
+      {
+        "id": 1,
+        "text": "Color the butterfly!",
+        "scene": "butterfly on bloom"
+      },
+      {
+        "id": 2,
+        "text": "Color the snake!",
+        "scene": "snake coiled rock"
+      },
+      {
+        "id": 3,
+        "text": "Color the roadrunner!",
+        "scene": "roadrunner bird"
+      },
+      {
+        "id": 4,
+        "text": "Color the prairie!",
+        "scene": "prairie dog burrow"
+      },
+      {
+        "id": 5,
+        "text": "Color the scorpion!",
+        "scene": "scorpion hiding"
+      },
+      {
+        "id": 6,
+        "text": "Color the lizard!",
+        "scene": "lizard on stone"
+      },
+      {
+        "id": 7,
+        "text": "Color the camel!",
+        "scene": "camel walking sand"
+      },
+      {
+        "id": 8,
+        "text": "Color the desert!",
+        "scene": "desert fox prowling"
+      },
+      {
+        "id": 9,
+        "text": "Color the cactus!",
+        "scene": "cactus with flowers"
+      },
+      {
+        "id": 10,
+        "text": "Color the owl!",
+        "scene": "owl in cactus"
+      }
+    ],
+    "metadata": {
+      "theme": "desert_life",
+      "book_type": "theme_based_coloring",
+      "generated_by": "Coloring-Books-Author",
+      "generation_time": "2025-09-05T11:03:24.549834"
+    }
+  }
+}
