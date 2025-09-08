@@ -24,6 +24,10 @@ class SimpleThemeAuthor:
         self.data_dir = Path("generated_books")
         self.data_dir.mkdir(exist_ok=True)
         
+        # Output directory for new stories (pipeline picks up from here)
+        self.output_dir = Path("new_stories")
+        self.output_dir.mkdir(exist_ok=True)
+        
         # Track what we've already used
         self.used_themes_file = self.data_dir / "used_themes.json"
         self.used_themes = self._load_used_themes()
@@ -302,8 +306,31 @@ class SimpleThemeAuthor:
         # Mark theme as used
         self._save_used_theme(theme_key)
         
+        # Save book as JSON file for pipeline processing
+        self._save_book_file(book)
+        
         logger.info(f"✅ Generated: {book['title']} ({pages} pages)")
         return book
+    
+    def _save_book_file(self, book: Dict[str, Any]):
+        """Save generated book as JSON file in new_stories for pipeline pickup"""
+        import datetime
+        
+        timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+        filename = f"{book['theme']}_{book['unique_id']}_{timestamp}.json"
+        filepath = self.output_dir / filename
+        
+        # Create pipeline-compatible format
+        pipeline_data = {
+            'story': book,
+            'prompts': book['prompts']
+        }
+        
+        with open(filepath, 'w', encoding='utf-8') as f:
+            json.dump(pipeline_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"💾 Saved: {filepath}")
+        return str(filepath)
 
 # Global instance
 simple_author = SimpleThemeAuthor()

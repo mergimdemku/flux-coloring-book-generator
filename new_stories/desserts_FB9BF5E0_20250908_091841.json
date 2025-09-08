@@ -1,0 +1,247 @@
+{
+  "story": {
+    "title": "Desserts Coloring Book FB9BF5E0",
+    "theme": "desserts",
+    "theme_title": "Desserts",
+    "total_pages": 12,
+    "unique_id": "FB9BF5E0",
+    "prompts": [
+      {
+        "type": "cover",
+        "character": "Desserts collection",
+        "scene": "Muffin, Cupcake, Brownie, Cake together",
+        "negative": "text, words, letters, writing, numbers, watermark",
+        "scene_description": "Cover"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 1,
+        "character": "Muffin",
+        "scene": "Muffin",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 1: Muffin",
+        "scene_visual": "Muffin"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 2,
+        "character": "Cupcake",
+        "scene": "Cupcake",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 2: Cupcake",
+        "scene_visual": "Cupcake"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 3,
+        "character": "Brownie",
+        "scene": "Brownie",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 3: Brownie",
+        "scene_visual": "Brownie"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 4,
+        "character": "Cake",
+        "scene": "Cake",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 4: Cake",
+        "scene_visual": "Cake"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 5,
+        "character": "Lollipop",
+        "scene": "Lollipop",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 5: Lollipop",
+        "scene_visual": "Lollipop"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 6,
+        "character": "Chocolate",
+        "scene": "Chocolate",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 6: Chocolate",
+        "scene_visual": "Chocolate"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 7,
+        "character": "Cookie",
+        "scene": "Cookie",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 7: Cookie",
+        "scene_visual": "Cookie"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 8,
+        "character": "Pudding",
+        "scene": "Pudding",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 8: Pudding",
+        "scene_visual": "Pudding"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 9,
+        "character": "Ice cream",
+        "scene": "Ice cream",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 9: Ice cream",
+        "scene_visual": "Ice cream"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 10,
+        "character": "Pie",
+        "scene": "Pie",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 10: Pie",
+        "scene_visual": "Pie"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 11,
+        "character": "Donut",
+        "scene": "Donut",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 11: Donut",
+        "scene_visual": "Donut"
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "character": "Desserts collection",
+      "scene": "Muffin, Cupcake, Brownie, Cake together",
+      "negative": "text, words, letters, writing, numbers, watermark",
+      "scene_description": "Cover"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "character": "Muffin",
+      "scene": "Muffin",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 1: Muffin",
+      "scene_visual": "Muffin"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "character": "Cupcake",
+      "scene": "Cupcake",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 2: Cupcake",
+      "scene_visual": "Cupcake"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "character": "Brownie",
+      "scene": "Brownie",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 3: Brownie",
+      "scene_visual": "Brownie"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "character": "Cake",
+      "scene": "Cake",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 4: Cake",
+      "scene_visual": "Cake"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "character": "Lollipop",
+      "scene": "Lollipop",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 5: Lollipop",
+      "scene_visual": "Lollipop"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "character": "Chocolate",
+      "scene": "Chocolate",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 6: Chocolate",
+      "scene_visual": "Chocolate"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "character": "Cookie",
+      "scene": "Cookie",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 7: Cookie",
+      "scene_visual": "Cookie"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "character": "Pudding",
+      "scene": "Pudding",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 8: Pudding",
+      "scene_visual": "Pudding"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "character": "Ice cream",
+      "scene": "Ice cream",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 9: Ice cream",
+      "scene_visual": "Ice cream"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "character": "Pie",
+      "scene": "Pie",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 10: Pie",
+      "scene_visual": "Pie"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "character": "Donut",
+      "scene": "Donut",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 11: Donut",
+      "scene_visual": "Donut"
+    }
+  ]
+}
