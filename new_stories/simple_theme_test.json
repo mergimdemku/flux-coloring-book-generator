@@ -1,0 +1,127 @@
+{
+  "story": {
+    "title": "World Cultures Coloring Book 53DB62F9",
+    "theme": "world_cultures",
+    "theme_title": "World Cultures",
+    "total_pages": 6,
+    "unique_id": "53DB62F9",
+    "prompts": [
+      {
+        "type": "cover",
+        "character": "World Cultures collection",
+        "scene": "French Eiffel Tower, Chinese dragon, Greek temple, Mexican sombrero together",
+        "negative": "text, words, letters, writing, numbers, watermark",
+        "scene_description": "Cover"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 1,
+        "character": "French Eiffel Tower",
+        "scene": "French Eiffel Tower",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 1: French Eiffel Tower",
+        "scene_visual": "French Eiffel Tower"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 2,
+        "character": "Chinese dragon",
+        "scene": "Chinese dragon",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 2: Chinese dragon",
+        "scene_visual": "Chinese dragon"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 3,
+        "character": "Greek temple",
+        "scene": "Greek temple",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 3: Greek temple",
+        "scene_visual": "Greek temple"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 4,
+        "character": "Mexican sombrero",
+        "scene": "Mexican sombrero",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 4: Mexican sombrero",
+        "scene_visual": "Mexican sombrero"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 5,
+        "character": "Italian pizza",
+        "scene": "Italian pizza",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 5: Italian pizza",
+        "scene_visual": "Italian pizza"
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "character": "World Cultures collection",
+      "scene": "French Eiffel Tower, Chinese dragon, Greek temple, Mexican sombrero together",
+      "negative": "text, words, letters, writing, numbers, watermark",
+      "scene_description": "Cover"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "character": "French Eiffel Tower",
+      "scene": "French Eiffel Tower",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 1: French Eiffel Tower",
+      "scene_visual": "French Eiffel Tower"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "character": "Chinese dragon",
+      "scene": "Chinese dragon",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 2: Chinese dragon",
+      "scene_visual": "Chinese dragon"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "character": "Greek temple",
+      "scene": "Greek temple",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 3: Greek temple",
+      "scene_visual": "Greek temple"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "character": "Mexican sombrero",
+      "scene": "Mexican sombrero",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 4: Mexican sombrero",
+      "scene_visual": "Mexican sombrero"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "character": "Italian pizza",
+      "scene": "Italian pizza",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 5: Italian pizza",
+      "scene_visual": "Italian pizza"
+    }
+  ]
+}

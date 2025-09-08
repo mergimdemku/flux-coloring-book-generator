@@ -30,38 +30,43 @@ class OptimizedFluxGenerator:
         logger.info(f"Using model cache at: {self.cache_dir}")
         logger.info("Will use existing cached models - no download needed")
         
-        # CRITICAL: Positive-only prompts for FLUX.1-schnell (no negative prompts support)
+        # CRITICAL: FIXED prompts that ELIMINATE text artifacts
         self.prompt_priorities = {
             'coloring_page': {
                 'essential': [  # First 25-30 tokens - THESE WILL BE READ
                     'simple black and white line drawing',
                     'coloring book page for children',
-                    'clean outlines only',
-                    'no shading or colors'
+                    'thick black outlines only',
+                    'no text anywhere',
+                    'no letters',
+                    'no words',
+                    'pure white background'
                 ],
                 'spatial': [  # Spatial organization for multi-object scenes
-                    'foreground showing',
-                    'background with',
-                    'centered composition'
+                    'centered on page',
+                    'simple composition'
                 ],
                 'character': [],  # 15-20 tokens for character description
                 'style': [  # 10-15 tokens
-                    'thick black outlines', 'simple shapes', 'clear forms'
+                    'easy to color', 'clean design', 'outline art only'
                 ]
             },
             'cover': {
                 'essential': [  # First 25-30 tokens - MOST CRITICAL
-                    'colorful children book cover illustration',
-                    'vibrant cartoon style',
-                    'friendly characters'
+                    'children book cover illustration',
+                    'colorful cartoon style',
+                    'no text elements',
+                    'no letters',
+                    'no words',
+                    'illustration only'
                 ],
                 'spatial': [  # Spatial organization
-                    'main character in center',
-                    'decorative background'
+                    'characters in center',
+                    'white background'
                 ],
                 'character': [],  # 15-20 tokens for character
                 'style': [  # 10-15 tokens
-                    'bright colors', 'child-friendly', 'cheerful mood'
+                    'bright colors', 'kid-friendly', 'cheerful design'
                 ]
             }
         }
