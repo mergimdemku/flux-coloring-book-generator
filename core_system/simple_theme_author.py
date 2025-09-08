@@ -28,6 +28,10 @@ class SimpleThemeAuthor:
         self.output_dir = Path("new_stories")
         self.output_dir.mkdir(exist_ok=True)
         
+        # Old stories directory for duplicate checking
+        self.old_stories_dir = Path("old_stories")
+        self.old_stories_dir.mkdir(exist_ok=True)
+        
         # Track what we've already used
         self.used_themes_file = self.data_dir / "used_themes.json"
         self.used_themes = self._load_used_themes()
@@ -331,6 +335,83 @@ class SimpleThemeAuthor:
         
         logger.info(f"💾 Saved: {filepath}")
         return str(filepath)
+    
+    def _check_existing_stories(self) -> set:
+        """Check both new_stories and old_stories for existing titles/themes"""
+        existing_stories = set()
+        
+        # Check new_stories folder
+        for json_file in self.output_dir.glob("*.json"):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                if 'story' in data and 'title' in data['story']:
+                    title = data['story']['title']
+                    theme = data['story'].get('theme', 'unknown')
+                    existing_stories.add(f"{theme}_{title}")
+            except:
+                continue
+        
+        # Check old_stories folder  
+        for json_file in self.old_stories_dir.glob("*.json"):
+            try:
+                with open(json_file, 'r', encoding='utf-8') as f:
+                    data = json.load(f)
+                if 'story' in data and 'title' in data['story']:
+                    title = data['story']['title']
+                    theme = data['story'].get('theme', 'unknown')
+                    existing_stories.add(f"{theme}_{title}")
+            except:
+                continue
+                
+        logger.info(f"Found {len(existing_stories)} existing stories across both folders")
+        return existing_stories
+    
+    def _is_duplicate_story(self, book: Dict[str, Any]) -> bool:
+        """Check if this book would be a duplicate"""
+        existing = self._check_existing_stories()
+        book_identifier = f"{book['theme']}_{book['title']}"
+        return book_identifier in existing
+    
+    def run_continuous_generation(self, interval_minutes: int = 10):
+        """Run continuous story generation every X minutes"""
+        import time
+        
+        logger.info(f"🚀 Starting Continuous Simple Theme Author")
+        logger.info(f"📁 Output: {self.output_dir}")
+        logger.info(f"⏰ Generation interval: {interval_minutes} minutes")
+        logger.info(f"🎨 Available themes: {len(self.theme_database)}")
+        
+        generation_count = 0
+        
+        while True:
+            try:
+                logger.info(f"📚 Starting generation #{generation_count + 1}")
+                
+                # Generate new book
+                book = self.generate_unique_book(12)
+                
+                if book:
+                    generation_count += 1
+                    logger.info(f"✅ Generated #{generation_count}: {book['title']}")
+                    logger.info(f"📊 Total themes used: {len(self.used_themes)}/{len(self.theme_database)}")
+                else:
+                    logger.warning("❌ Failed to generate book")
+                
+                # Wait for next generation
+                wait_seconds = interval_minutes * 60
+                logger.info(f"💤 Waiting {interval_minutes} minutes until next generation...")
+                time.sleep(wait_seconds)
+                
+            except KeyboardInterrupt:
+                logger.info(f"⏹️  Stopping continuous generation (user interrupt)")
+                logger.info(f"📊 Final stats: {generation_count} books generated")
+                break
+                
+            except Exception as e:
+                logger.error(f"❌ Error in continuous generation: {e}")
+                logger.info("⏰ Waiting 2 minutes before retry...")
+                time.sleep(120)  # Wait 2 minutes on error
 
 # Global instance
 simple_author = SimpleThemeAuthor()
@@ -339,12 +420,27 @@ def generate_simple_book(pages: int = 12) -> Dict[str, Any]:
     """Generate a simple single-theme coloring book"""
     return simple_author.generate_unique_book(pages)
 
+def run_continuous_author(interval_minutes: int = 10):
+    """Run the continuous simple theme author"""
+    simple_author.run_continuous_generation(interval_minutes)
+
 if __name__ == "__main__":
-    # Test
-    book = generate_simple_book(12)
-    print(f"Generated: {book['title']}")
-    print(f"Theme: {book['theme_title']}")
-    print(f"Pages: {book['total_pages']}")
-    print("\nSample prompts:")
-    print(f"Cover: {book['prompts'][0]['character']} - {book['prompts'][0]['scene']}")
-    print(f"Page 1: {book['prompts'][1]['character']} - {book['prompts'][1]['scene']}")
+    import sys
+    
+    if len(sys.argv) > 1 and sys.argv[1] == "continuous":
+        # Continuous mode - generate every 10 minutes
+        interval = int(sys.argv[2]) if len(sys.argv) > 2 else 10
+        print(f"Starting continuous generation every {interval} minutes...")
+        print("Press Ctrl+C to stop")
+        run_continuous_author(interval)
+    else:
+        # Single generation test
+        book = generate_simple_book(12)
+        print(f"Generated: {book['title']}")
+        print(f"Theme: {book['theme_title']}")
+        print(f"Pages: {book['total_pages']}")
+        print("\nSample prompts:")
+        print(f"Cover: {book['prompts'][0]['character']} - {book['prompts'][0]['scene']}")
+        print(f"Page 1: {book['prompts'][1]['character']} - {book['prompts'][1]['scene']}")
+        print("\nTo run continuous generation:")
+        print("python3 core_system/simple_theme_author.py continuous [minutes]")

@@ -1,0 +1,247 @@
+{
+  "story": {
+    "title": "Farm Animals Coloring Book DE2535BD",
+    "theme": "farm_animals",
+    "theme_title": "Farm Animals",
+    "total_pages": 12,
+    "unique_id": "DE2535BD",
+    "prompts": [
+      {
+        "type": "cover",
+        "character": "Farm Animals collection",
+        "scene": "Turkey, Cow, Horse, Rabbit together",
+        "negative": "text, words, letters, writing, numbers, watermark",
+        "scene_description": "Cover"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 1,
+        "character": "Turkey",
+        "scene": "Turkey",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 1: Turkey",
+        "scene_visual": "Turkey"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 2,
+        "character": "Cow",
+        "scene": "Cow",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 2: Cow",
+        "scene_visual": "Cow"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 3,
+        "character": "Horse",
+        "scene": "Horse",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 3: Horse",
+        "scene_visual": "Horse"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 4,
+        "character": "Rabbit",
+        "scene": "Rabbit",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 4: Rabbit",
+        "scene_visual": "Rabbit"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 5,
+        "character": "Chicken",
+        "scene": "Chicken",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 5: Chicken",
+        "scene_visual": "Chicken"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 6,
+        "character": "Sheep",
+        "scene": "Sheep",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 6: Sheep",
+        "scene_visual": "Sheep"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 7,
+        "character": "Rooster",
+        "scene": "Rooster",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 7: Rooster",
+        "scene_visual": "Rooster"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 8,
+        "character": "Pig",
+        "scene": "Pig",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 8: Pig",
+        "scene_visual": "Pig"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 9,
+        "character": "Goat",
+        "scene": "Goat",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 9: Goat",
+        "scene_visual": "Goat"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 10,
+        "character": "Goose",
+        "scene": "Goose",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 10: Goose",
+        "scene_visual": "Goose"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 11,
+        "character": "Donkey",
+        "scene": "Donkey",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 11: Donkey",
+        "scene_visual": "Donkey"
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "character": "Farm Animals collection",
+      "scene": "Turkey, Cow, Horse, Rabbit together",
+      "negative": "text, words, letters, writing, numbers, watermark",
+      "scene_description": "Cover"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "character": "Turkey",
+      "scene": "Turkey",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 1: Turkey",
+      "scene_visual": "Turkey"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "character": "Cow",
+      "scene": "Cow",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 2: Cow",
+      "scene_visual": "Cow"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "character": "Horse",
+      "scene": "Horse",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 3: Horse",
+      "scene_visual": "Horse"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "character": "Rabbit",
+      "scene": "Rabbit",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 4: Rabbit",
+      "scene_visual": "Rabbit"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "character": "Chicken",
+      "scene": "Chicken",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 5: Chicken",
+      "scene_visual": "Chicken"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "character": "Sheep",
+      "scene": "Sheep",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 6: Sheep",
+      "scene_visual": "Sheep"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "character": "Rooster",
+      "scene": "Rooster",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 7: Rooster",
+      "scene_visual": "Rooster"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "character": "Pig",
+      "scene": "Pig",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 8: Pig",
+      "scene_visual": "Pig"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "character": "Goat",
+      "scene": "Goat",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 9: Goat",
+      "scene_visual": "Goat"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "character": "Goose",
+      "scene": "Goose",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 10: Goose",
+      "scene_visual": "Goose"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "character": "Donkey",
+      "scene": "Donkey",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 11: Donkey",
+      "scene_visual": "Donkey"
+    }
+  ]
+}

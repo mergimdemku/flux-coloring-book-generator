@@ -1,0 +1,247 @@
+{
+  "story": {
+    "title": "Fruits Coloring Book 9939F638",
+    "theme": "fruits",
+    "theme_title": "Fruits",
+    "total_pages": 12,
+    "unique_id": "9939F638",
+    "prompts": [
+      {
+        "type": "cover",
+        "character": "Fruits collection",
+        "scene": "Grape, Pear, Cherry, Pineapple together",
+        "negative": "text, words, letters, writing, numbers, watermark",
+        "scene_description": "Cover"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 1,
+        "character": "Grape",
+        "scene": "Grape",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 1: Grape",
+        "scene_visual": "Grape"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 2,
+        "character": "Pear",
+        "scene": "Pear",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 2: Pear",
+        "scene_visual": "Pear"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 3,
+        "character": "Cherry",
+        "scene": "Cherry",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 3: Cherry",
+        "scene_visual": "Cherry"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 4,
+        "character": "Pineapple",
+        "scene": "Pineapple",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 4: Pineapple",
+        "scene_visual": "Pineapple"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 5,
+        "character": "Banana",
+        "scene": "Banana",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 5: Banana",
+        "scene_visual": "Banana"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 6,
+        "character": "Apple",
+        "scene": "Apple",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 6: Apple",
+        "scene_visual": "Apple"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 7,
+        "character": "Watermelon",
+        "scene": "Watermelon",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 7: Watermelon",
+        "scene_visual": "Watermelon"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 8,
+        "character": "Mango",
+        "scene": "Mango",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 8: Mango",
+        "scene_visual": "Mango"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 9,
+        "character": "Kiwi",
+        "scene": "Kiwi",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 9: Kiwi",
+        "scene_visual": "Kiwi"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 10,
+        "character": "Peach",
+        "scene": "Peach",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 10: Peach",
+        "scene_visual": "Peach"
+      },
+      {
+        "type": "coloring_page",
+        "page_number": 11,
+        "character": "Strawberry",
+        "scene": "Strawberry",
+        "scene_objects": [],
+        "negative": "text, words, letters, shading, gray, colors, complex details",
+        "scene_description": "Page 11: Strawberry",
+        "scene_visual": "Strawberry"
+      }
+    ]
+  },
+  "prompts": [
+    {
+      "type": "cover",
+      "character": "Fruits collection",
+      "scene": "Grape, Pear, Cherry, Pineapple together",
+      "negative": "text, words, letters, writing, numbers, watermark",
+      "scene_description": "Cover"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 1,
+      "character": "Grape",
+      "scene": "Grape",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 1: Grape",
+      "scene_visual": "Grape"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 2,
+      "character": "Pear",
+      "scene": "Pear",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 2: Pear",
+      "scene_visual": "Pear"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 3,
+      "character": "Cherry",
+      "scene": "Cherry",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 3: Cherry",
+      "scene_visual": "Cherry"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 4,
+      "character": "Pineapple",
+      "scene": "Pineapple",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 4: Pineapple",
+      "scene_visual": "Pineapple"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 5,
+      "character": "Banana",
+      "scene": "Banana",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 5: Banana",
+      "scene_visual": "Banana"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 6,
+      "character": "Apple",
+      "scene": "Apple",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 6: Apple",
+      "scene_visual": "Apple"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 7,
+      "character": "Watermelon",
+      "scene": "Watermelon",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 7: Watermelon",
+      "scene_visual": "Watermelon"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 8,
+      "character": "Mango",
+      "scene": "Mango",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 8: Mango",
+      "scene_visual": "Mango"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 9,
+      "character": "Kiwi",
+      "scene": "Kiwi",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 9: Kiwi",
+      "scene_visual": "Kiwi"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 10,
+      "character": "Peach",
+      "scene": "Peach",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 10: Peach",
+      "scene_visual": "Peach"
+    },
+    {
+      "type": "coloring_page",
+      "page_number": 11,
+      "character": "Strawberry",
+      "scene": "Strawberry",
+      "scene_objects": [],
+      "negative": "text, words, letters, shading, gray, colors, complex details",
+      "scene_description": "Page 11: Strawberry",
+      "scene_visual": "Strawberry"
+    }
+  ]
+}

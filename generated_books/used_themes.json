@@ -1,13 +1,15 @@
 {
   "used_themes": [
-    "trees",
-    "desserts",
-    "dogs_and_cats",
-    "dinosaurs",
-    "bathroom",
-    "kitchen",
     "vegetables",
+    "dinosaurs",
+    "desserts",
     "world_cultures",
-    "the_dog_benji"
+    "kitchen",
+    "dogs_and_cats",
+    "trees",
+    "bathroom",
+    "fruits",
+    "the_dog_benji",
+    "farm_animals"
   ]
 }
